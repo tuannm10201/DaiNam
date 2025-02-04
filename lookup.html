@@ -12,60 +12,107 @@
     <script src="script/lookup.js" defer></script>
   </head>
   <body>
-    <div class="header border-bottom py-2">
+    <!-- Top Header -->
+    <nav class="header navbar navbar-expand-xxl border-bottom py-2">
       <div class="container">
-        <div class="d-flex justify-content-between top-nav">
-          <ul class="d-flex gap-3">
-            <li>Khối SK</li>
-            <li>Khối KHCB</li>
-            <li>Khối KT-CN</li>
-            <li>Khối KD-KT</li>
-            <li>Khối KHXH&NV</li>
-            <li>Viện-Trung tâm</li>
-          </ul>
-          <div class="d-flex gap-3">
-            <ul class="d-flex gap-3">
-              <li>Trang chủ</li>
-              <li>VR Tour</li>
-              <li>Ngành học</li>
-              <li>Nộp hồ sơ xét tuyển online</li>
-              <li>Liên hệ</li>
-            </ul>
+        <!-- Left Navigation -->
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#topNav"
+        >
+          ☰ Menu
+        </button>
 
-            <div class="d-flex align-items-center gap-1">
-              <img src="assets/icon/language-flag.svg" alt="" />
-              Tiếng Việt
-              <img src="assets/icon/chevron-down.svg" />
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div
-      class="header position-sticky top-0 bg-white border-bottom sticky-header"
-    >
-      <div class="container">
-        <div class="d-flex align-items-center" style="height: 74px">
-          <div class="d-flex my-2 gap-2">
-            <img src="assets/logo/dai-nam-logo-img.svg" />
-            <img src="assets/logo/dai-nam-logo-text.svg" />
-          </div>
-          <ul
-            class="d-flex ms-auto text-uppercase fw-semibold gap-4 align-items-end bottom-nav h-100"
-          >
-            <li class="h-100 d-flex align-items-center">Khám phá DNU</li>
-            <li class="h-100 d-flex align-items-center">Đại học chính quy</li>
-            <li class="h-100 d-flex align-items-center">Thạc sĩ</li>
-            <li class="h-100 d-flex align-items-center">Tiến sĩ</li>
-            <li class="h-100 d-flex align-items-center">Liên kết quốc tế</li>
-            <li class="h-100 d-flex align-items-center">
-              Liên thông - Bằng 2 - Từ xa
+        <div
+          class="collapse navbar-collapse align-items-center justify-content-between top-nav"
+          id="topNav"
+        >
+          <ul class="navbar-nav gap-3 mt-xxl-0 mt-3">
+            <li class="nav-item">Khối SK</li>
+            <li class="nav-item">Khối KHCB</li>
+            <li class="nav-item">Khối KT-CN</li>
+            <li class="nav-item">Khối KD-KT</li>
+            <li class="nav-item">Khối KHXH&NV</li>
+            <li class="nav-item">Viện-Trung tâm</li>
+          </ul>
+
+          <!-- Right Navigation -->
+          <ul class="navbar-nav gap-3 align-items-xxl-center">
+            <li class="nav-item">Trang chủ</li>
+            <li class="nav-item">VR Tour</li>
+            <li class="nav-item">Ngành học</li>
+            <li class="nav-item">Nộp hồ sơ xét tuyển online</li>
+            <li class="nav-item">Liên hệ</li>
+
+            <!-- Language Dropdown -->
+            <li class="nav-item dropdown" style="z-index: 10002">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                role="button"
+                data-bs-toggle="dropdown"
+              >
+                <img src="assets/icon/language-flag.svg" alt="" /> Tiếng Việt
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">English</a></li>
+                <li><a class="dropdown-item" href="#">Tiếng Việt</a></li>
+              </ul>
             </li>
-            <li class="h-100 d-flex align-items-center" selected>Tra cứu</li>
           </ul>
         </div>
       </div>
-    </div>
+    </nav>
+
+    <!-- Bottom Header -->
+    <nav class="navbar navbar-expand-xxl bg-white border-bottom sticky-top">
+      <div class="container">
+        <!-- Logo -->
+        <a class="navbar-brand d-flex align-items-center" href="#">
+          <img src="assets/logo/dai-nam-logo-img.svg" alt="Logo" />
+          <img
+            src="assets/logo/dai-nam-logo-text.svg"
+            alt="Dai Nam"
+            class="ms-2"
+          />
+        </a>
+
+        <!-- Mobile Menu Toggle Button -->
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#bottomNav"
+        >
+          ☰
+        </button>
+
+        <!-- Bottom Nav Links -->
+        <div class="collapse navbar-collapse" id="bottomNav">
+          <ul class="navbar-nav ms-auto fw-semibold text-uppercase">
+            <li class="nav-item">
+              <a class="nav-link" href="#">Khám phá DNU</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Đại học chính quy</a>
+            </li>
+            <li class="nav-item"><a class="nav-link" href="#">Thạc sĩ</a></li>
+            <li class="nav-item"><a class="nav-link" href="#">Tiến sĩ</a></li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Liên kết quốc tế</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Liên thông - Bằng 2 - Từ xa</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="#">Tra cứu</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
 
     <main>
       <section class="top-input position-relative">

@@ -56,11 +56,11 @@ function selectItem(e) {
   const selectedText = this.textContent;
   customDropdown.textContent = selectedText;
 
-  const selectedValue = this.dataset.value;
-  selectedValue.value = selectedValue;
+  const dataValue = this.dataset.value;
+  selectedValue.value = dataValue;
 
   listDropdowItem.forEach((li) => {
-    if (li.dataset.value === selectedValue) {
+    if (li.dataset.value === dataValue) {
       li.setAttribute("selected", true);
     } else {
       li.removeAttribute("selected");
