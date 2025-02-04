@@ -1,0 +1,540 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dai Nam university</title>
+
+    <link rel="stylesheet" href="style/lib/bootstrap.min.css" />
+    <link rel="stylesheet" href="style/lookup.css" />
+
+    <script src="script/lib/bootstrap.min.js" defer></script>
+    <script src="script/lookup.js" defer></script>
+  </head>
+  <body>
+    <div class="header border-bottom py-2">
+      <div class="container">
+        <div class="d-flex justify-content-between top-nav">
+          <ul class="d-flex gap-3">
+            <li>Khối SK</li>
+            <li>Khối KHCB</li>
+            <li>Khối KT-CN</li>
+            <li>Khối KD-KT</li>
+            <li>Khối KHXH&NV</li>
+            <li>Viện-Trung tâm</li>
+          </ul>
+          <div class="d-flex gap-3">
+            <ul class="d-flex gap-3">
+              <li>Trang chủ</li>
+              <li>VR Tour</li>
+              <li>Ngành học</li>
+              <li>Nộp hồ sơ xét tuyển online</li>
+              <li>Liên hệ</li>
+            </ul>
+
+            <div class="d-flex align-items-center gap-1">
+              <img src="assets/icon/language-flag.svg" alt="" />
+              Tiếng Việt
+              <img src="assets/icon/chevron-down.svg" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div
+      class="header position-sticky top-0 bg-white border-bottom sticky-header"
+    >
+      <div class="container">
+        <div class="d-flex align-items-center" style="height: 74px">
+          <div class="d-flex my-2 gap-2">
+            <img src="assets/logo/dai-nam-logo-img.svg" />
+            <img src="assets/logo/dai-nam-logo-text.svg" />
+          </div>
+          <ul
+            class="d-flex ms-auto text-uppercase fw-semibold gap-4 align-items-end bottom-nav h-100"
+          >
+            <li class="h-100 d-flex align-items-center">Khám phá DNU</li>
+            <li class="h-100 d-flex align-items-center">Đại học chính quy</li>
+            <li class="h-100 d-flex align-items-center">Thạc sĩ</li>
+            <li class="h-100 d-flex align-items-center">Tiến sĩ</li>
+            <li class="h-100 d-flex align-items-center">Liên kết quốc tế</li>
+            <li class="h-100 d-flex align-items-center">
+              Liên thông - Bằng 2 - Từ xa
+            </li>
+            <li class="h-100 d-flex align-items-center" selected>Tra cứu</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <main>
+      <section class="top-input position-relative">
+        <div
+          class="container flex-column lookup-container"
+          style="display: none"
+        >
+          <div class="flex-fill d-flex align-items-center">
+            <h1 class="text-white title d-none d-lg-block">
+              Tra cứu kết quả <br />
+              tuyển sinh 2025
+            </h1>
+            <h1 class="text-white d-lg-none d-block">
+              Tra cứu kết quả tuyển sinh 2025
+            </h1>
+          </div>
+          <div class="mb-3 mb-lg-5 bg-white card px-4 py-3">
+            <form class="row gap-3 gap-lg-0" id="form">
+              <div class="col-lg-5 col-12">
+                <label for="customDropdown" class="fw-semibold">
+                  Chọn thông tin bạn cần tra cứu
+                </label>
+                <div class="dropdown mt-2">
+                  <button
+                    class="dropdown-toggle custom-select-dropdown lookup-input fw-medium form-select form-select-lg text-start"
+                    type="button"
+                    id="customDropdown"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                  >
+                    Select option
+                  </button>
+                  <ul
+                    class="dropdown-menu w-100"
+                    aria-labelledby="customDropdown"
+                  >
+                    <li
+                      class="dropdown-item fs-5 px-3 py-2 border-bottom"
+                      selected
+                      data-value="1"
+                    >
+                      Kết quả xét tuyển đại học 2025
+                    </li>
+                    <li
+                      class="dropdown-item fs-5 px-3 py-2 border-bottom"
+                      data-value="2"
+                    >
+                      Kết quả xét tuyển thạc sĩ 2025
+                    </li>
+                    <li
+                      class="dropdown-item fs-5 px-3 py-2 border-bottom"
+                      data-value="3"
+                    >
+                      Kết quả xét tuyển tiến sĩ 2025
+                    </li>
+                    <li
+                      class="dropdown-item fs-5 px-3 py-2 border-bottom"
+                      data-value="4"
+                    >
+                      Kết quả xét tuyển liên thông - Bằng 2 - Từ xa 2025
+                    </li>
+                    <li class="dropdown-item fs-5 px-3 py-2" data-value="5">
+                      Kết quả xét tuyển liên thông - Bằng 2 - Từ xa 2025
+                    </li>
+                  </ul>
+
+                  <input
+                    type="hidden"
+                    id="selected-value"
+                    name="selected-value"
+                    value="1"
+                    required
+                  />
+                </div>
+              </div>
+              <div class="col-lg-5 col-12 position-relative">
+                <label for="input" class="fw-semibold">
+                  Nhập số CCCD/CMND
+                </label>
+                <input
+                  type="input"
+                  id="input"
+                  class="form-control form-control-lg mt-2 lookup-input fw-medium"
+                  placeholder="Nhập số CCCD/CMND(*)"
+                  inputmode="numeric"
+                  pattern="[0-9]*"
+                  name="id-number"
+                  required
+                />
+                <img
+                  src="assets/icon/clear-input.svg"
+                  alt=""
+                  id="clear-icon"
+                  class="clear-input-icon"
+                />
+              </div>
+              <div class="col-lg-2 col-12 d-flex mt-lg-0 mt-2">
+                <button
+                  class="btn btn-lg lookup-btn mt-auto d-flex align-items-center justify-content-center gap-2 w-100"
+                  type="submit"
+                  disabled
+                >
+                  <img
+                    src="assets/icon/lookup-icon.svg"
+                    alt=""
+                    class="d-none d-xl-block"
+                  />
+                  <div class="fw-medium">Tra cứu</div>
+                </button>
+              </div>
+            </form>
+
+            <div class="mt-3">
+              Trong trường hợp không tra cứu được, vui lòng liên hệ hotline
+              <span class="fw-semibold contact"> 0961.595.559 </span> hoặc
+              <span class="fw-semibold contact"> 0931.595.599 </span>
+              để được hỗ trợ.
+            </div>
+          </div>
+        </div>
+
+        <img
+          src="assets/img/lookup-bg.png"
+          alt="Lookup Bg"
+          class="lookup-bg"
+          width="100%"
+        />
+      </section>
+
+      <section class="info py-4">
+        <div class="container">
+          <div class="rounded-4 bg-white">
+            <h4
+              class="d-flex align-items-center gap-2 border-bottom px-4 pt-4 pb-3"
+            >
+              <img src="assets/icon/candidate-info.svg" alt="" />
+              Thông tin thí sinh/Người dự tuyển
+            </h4>
+            <div class="px-4 py-2">
+              <table class="table table-bordered table-candidate-info">
+                <colgroup>
+                  <col style="width: 25%" />
+                  <col style="width: 75%" />
+                </colgroup>
+                <tbody>
+                  <tr class="border-top-0">
+                    <td>Hệ đào tạo</td>
+                    <td id="he-dao-tao">-</td>
+                  </tr>
+                  <tr>
+                    <td>Họ và tên</td>
+                    <td id="ho-va-ten">-</td>
+                  </tr>
+                  <tr>
+                    <td>Ngày sinh</td>
+                    <td id="ngay-sinh">-</td>
+                  </tr>
+                  <tr>
+                    <td>Giới tính</td>
+                    <td id="gioi-tinh">-</td>
+                  </tr>
+                  <tr>
+                    <td>Số CCCD/CMND</td>
+                    <td id="so-cccd">-</td>
+                  </tr>
+                  <tr>
+                    <td>Địa chỉ</td>
+                    <td id="dia-chi">-</td>
+                  </tr>
+                  <tr>
+                    <td>Điện thoại</td>
+                    <td id="dien-thoai">-</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+
+          <div class="rounded-4 bg-white mt-4">
+            <h4
+              class="d-flex align-items-center gap-2 border-bottom px-4 pt-4 pb-3"
+            >
+              <img src="assets/icon/admission-result.svg" alt="" />
+              Kết quả tuyển sinh
+            </h4>
+            <div class="px-4 pb-2">
+              <table class="table table-bordered table-admission-result">
+                <colgroup>
+                  <col style="width: 25%" />
+                  <col style="width: 25%" />
+                  <col style="width: 15%" />
+                  <col style="width: 15%" />
+                  <col style="width: 20%" />
+                </colgroup>
+                <thead>
+                  <tr class="border-top-0">
+                    <th>Ngành</th>
+                    <th>Phương thức</th>
+                    <th>Tổ hợp</th>
+                    <th>Tổng điểm</th>
+                    <th>Kết quả</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>-</td>
+                    <td>-</td>
+                    <td>-</td>
+                    <td>-</td>
+                    <td>-</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+
+          <div class="rounded-4 bg-white mt-4">
+            <h4
+              class="d-flex align-items-center gap-2 border-bottom px-4 pt-4 pb-3"
+            >
+              <img src="assets/icon/file.svg" alt="" />
+              Hồ sơ đã nộp/Cần bổ sung
+            </h4>
+            <div class="px-4 pb-2">
+              <table class="table table-bordered table-file">
+                <colgroup>
+                  <col style="width: 50%" />
+                  <col style="width: 50%" />
+                </colgroup>
+                <thead>
+                  <tr class="border-top-0">
+                    <th>Loại giấy tờ</th>
+                    <th>Đã nộp bản</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>Học bạ THPT</td>
+                    <td>-</td>
+                  </tr>
+                  <tr>
+                    <td>Bằng tốt nghiệp THPT</td>
+                    <td>-</td>
+                  </tr>
+                  <tr>
+                    <td>Chứng nhận tốt nghiệp THPT năm 2025</td>
+                    <td>-</td>
+                  </tr>
+                  <tr>
+                    <td>Chứng minh nhân dân/ Căn cước công dân</td>
+                    <td>-</td>
+                  </tr>
+                  <tr>
+                    <td>Giấy khai sinh</td>
+                    <td>-</td>
+                  </tr>
+                  <tr>
+                    <td>Sơ yếu lý lịch</td>
+                    <td>-</td>
+                  </tr>
+                  <tr>
+                    <td>Giấy tạm hoãn nghĩa vụ quân sự</td>
+                    <td>-</td>
+                  </tr>
+                  <tr class="border-bottom">
+                    <td>Phiếu báo điểm thi tốt nghiệp THPT năm 2025</td>
+                    <td>-</td>
+                  </tr>
+                </tbody>
+              </table>
+
+              <div class="ms-2 mt-2">
+                Đối với các giấy tờ bản Scan, thí sinh cần nộp bản công chứng
+                hoặc bản gốc về trường. Các giấy tờ bắt buộc nộp bản gốc:
+                <ol class="ps-4">
+                  <li>Chứng nhận tốt nghiệp tạm thời</li>
+                  <li>Phiếu báo điểm thi tốt nghiệp THPT năm 2025</li>
+                </ol>
+              </div>
+            </div>
+          </div>
+
+          <div class="rounded-4 bg-white mt-4">
+            <h4
+              class="d-flex align-items-center gap-2 border-bottom px-4 pt-4 pb-3"
+            >
+              <img src="assets/icon/guide.svg" alt="" />
+              Hướng dẫn thí sinh/Người dự tuyển
+            </h4>
+            <div class="px-4 pb-2">
+              <ul class="ps-3 d-flex flex-column gap-2">
+                <li>
+                  Tất cả sinh viên phải xác nhận nhập học từ ngày 27/12 đến 12h
+                  ngày 04/01 trực tuyến tại website
+                  <a
+                    href="https://nhaphoconline.dainam.edu.vn/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="guide-link"
+                  >
+                    https://nhaphoconline.dainam.edu.vn/
+                  </a>
+                  (xác nhận nhập học thành công sẽ có thời khóa biểu gửi qua
+                  email).
+                </li>
+                <li>
+                  Thời gian nộp kinh phi đào tạo: từ 02/01 đến 12h ngày 04/01
+                  tại website
+                  <a
+                    href="https://nhaphoconline.dainam.edu.vn/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="guide-link"
+                  >
+                    https://nhaphoconline.dainam.edu.vn/
+                  </a>
+                  hoặc trực tiếp tại Phòng Tài chính Kế toán, Tầng 1 tòa Central
+                  Building (Số 01 Phố Xốm, Phủ Lãm, Hà Đông, Hà Nội). Xem hướng
+                  dẫn thanh toán kinh phí nhập học
+                  <a href="" class="guide-link"> TẠI ĐÂY </a>
+                </li>
+                <li>
+                  Kinh phí nhập học:
+                  <span class="guide-link"> 25.400.000 đ </span> - Gồm học phí
+                  kỳ 1 (25.000.000 đ) + Lệ phí nhập học (200.000 đ) + Làm thẻ
+                  sinh viên (200.000 ₫)
+                </li>
+                <li>
+                  Lịch học chính thức: ngày 04/01/2025 (sáng từ 8h-11h35, chiều
+                  từ 13h-16h45)
+                </li>
+                <li>
+                  Hotline hỗ trợ:
+                  <span class="guide-link">
+                    <a class="guide-link" href="tel:0931595599">0931595599</a> |
+                    <a class="guide-link" href="tel:0961595599">0961595599</a>
+                  </span>
+                </li>
+              </ul>
+
+              <h5 class="mt-4">
+                Thí sinh có thể xem các hướng dẫn khác như sau:
+              </h5>
+              <ul class="ps-4 d-flex flex-column gap-2 guide-list">
+                <li>Xác nhận nhập học trực tuyến Đại học Đại Nam năm 2025</li>
+                <li>Nộp học phí trực tuyến Đại học Đại Nam năm 2025</li>
+                <li>
+                  Hướng dẫn nộp học phí trực tuyến Đại học Đại Nam năm 2025
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="py-5 text-white">
+      <div class="container">
+        <div class="row">
+          <div class="col-12 col-lg-4">
+            <img src="assets/logo/dai-nam-logo-ngang.svg" alt="" />
+          </div>
+          <div class="row col-12 col-lg-8 mt-4 mt-lg-0 gap-md-0 gap-3">
+            <div class="col-md-4 col-12">
+              <div class="text-title-footer">Email</div>
+              <div class="fw-semibold">tuyensinh@dainam.edu.vn</div>
+            </div>
+            <div class="col-md-4 col-12">
+              <div class="text-title-footer">Điện thoại</div>
+              <div class="fw-semibold">(024) 35577799</div>
+            </div>
+            <div class="col-md-4 col-12">
+              <div class="text-title-footer">Hotline</div>
+              <div class="d-flex align-items-center gap-2">
+                <span class="fw-semibold"> 0961.595.599 </span>
+                |
+                <span class="fw-semibold">0931.595.599</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="footer-splitter my-5"></div>
+        <div class="row">
+          <div class="col-12 col-lg-4">
+            <div class="fs-5 fw-semibold">
+              Phòng Tuyển sinh - Trường Đại học Đại Nam
+            </div>
+
+            <ul class="mt-3 list-unstyled">
+              <li class="mt-2">Hotline: 0961.595.599 / 0931.595.599</li>
+              <li class="mt-2">Email: tuyensinh@dainam.edu.vn</li>
+              <li class="mt-2">
+                Địa chỉ: Phòng 105, Tòa Central Building - Số 1 Phố Xốm, Phú
+                Lãm, Hà Đông, Hà Nội.
+              </li>
+            </ul>
+          </div>
+          <div class="row col-12 col-lg-8 mt-4 mt-lg-0 gap-md-0 gap-3">
+            <div class="col-lg-4 col-6">
+              <div class="fs-5 fw-semibold">Theo dõi Đại Nam</div>
+
+              <ul class="mt-3 list-unstyled">
+                <li class="mt-2 d-flex align-items-center gap-3">
+                  <img src="assets/logo/facebook.svg" width="8px" />
+                  Đại học Đại Nam
+                </li>
+                <li class="mt-2 d-flex align-items-center gap-3">
+                  <img src="assets/logo/facebook.svg" width="8px" />
+                  Tuyển sinh Đại học Đại Nam
+                </li>
+                <li class="mt-2 d-flex align-items-center gap-3">
+                  <img src="assets/logo/facebook.svg" width="8px" />
+                  Sinh viên Đại học Đại Nam
+                </li>
+                <li class="mt-2 d-flex align-items-center gap-3">
+                  <img src="assets/logo/facebook-detail.svg" width="8px" />
+                  Đại học Đại Nam
+                </li>
+                <li class="mt-2 d-flex align-items-center gap-3">
+                  <img src="assets/logo/youtube.svg" width="8px" />
+                  Trường Đại học Đại Nam
+                </li>
+                <li class="mt-2 d-flex align-items-center gap-3">
+                  <img src="assets/logo/tiktok.svg" width="8px" />
+                  Trường Đại học Đại Nam
+                </li>
+                <li class="mt-2 d-flex align-items-center gap-3">
+                  <img src="assets/logo/facebook-detail.svg" width="8px" />
+                  Đại Nam Official
+                </li>
+                <li class="mt-2 d-flex align-items-center gap-3">
+                  <img src="assets/logo/facebook.svg" width="8px" />
+                  Đại học Đại Nam
+                </li>
+              </ul>
+            </div>
+            <div class="col-lg-8 col-6">
+              <div class="fs-5 fw-semibold">Truy cập nhanh</div>
+
+              <ul class="mt-3 list-unstyled">
+                <li class="mt-2">Đề án tuyển sinh 2025</li>
+                <li class="mt-2">Phiếu đăng ký xét tuyển 2025</li>
+                <li class="mt-2">Tra cứu danh sách trúng tuyển 2025</li>
+                <li class="mt-2">Cổng thông tin nhập học</li>
+                <li class="mt-2">
+                  Thông báo Tuyển sinh Thạc sĩ đợt 1 năm 2025
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <div class="row mt-4">
+          <div class="col-lg-4 col-12">
+            Copyright @2024. Trường đại học Đại Nam.
+          </div>
+          <div
+            class="col-lg-8 col-12 mt-3 mt-lg-0 d-flex align-items-center gap-3"
+          >
+            <img src="assets/icon/location.svg" alt="" />
+            <div>
+              Địa chỉ:
+              <a class="fw-semibold text-decoration-none color-secondary">
+                Số 1 Phố Xốm, Phú Lãm, Hà Đông, Hà Nội.
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

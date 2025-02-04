@@ -1,0 +1,143 @@
+:root {
+  --primary-color: rgba(4, 11, 36, 1);
+  --secondary-color: rgba(255, 119, 0, 1);
+  --background-blue: rgba(2, 20, 87, 1);
+}
+
+.color-primary {
+  color: var(--primary-color);
+}
+.color-secondary {
+  color: var(--secondary-color);
+}
+.bg-blue {
+  background-color: var(--background-blue);
+}
+
+/* header */
+.header ul {
+  margin-bottom: 0;
+  padding-left: 0;
+}
+.header ul li {
+  list-style-type: none;
+  cursor: pointer;
+}
+.top-nav {
+  font-weight: 500;
+  font-size: 15px;
+}
+.sticky-header {
+  z-index: 1001;
+}
+.bottom-nav li {
+  position: relative;
+}
+.bottom-nav li[selected]::after {
+  content: "";
+  inset: auto 0 0;
+  position: absolute;
+  width: 100%;
+  height: 4px;
+  background-color: rgba(246, 102, 0, 1);
+}
+
+/* section top-input */
+.top-input {
+  min-height: 500px;
+}
+.title {
+  font-size: 3.5rem;
+}
+.lookup-bg {
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  object-fit: cover;
+  min-height: 500px;
+}
+/* .lookup-container {
+  min-height: 500px;
+  height: 65vh;
+} */
+.lookup-btn {
+  background-color: rgba(246, 102, 0, 1);
+  color: white;
+  height: 50px;
+}
+.lookup-btn:hover,
+.lookup-btn:disabled {
+  background-color: rgba(246, 102, 0, 1);
+  color: white;
+}
+.contact {
+  color: rgba(32, 64, 154, 1);
+}
+.lookup-input {
+  border: 2px solid rgba(116, 117, 122, 1);
+}
+.lookup-input:focus {
+  box-shadow: none;
+}
+.clear-input-icon {
+  position: absolute;
+  right: 20px;
+  bottom: 10px;
+  cursor: pointer;
+  color: gray;
+  display: none;
+}
+input.lookup-input {
+  padding-right: 35px;
+}
+
+/* info */
+.info {
+  background-color: #f4f6fc;
+}
+td,
+th {
+  border-left: none;
+  border-right: none;
+}
+td {
+  font-weight: 600;
+}
+tr:last-child {
+  border-bottom: none;
+}
+th {
+  opacity: 0.5;
+}
+.guide-link {
+  color: rgba(0, 18, 83, 1);
+  font-weight: 600;
+}
+a.guide-link {
+  text-decoration: none;
+}
+.guide-list {
+  list-style-image: url("/assets/icon/guide-list-style.svg");
+}
+
+.dropdown-toggle::after {
+  display: none;
+}
+.dropdown-item:hover,
+.dropdown-item[selected] {
+  color: var(--secondary-color);
+  cursor: pointer;
+}
+
+/* footer  */
+footer {
+  background-color: rgba(0, 53, 143, 1);
+}
+.text-title-footer {
+  color: rgba(160, 196, 255, 1);
+}
+.footer-splitter {
+  background-color: rgba(160, 196, 255, 1);
+  height: 1px;
+  opacity: 0.16;
+}
