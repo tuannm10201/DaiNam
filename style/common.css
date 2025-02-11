@@ -50,4 +50,10 @@
 body {
   font-family: "Manrope", sans-serif !important;
   font-weight: 400;
+  overflow-x: hidden;
+}
+
+a {
+  text-decoration: none;
+  color: currentColor;
 }

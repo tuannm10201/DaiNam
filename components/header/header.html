@@ -1,166 +1,219 @@
 <link rel="stylesheet" href="components/header/header.css" />
 
 <!-- Top Header -->
-<nav class="top-nav navbar navbar-expand-xxl border-bottom py-0">
-  <div class="container">
-    <!-- Left Navigation -->
-    <button
-      class="navbar-toggler"
-      type="button"
-      data-bs-toggle="collapse"
-      data-bs-target="#topNav"
-    >
-      ☰ Menu
-    </button>
-
-    <div
-      class="collapse navbar-collapse align-items-center justify-content-between fw-semibold"
-      id="topNav"
-    >
-      <ul class="navbar-nav mt-xxl-0 mt-3">
+<div class="top-nav-container">
+  <div
+    class="top-nav container-fluid container-xxl fw-semibold justify-content-between d-block d-xl-flex"
+  >
+    <div class="dropdown click-dropdown top-left-nav pt-xl-0 pt-3 ms-2">
+      <a
+        class="dropdown-toggle d-xxl-none d-flex align-items-center h-100 gap-2 user-select-none justify-content-between"
+        id="kvtt-dropdown"
+        data-bs-toggle="dropdown"
+        aria-expanded="false"
+        role="button"
+      >
+        Khoa - Viện - Trung tâm
+        <span class="chevron-down"></span>
+      </a>
+      <ul
+        class="d-xxl-flex kvtt-dropdown-menu dropdown-click-menu"
+        aria-labelledby="kvtt-dropdown"
+      >
         <li class="nav-item">
-          <a href="#" class="nav-link"> Khối SK</a>
+          <a
+            href="#"
+            class="nav-link px-2 d-xxl-block d-flex justify-content-between align-items-center pe-xxl-2 pe-3"
+          >
+            Khối SK
+          </a>
         </li>
         <li class="nav-item">
-          <a href="#" class="nav-link"> Khối KHCB </a>
+          <a
+            href="#"
+            class="nav-link px-2 d-xxl-block d-flex justify-content-between align-items-center pe-xxl-2 pe-3"
+          >
+            Khối KHCB
+          </a>
         </li>
         <li class="nav-item">
-          <a href="#" class="nav-link"> Khối KT-CN </a>
+          <a
+            href="#"
+            class="nav-link px-2 d-xxl-block d-flex justify-content-between align-items-center pe-xxl-2 pe-3"
+          >
+            Khối KT-CN
+          </a>
         </li>
         <li class="nav-item">
-          <a href="#" class="nav-link"> Khối KD-KT </a>
+          <a
+            href="#"
+            class="nav-link px-2 d-xxl-block d-flex justify-content-between align-items-center pe-xxl-2 pe-3"
+          >
+            Khối KD-KT
+          </a>
         </li>
         <li class="nav-item dropdown">
           <a
             href="#"
-            class="nav-link dropdown-toggle"
+            class="nav-link px-2 dropdown-toggle d-xxl-block d-flex justify-content-between align-items-center pe-xxl-2 pe-3"
             id="khxhnv-dropdown"
             data-bs-toggle="dropdown"
             aria-expanded="false"
           >
             Khối KHXH&NV
+            <span class="chevron-down d-xl-none"></span>
           </a>
-          <ul class="dropdown-menu" aria-labelledby="khxhnv-dropdown">
-            <li class="dropdown-item p-0">
+          <ul
+            class="dropdown-menu khxhnv-dropdown-menu ps-3 ps-xl-0 pt-0 pt-xl-2"
+            aria-labelledby="khxhnv-dropdown"
+          >
+            <li class="dropdown-item">
               <a href=""> Khoa Ngôn ngữ Anh </a>
             </li>
-            <li class="dropdown-item p-0">
+            <li class="dropdown-item">
               <a href=""> Khoa Ngôn ngữ và văn hoá Hàn Quốc </a>
             </li>
-            <li class="dropdown-item p-0">
+            <li class="dropdown-item">
               <a href=""> Khoa Ngôn ngữ và văn hoá Nhật Bản </a>
             </li>
-            <li class="dropdown-item p-0">
+            <li class="dropdown-item">
               <a href=""> Khoa Truyền thông </a>
             </li>
-            <li class="dropdown-item p-0">
+            <li class="dropdown-item">
               <a href="">Khoa Du lịch</a>
             </li>
-            <li class="dropdown-item p-0">
+            <li class="dropdown-item">
               <a href=""> Khoa Nghệ thuật và Thiết kế </a>
             </li>
-            <li class="dropdown-item p-0">
+            <li class="dropdown-item">
               <a href=""> Khoa Tâm lý và Khoa học Giáo dục </a>
             </li>
           </ul>
         </li>
         <li class="nav-item">
-          <a href="#" class="nav-link"> Viện-Trung tâm </a>
-        </li>
-      </ul>
-
-      <!-- Right Navigation -->
-      <ul class="navbar-nav align-items-xxl-center">
-        <li class="nav-item">
-          <a href="#" class="nav-link"> Trang chủ </a>
-        </li>
-        <li class="nav-item">
-          <a href="#" class="nav-link"> Ngành học </a>
-        </li>
-        <li class="nav-item">
-          <a href="#" class="nav-link"> VR Tour </a>
-        </li>
-        <li class="nav-item">
-          <a href="#" class="nav-link">Nộp hồ sơ xét tuyển online </a>
-        </li>
-        <li class="nav-item">
-          <a href="#" class="nav-link"> Liên hệ </a>
-        </li>
-
-        <!-- Language Dropdown -->
-        <li class="nav-item dropdown language-dropdown">
           <a
-            class="nav-link dropdown-toggle gap-2 d-flex align-items-center"
             href="#"
-            role="button"
-            data-bs-toggle="dropdown"
-            aria-expanded="false"
+            class="nav-link px-2 d-xxl-block d-flex justify-content-between align-items-center pe-xxl-2 pe-3"
           >
-            <img
-              src="assets/icon/language-english-flag.svg"
-              alt="English Flag"
-            />
-            English
-            <span class="chevron-down"></span>
+            Viện-Trung tâm
           </a>
-          <ul class="dropdown-menu dropdown-language-menu">
-            <li class="dropdown-item">
-              <a href="/vi">
-                <img
-                  src="assets/icon/language-flag.svg"
-                  alt="Vietnamese Flag"
-                />
-                Tiếng Việt
-              </a>
-            </li>
-            <li class="dropdown-item">
-              <a href="/en">
-                <img
-                  src="assets/icon/language-english-flag.svg"
-                  alt="English Flag"
-                />
-                English
-              </a>
-            </li>
-          </ul>
         </li>
       </ul>
     </div>
+
+    <!-- Right Navigation -->
+    <ul class="row top-right-nav ms-xl-0">
+      <li class="col-6 col-xl p-0 ms-0 nav-item border-0">
+        <a href="#" class="nav-link px-2 ps-4 ps-xl-2"> Trang chủ </a>
+      </li>
+      <li class="col-6 col-xl p-0 ms-0 nav-item border-0">
+        <a href="#" class="nav-link px-2 ps-4 ps-xl-2"> Ngành học </a>
+      </li>
+      <li class="col-6 col-xl p-0 ms-0 nav-item border-0">
+        <a href="#" class="nav-link px-2 ps-4 ps-xl-2"> VR Tour </a>
+      </li>
+      <li class="col-6 col-xl p-0 ms-0 nav-item border-0">
+        <a href="#" class="nav-link px-2 ps-4 ps-xl-2">
+          Nộp hồ sơ xét tuyển online
+        </a>
+      </li>
+      <li class="col-6 col-xl p-0 ms-0 nav-item border-0">
+        <a href="#" class="nav-link px-2 ps-4 ps-xl-2"> Liên hệ </a>
+      </li>
+
+      <!-- Language Dropdown -->
+      <li
+        class="col-12 col-xl ps-3 ps-xl-0 p-0 ms-0 nav-item dropdown click-dropdown"
+      >
+        <a
+          class="nav-link px-2 dropdown-toggle gap-2 d-flex align-items-center"
+          href="#"
+          role="button"
+          data-bs-toggle="dropdown"
+          aria-expanded="false"
+        >
+          <img src="assets/icon/language-english-flag.svg" alt="English Flag" />
+          English
+          <span class="chevron-down"></span>
+        </a>
+        <ul class="dropdown-menu dropdown-click-menu w-25">
+          <li class="dropdown-item">
+            <a href="/vi">
+              <img src="assets/icon/language-flag.svg" alt="Vietnamese Flag" />
+              Tiếng Việt
+            </a>
+          </li>
+          <li class="dropdown-item">
+            <a href="/en">
+              <img
+                src="assets/icon/language-english-flag.svg"
+                alt="English Flag"
+              />
+              English
+            </a>
+          </li>
+        </ul>
+      </li>
+    </ul>
   </div>
-</nav>
+</div>
 
 <!-- Bottom Header -->
 <nav
-  class="navbar bot-nav navbar-expand-xxl bg-white border-bottom sticky-top py-0"
+  class="bot-nav-container navbar bot-nav navbar-expand-xl border-bottom sticky-top py-0"
 >
-  <div class="container">
+  <div class="container-fluid container-xxl">
     <!-- Logo -->
     <a class="navbar-brand" href="#">
       <img src="assets/logo/logo-ngang.png" alt="Dai Nam" />
     </a>
 
-    <!-- Mobile Menu Toggle Button -->
-    <button
-      class="navbar-toggler"
-      type="button"
-      data-bs-toggle="collapse"
-      data-bs-target="#bottomNav"
-    >
-      ☰
-    </button>
+    <div class="d-flex align-items-center justify-content-end flex-fill">
+      <!-- mobile search -->
+      <div class="p-3 nav-search-icon d-xl-none" role="button">
+        <img src="assets/icon/search.svg" alt="" />
+      </div>
+
+      <div class="search-container d-none nav-search flex-fill">
+        <img
+          src="assets/icon/input-search.svg"
+          class="search-icon px-3"
+          alt=""
+        />
+
+        <input
+          type="text"
+          class="search-input fw-semibold border-0 nav-search-input"
+          placeholder="Bạn đang tìm kiếm gì?"
+        />
+        <span class="py-3 px-4 fs-4 fw-lighter clear-search-icon" role="button">
+          ✕
+        </span>
+      </div>
+
+      <!-- Mobile Menu Toggle Button -->
+      <div
+        class="navbar-toggler border-0 fs-2 py-2"
+        type="button"
+        data-bs-toggle="collapse"
+        data-bs-target="#bottom-nav"
+      ></div>
+    </div>
 
     <!-- Bottom Nav Links -->
-    <div class="collapse navbar-collapse" id="bottomNav">
+    <div class="collapse navbar-collapse" id="bottom-nav">
       <ul class="navbar-nav ms-auto fw-bold fs-5 gap-2">
         <li class="nav-item dropdown">
           <a
             href="#"
-            class="nav-link py-3 dropdown-toggle"
+            class="nav-link py-3 pe-3 dropdown-toggle d-flex align-items-center justify-content-between"
             id="gt-dropdown"
             data-bs-toggle="dropdown"
             aria-expanded="false"
-            >Giới thiệu</a
           >
+            Giới thiệu
+            <span class="chevron-down d-xl-none"></span>
+          </a>
           <ul class="dropdown-menu" aria-labelledby="gt-dropdown">
             <li class="dropdown-item">
               <a href=""> Sứ mệnh - Tầm nhìn - Giá trị cốt lõi </a>
@@ -197,13 +250,15 @@
         <li class="nav-item">
           <a class="nav-link py-3" href="#">Tin tức & Sự kiện</a>
         </li>
-        <li class="nav-item" selected id="nav-search-icon">
-          <a class="nav-link py-3 active" href="#">
-            <img src="assets/icon/search.svg" alt="" />
-          </a>
+        <li
+          class="nav-item nav-search-icon d-none d-xl-block"
+          selected
+          role="button"
+        >
+          <img class="nav-link py-3" src="assets/icon/search.svg" alt="" />
         </li>
 
-        <div class="search-container d-none" id="nav-search">
+        <div class="search-container d-none nav-search">
           <img
             src="assets/icon/input-search.svg"
             class="search-icon px-3"
@@ -212,13 +267,19 @@
 
           <input
             type="text"
-            class="search-input fw-semibold border-0"
+            class="search-input fw-semibold border-0 nav-search-input"
             placeholder="Bạn đang tìm kiếm gì?"
-            id="nav-search-input"
           />
-          <span class="py-3 px-4 fs-4 fw-lighter" id="clear-search">✖</span>
+          <span
+            class="py-3 px-4 fs-4 fw-lighter clear-search-icon"
+            role="button"
+          >
+            ✕
+          </span>
         </div>
       </ul>
+
+      <!-- mobile responive => topmenu will be injected here -->
     </div>
   </div>
 </nav>
