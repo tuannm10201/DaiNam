@@ -159,11 +159,13 @@
   transform: rotate(45deg);
   margin-bottom: 5px;
 }
-.dropdown-toggle.show .chevron-down {
+.top-nav-container .dropdown-toggle.show .chevron-down,
+.bot-nav-container .dropdown-toggle.show .chevron-down {
   transform: rotate(-135deg);
   margin-bottom: -5px;
 }
-.dropdown-toggle.show {
+.top-nav-container .dropdown-toggle.show,
+.bot-nav-container .dropdown-toggle.show {
   color: var(--header-primary-color);
 }
 .kvtt-dropdown-menu.show {

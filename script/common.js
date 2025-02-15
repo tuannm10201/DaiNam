@@ -1,20 +1,23 @@
-async function loadComponent(file) {
-  const response = await fetch(file);
-  if (response.ok) return await response.text();
-  return "";
-}
+// handle scroll top btn
+const backToTopBtn = document.createElement("button");
+backToTopBtn.className = "btn btn-light to-top-btn fw-bold hover-ff77";
 
-async function loadHeaderAndFooter() {
-  const headerHTML = await loadComponent("../components/header/header.html");
-  const footerHTML = await loadComponent("../components/footer/footer.html");
+const div = document.createElement("div");
+div.className = "d-flex gap-2";
+div.innerHTML = `Về đầu trang <img src="assets/icon/arrow-up.svg" />`;
 
-  document.body.insertAdjacentHTML("afterbegin", headerHTML);
-  document.body.insertAdjacentHTML("beforeend", footerHTML);
+backToTopBtn.appendChild(div);
+document.body.appendChild(backToTopBtn);
 
-  const script = document.createElement("script");
-  script.src = "../components/header/header.js";
-  script.defer = true;
-  document.body.appendChild(script);
-}
+window.addEventListener("scroll", () => {
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    backToTopBtn.style.display = "block";
+  } else {
+    backToTopBtn.style.display = "none";
+  }
+});
 
-loadHeaderAndFooter();
+backToTopBtn.addEventListener("click", () => {
+  document.body.scrollTop = 0;
+  document.documentElement.scrollTop = 0;
+});

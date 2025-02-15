@@ -1,43 +1,3 @@
-:root {
-  --primary-color: rgba(5, 6, 8, 1);
-  --secondary-color: #f66600;
-  --background-blue: rgba(0, 53, 143, 1);
-  --light-blue-color: rgba(174, 204, 255, 1);
-  --background-off-white: rgba(244, 246, 252, 0.8);
-  --red-color: #ff4000;
-}
-
-body {
-  overflow-x: hidden;
-}
-
-ul {
-  list-style: none;
-  padding-left: 0;
-}
-ul li {
-  cursor: pointer;
-}
-
-.color-primary {
-  color: var(--primary-color);
-}
-.color-secondary {
-  color: var(--secondary-color);
-}
-.color-light-blue {
-  color: var(--light-blue-color);
-}
-.color-red {
-  color: var(--red-color);
-}
-.bg-blue {
-  background-color: var(--background-blue);
-}
-.bg-off-white {
-  background-color: var(--background-off-white);
-}
-
 /* banner swiper */
 .banner-swiper .swiper-wrapper {
   aspect-ratio: 2.5;
@@ -94,7 +54,7 @@ ul li {
 .toggle-chevron[aria-expanded="true"] {
   color: var(--secondary-color);
 }
-@media (max-width: 991px) {
+@media (max-width: 991.98px) {
   .specialization-border {
     border-bottom: 1px solid rgba(5, 6, 8, 0.15);
     margin-top: 0.5rem;
@@ -216,7 +176,7 @@ ul li {
 .numbers-row:nth-child(odd) {
   color: var(--secondary-color);
 }
-@media (max-width: 991px) {
+@media (max-width: 991.98px) {
   .number-item:not(:first-child) > * {
     padding-left: 0;
     border-left: none;
@@ -273,40 +233,14 @@ ul li {
   min-width: 20rem;
 }
 
-/* new-event */
-.new-event-sm:first-child {
-  padding-bottom: 1.5rem;
-}
-.new-event-sm:not(:last-child) {
-  border-bottom: 1px solid rgba(218, 220, 224, 0.85);
-}
-.new-event-sm:not(:first-child) {
-  padding: 1.5rem 0;
-}
-.new-event-sm img {
-  height: 130px;
-}
-.new-event-item {
-  min-width: 400px;
-  width: 33.33vw;
-  max-width: 450px;
-}
-@media (max-width: 1199.98px) {
-  .new-event-sm:first-child {
-    border-top: 1px solid rgba(218, 220, 224, 0.85);
-    padding-top: 1.5rem;
-  }
-  .new-event-sm:last-child {
-    border-bottom: 1px solid rgba(218, 220, 224, 0.85);
-  }
-}
-
 /* student life */
-.student-life img {
-  border-radius: 12px;
+.student-life .zoom-105 img {
   width: 100%;
   height: 100%;
   object-fit: cover;
+}
+.student-life .zoom-105 {
+  border-radius: 12px;
 }
 .student-img-row-2 img {
   aspect-ratio: 1;
@@ -328,81 +262,4 @@ ul li {
   border-bottom: 3px solid currentColor;
   transform: rotate(45deg);
   margin-bottom: 5px;
-}
-
-/* admission */
-.admissions-form {
-  background-color: rgba(244, 246, 252, 1);
-}
-.admissions-form input,
-.admissions-form .custom-select-dropdown {
-  border: 2px solid rgba(116, 117, 122, 1);
-  height: 50px;
-  padding: 0.5rem 1rem;
-}
-.admissions-form input:focus,
-.admissions-form .custom-select-dropdown:focus {
-  box-shadow: none;
-  border: 2px solid rgba(0, 53, 143, 1);
-}
-.admissions-form input::placeholder {
-  opacity: 0.45;
-  font-weight: 500;
-}
-.dropdown-toggle::after {
-  display: none;
-}
-.dropdown-item:hover,
-.dropdown-item[selected] {
-  color: var(--secondary-color);
-  cursor: pointer;
-}
-.admission-submit-btn {
-  background-color: var(--secondary-color);
-}
-.admissions-student {
-  object-fit: cover;
-  height: 32vw;
-  max-height: 500px;
-}
-.admissions .speech-bubble {
-  max-width: 300px;
-  max-height: fit-content;
-}
-.admissions .speech-bubble.position-absolute {
-  top: 4rem;
-  right: 10rem;
-}
-.admissions .speech-bubble::after {
-  content: "";
-  position: absolute;
-  bottom: -1rem;
-  right: 1.5rem;
-  width: 0;
-  height: 0;
-  border-left: 3rem solid transparent;
-  border-right: 0;
-  border-top: 1.2rem solid var(--background-blue);
-}
-.admissions .speech-bubble.position-absolute::after {
-  border-left: 1rem solid transparent;
-  border-right: 1rem solid transparent;
-}
-@media (max-width: 1199.98px) {
-  .admissions .speech-bubble.position-absolute {
-    top: 12rem;
-  }
-}
-@media (max-width: 1399.98px) {
-  .admissions .speech-bubble.position-absolute {
-    top: 10rem;
-  }
-}
-.to-top-btn {
-  display: none;
-  position: fixed;
-  bottom: 20px;
-  right: 30px;
-  z-index: 99;
-  border-radius: 50px;
 }

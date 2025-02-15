@@ -1,11 +1,82 @@
 footer {
   background-color: rgba(0, 53, 143, 1);
+  border-top: 5px solid rgba(255, 119, 0, 1);
+}
+
+.footer-contact {
+  position: relative;
+}
+
+@media (max-width: 1199.98px) {
+  .footer-contact-first {
+    position: static;
+  }
+}
+@media (max-width: 991.98px) {
+  .footer-contact {
+    position: static;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.15);
+    padding-left: 0;
+    padding-right: 0;
+    margin-left: 1rem;
+  }
+  .footer-about a {
+    color: rgba(199, 220, 255, 1);
+  }
+  .footer-border {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.15);
+    margin-top: 0.5rem;
+  }
+  .footer-about > * {
+    padding: 1rem 0 1rem;
+    margin-left: 1rem;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.15);
+  }
+  .footer-about .toggle-chevron[aria-expanded="true"]::after {
+    top: 50%;
+  }
+  .footer-about .toggle-chevron::after {
+    right: -1.3rem;
+    width: 0.7rem;
+    height: 0.7rem;
+    border-width: 3px;
+    top: 40%;
+  }
+}
+.footer-contact::before {
+  content: "";
+  position: absolute;
+  height: calc(100% - 0.8rem);
+  width: 1px;
+  left: -0.8rem;
+  top: 0.5rem;
+  background-color: rgba(6, 18, 62, 0.15);
+}
+
+.footer-about a {
+  padding: 0.4rem 0;
+  display: block;
+  transition: color 0.1s ease-in;
+  font-weight: 500;
+}
+.footer-about a:hover {
+  color: #ff7700;
+  font-weight: 600;
 }
 .text-title-footer {
   color: rgba(160, 196, 255, 1);
+  font-weight: 700;
+}
+.footer-contact-divider {
+  width: 1px;
+  height: 20px;
+  background-color: rgba(255, 255, 255, 0.25);
 }
 .footer-splitter {
-  background-color: rgba(160, 196, 255, 1);
+  background-color: rgba(160, 196, 255, 0.16);
   height: 1px;
-  opacity: 0.16;
+}
+
+.copy-right {
+  opacity: 0.65;
 }

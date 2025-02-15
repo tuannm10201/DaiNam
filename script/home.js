@@ -1,3 +1,13 @@
+// inject new event
+fetch("components/new-event/new-event.html")
+  .then((res) => res.text())
+  .then((component) => {
+    document
+      .querySelector(".feelings")
+      .insertAdjacentHTML("afterend", component);
+  });
+
+// setup swiper
 new Swiper(".banner-swiper", {
   loop: true,
   pagination: {
@@ -117,44 +127,3 @@ studentShowMore.addEventListener("click", function () {
   studentImgRow2.classList.remove("d-none");
   this.classList.add("d-none");
 });
-
-// admission form
-const admissionForm = document.querySelector(".admissions-form");
-admissionForm.addEventListener("submit", async function (e) {
-  e.preventDefault();
-  const formData = new FormData(this);
-  const admissionHvt = formData.get("admission-hvt");
-  const admissionSdt = formData.get("admission-sdt");
-  const admissionEmail = formData.get("admission-email");
-  const admissionDc = formData.get("admission-dc");
-  const admissionhDt = formData.get("admission-hdt");
-
-  console.log(
-    admissionHvt,
-    admissionSdt,
-    admissionEmail,
-    admissionDc,
-    admissionhDt
-  );
-
-  // loading();
-
-  // setTimeout(fillContent, 2000);
-});
-
-// Get the button
-const backToTop = document.getElementById("to-top-btn");
-
-window.onscroll = function () {
-  // scrollFunction;
-  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-    backToTop.style.display = "block";
-  } else {
-    backToTop.style.display = "none";
-  }
-};
-
-backToTop.onclick = function () {
-  document.body.scrollTop = 0;
-  document.documentElement.scrollTop = 0;
-};

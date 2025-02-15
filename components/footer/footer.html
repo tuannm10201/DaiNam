@@ -1,108 +1,193 @@
 <link rel="stylesheet" href="./components/footer/footer.css" />
 
-<footer class="py-5 text-white">
+<footer class="py-3 py-lg-4 py-xl-5 text-white">
   <div class="container">
     <div class="row">
-      <div class="col-12 col-lg-4">
+      <div class="col-xl-3 col-12 zoom-105 pb-3 pb-lg-4">
         <img src="assets/logo/dai-nam-logo-ngang.svg" alt="" />
       </div>
-      <div class="row col-12 col-lg-8 mt-4 mt-lg-0 gap-md-0 gap-3">
-        <div class="col-md-4 col-12">
-          <div class="text-title-footer">Email</div>
-          <div class="fw-semibold">tuyensinh@dainam.edu.vn</div>
+
+      <div
+        class="col-xl-3 col-lg-4 col-12 py-3 pb-lg-4 footer-contact footer-contact-first"
+      >
+        <div class="text-title-footer mb-2">Email</div>
+        <a class="fw-extra fs-5 hover-ff77" href="mailto:dnu@dainam.edu.vn">
+          dnu@dainam.edu.vn
+        </a>
+      </div>
+      <div class="col-xl-3 col-lg-4 col-12 py-3 pb-lg-4 footer-contact">
+        <div class="text-title-footer mb-2">Điện thoại</div>
+        <a class="fw-extra fs-5 hover-ff77" href="tel:02435577799">
+          (024) 35577799
+        </a>
+      </div>
+      <div class="col-xl-3 col-lg-4 col-12 py-3 pb-lg-4 footer-contact">
+        <div class="text-title-footer mb-2">Hotline</div>
+        <div class="d-inline-flex align-items-center gap-2 fs-5 fw-extra">
+          <a href="tel:0961595599" class="hover-ff77">0961.595.599</a>
+          <div class="footer-contact-divider"></div>
+          <a href="tel:0931595599" class="hover-ff77">0931.595.599</a>
         </div>
-        <div class="col-md-4 col-12">
-          <div class="text-title-footer">Điện thoại</div>
-          <div class="fw-semibold">(024) 35577799</div>
-        </div>
-        <div class="col-md-4 col-12">
-          <div class="text-title-footer">Hotline</div>
-          <div class="d-flex align-items-center gap-2">
-            <span class="fw-semibold"> 0961.595.599 </span>
-            |
-            <span class="fw-semibold">0931.595.599</span>
-          </div>
+      </div>
+
+      <div
+        class="py-3 pb-lg-4 footer-contact d-lg-none d-flex align-items-center gap-2"
+      >
+        <img src="assets/icon/location.svg" alt="" />
+        <div>
+          Địa chỉ:
+          <a class="fw-extra color-secondary" href="">
+            Số 1 Phố Xốm, Phú Lãm, Hà Đông, Hà Nội.
+          </a>
         </div>
       </div>
     </div>
-    <div class="footer-splitter my-5"></div>
-    <div class="row">
-      <div class="col-12 col-lg-4">
-        <div class="fs-5 fw-semibold">
-          Phòng Tuyển sinh - Trường Đại học Đại Nam
-        </div>
 
-        <ul class="mt-3 list-unstyled">
-          <li class="mt-2">Hotline: 0961.595.599 / 0931.595.599</li>
-          <li class="mt-2">Email: tuyensinh@dainam.edu.vn</li>
-          <li class="mt-2">
-            Địa chỉ: Phòng 105, Tòa Central Building - Số 1 Phố Xốm, Phú Lãm, Hà
-            Đông, Hà Nội.
+    <div class="footer-splitter mb-4 d-none d-lg-block"></div>
+
+    <div class="row mt-2 footer-about">
+      <div class="col-lg-3 col-12">
+        <div class="fs-5 fw-extra d-none d-lg-block">Về Đại học Đại Nam</div>
+        <div
+          class="d-lg-none fw-extra toggle-chevron fs-5"
+          role="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#footer-about-dn"
+          aria-expanded="false"
+        >
+          Về Đại học Đại Nam
+        </div>
+        <ul
+          id="footer-about-dn"
+          class="collapse ps-3 mb-1 d-lg-block ps-lg-0 mt-2 mt-lg-3"
+        >
+          <li><a href="">Sự mệnh - Tầm nhìn</a></li>
+          <li><a href="">Giá trị cốt lõi</a></li>
+          <li><a href="">Tin tức & Sự kiện</a></li>
+          <li><a href="">Tuyển dụng</a></li>
+        </ul>
+      </div>
+      <div class="col-lg-3 col-12">
+        <div class="fs-5 fw-extra d-none d-lg-block">Truy cập nhanh</div>
+        <div
+          class="d-lg-none fw-extra toggle-chevron fs-5"
+          role="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#footer-quick-access"
+          aria-expanded="false"
+        >
+          Truy cập nhanh
+        </div>
+        <ul
+          id="footer-quick-access"
+          class="collapse ps-3 mb-1 d-lg-block ps-lg-0 mt-2 mt-lg-3"
+        >
+          <li><a href="">Danh sách phòng ban</a></li>
+          <li><a href="">VR360 Tour</a></li>
+          <li><a href="">Thư viện số</a></li>
+          <li><a href="">Nộp hồ sơ xét tuyển Online</a></li>
+        </ul>
+      </div>
+      <div class="col-lg-3 col-12">
+        <div class="fs-5 fw-extra d-none d-lg-block">Theo dõi Đại Nam</div>
+        <div
+          class="d-lg-none fw-extra toggle-chevron fs-5"
+          role="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#footer-follow-dn"
+          aria-expanded="false"
+        >
+          Theo dõi Đại Nam
+        </div>
+        <ul
+          id="footer-follow-dn"
+          class="collapse ps-3 mb-1 d-lg-block ps-lg-0 mt-2 mt-lg-3"
+        >
+          <li>
+            <a class="d-flex align-items-center gap-3" href="">
+              <img src="assets/logo/facebook.svg" width="8px" />
+              Đại học Đại Nam
+            </a>
+          </li>
+          <li>
+            <a class="d-flex align-items-center gap-3" href="">
+              <img src="assets/logo/facebook.svg" width="8px" />
+              Tuyển sinh Đại học Đại Nam
+            </a>
+          </li>
+          <li>
+            <a class="d-flex align-items-center gap-3" href="">
+              <img src="assets/logo/facebook.svg" width="8px" />
+              Sinh viên Đại học Đại Nam
+            </a>
+          </li>
+          <li>
+            <a class="d-flex align-items-center gap-3" href="">
+              <img src="assets/logo/facebook-detail.svg" width="8px" />
+              Đại học Đại Nam
+            </a>
+          </li>
+          <li>
+            <a class="d-flex align-items-center gap-3" href="">
+              <img src="assets/logo/youtube.svg" width="8px" />
+              Trường Đại học Đại Nam
+            </a>
+          </li>
+          <li>
+            <a class="d-flex align-items-center gap-3" href="">
+              <img src="assets/logo/tiktok.svg" width="8px" />
+              Trường Đại học Đại Nam
+            </a>
+          </li>
+          <li>
+            <a class="d-flex align-items-center gap-3" href="">
+              <img src="assets/logo/facebook-detail.svg" width="8px" />
+              Đại Nam Official
+            </a>
+          </li>
+          <li>
+            <a class="d-flex align-items-center gap-3" href="">
+              <img src="assets/logo/facebook.svg" width="8px" />
+              Đại học Đại Nam
+            </a>
           </li>
         </ul>
       </div>
-      <div class="row col-12 col-lg-8 mt-4 mt-lg-0 gap-md-0 gap-3">
-        <div class="col-lg-4 col-6">
-          <div class="fs-5 fw-semibold">Theo dõi Đại Nam</div>
-
-          <ul class="mt-3 list-unstyled">
-            <li class="mt-2 d-flex align-items-center gap-3">
-              <img src="assets/logo/facebook.svg" width="8px" />
-              Đại học Đại Nam
-            </li>
-            <li class="mt-2 d-flex align-items-center gap-3">
-              <img src="assets/logo/facebook.svg" width="8px" />
-              Tuyển sinh Đại học Đại Nam
-            </li>
-            <li class="mt-2 d-flex align-items-center gap-3">
-              <img src="assets/logo/facebook.svg" width="8px" />
-              Sinh viên Đại học Đại Nam
-            </li>
-            <li class="mt-2 d-flex align-items-center gap-3">
-              <img src="assets/logo/facebook-detail.svg" width="8px" />
-              Đại học Đại Nam
-            </li>
-            <li class="mt-2 d-flex align-items-center gap-3">
-              <img src="assets/logo/youtube.svg" width="8px" />
-              Trường Đại học Đại Nam
-            </li>
-            <li class="mt-2 d-flex align-items-center gap-3">
-              <img src="assets/logo/tiktok.svg" width="8px" />
-              Trường Đại học Đại Nam
-            </li>
-            <li class="mt-2 d-flex align-items-center gap-3">
-              <img src="assets/logo/facebook-detail.svg" width="8px" />
-              Đại Nam Official
-            </li>
-            <li class="mt-2 d-flex align-items-center gap-3">
-              <img src="assets/logo/facebook.svg" width="8px" />
-              Đại học Đại Nam
-            </li>
-          </ul>
+      <div class="col-lg-3 col-12">
+        <div class="fs-5 fw-extra d-none d-lg-block">Khối ngành đào tạo</div>
+        <div
+          class="d-lg-none fw-extra toggle-chevron fs-5"
+          role="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#footer-training-sector"
+          aria-expanded="false"
+        >
+          Khối ngành đào tạo
         </div>
-        <div class="col-lg-8 col-6">
-          <div class="fs-5 fw-semibold">Truy cập nhanh</div>
-
-          <ul class="mt-3 list-unstyled">
-            <li class="mt-2">Đề án tuyển sinh 2025</li>
-            <li class="mt-2">Phiếu đăng ký xét tuyển 2025</li>
-            <li class="mt-2">Tra cứu danh sách trúng tuyển 2025</li>
-            <li class="mt-2">Cổng thông tin nhập học</li>
-            <li class="mt-2">Thông báo Tuyển sinh Thạc sĩ đợt 1 năm 2025</li>
-          </ul>
-        </div>
+        <ul
+          id="footer-training-sector"
+          class="collapse ps-3 mb-1 d-lg-block ps-lg-0 mt-2 mt-lg-3"
+        >
+          <li><a href="">Khối ngành Sức khỏe</a></li>
+          <li><a href="">Khối ngành Khoa học cơ bản</a></li>
+          <li><a href="">Khối ngành Kỹ thuật - Công nghệ</a></li>
+          <li><a href="">Khối ngành Kinh doanh - Kinh tế</a></li>
+          <li><a href="">Khối ngành Khoa học xã hội & nhân văn</a></li>
+        </ul>
       </div>
     </div>
 
     <div class="row mt-4">
-      <div class="col-lg-4 col-12">
-        Copyright @2024. Trường đại học Đại Nam.
+      <div class="col-xl-4 col-lg-5 col-12 copy-right">
+        Copyright @2025. Trường đại học Đại Nam.
       </div>
-      <div class="col-lg-8 col-12 mt-3 mt-lg-0 d-flex align-items-center gap-3">
+      <div
+        class="col-xl-8 col-lg-7 d-none d-lg-flex d-flex align-items-center gap-2"
+      >
         <img src="assets/icon/location.svg" alt="" />
         <div>
           Địa chỉ:
-          <a class="fw-semibold text-decoration-none color-secondary">
+          <a class="fw-extra color-secondary" href="">
             Số 1 Phố Xốm, Phú Lãm, Hà Đông, Hà Nội.
           </a>
         </div>

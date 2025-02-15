@@ -1,0 +1,49 @@
+/* admission */
+.register-form form {
+  background-color: rgba(244, 246, 252, 1);
+}
+.admission-submit-btn {
+  background-color: var(--secondary-color);
+}
+.admission-submit-btn:hover {
+  background-color: var(--red-color);
+}
+.admissions-student {
+  object-fit: cover;
+  height: 32vw;
+  max-height: 500px;
+}
+.register-form .speech-bubble {
+  max-width: 300px;
+  max-height: fit-content;
+}
+.register-form .speech-bubble.position-absolute {
+  top: 8rem;
+  right: 10rem;
+}
+.register-form .speech-bubble::after {
+  content: "";
+  position: absolute;
+  bottom: -1rem;
+  right: 1.5rem;
+  width: 0;
+  height: 0;
+  border-left: 3rem solid transparent;
+  border-right: 0;
+  border-top: 1.2rem solid var(--background-blue);
+}
+.register-form .speech-bubble.position-absolute::after {
+  border-left: 1rem solid transparent;
+  border-right: 1rem solid transparent;
+}
+@media (max-width: 1199.98px) {
+  .register-form .speech-bubble.position-absolute {
+    top: 12rem;
+  }
+}
+@media (max-width: 1399.98px) {
+  .register-form .speech-bubble.position-absolute {
+    top: 14rem;
+    right: 6rem;
+  }
+}
