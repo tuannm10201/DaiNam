@@ -21,8 +21,8 @@
   padding: 1.5rem 0;
 }
 .new-event-item {
-  min-width: 400px;
-  width: 33.33vw;
+  min-width: 350px;
+  width: calc(33.33vw - 1rem);
   max-width: 450px;
 }
 @media (max-width: 1199.98px) {

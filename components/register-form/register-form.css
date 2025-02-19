@@ -1,4 +1,7 @@
 /* admission */
+.register-form {
+  background-color: rgba(244, 246, 252, 0.45);
+}
 .register-form form {
   background-color: rgba(244, 246, 252, 1);
 }
@@ -10,16 +13,20 @@
 }
 .admissions-student {
   object-fit: cover;
-  height: 32vw;
-  max-height: 500px;
+  height: 40vw;
+  min-height: 350px;
+  max-height: 600px;
+}
+.admissions-student-sm {
+  object-fit: contain;
 }
 .register-form .speech-bubble {
-  max-width: 300px;
+  width: 300px;
   max-height: fit-content;
 }
 .register-form .speech-bubble.position-absolute {
-  top: 8rem;
-  right: 10rem;
+  top: 6rem;
+  right: 13rem;
 }
 .register-form .speech-bubble::after {
   content: "";
@@ -36,14 +43,19 @@
   border-left: 1rem solid transparent;
   border-right: 1rem solid transparent;
 }
+@media (max-width: 991.98px) {
+  .form-label {
+    font-size: 0.875rem;
+  }
+}
 @media (max-width: 1199.98px) {
   .register-form .speech-bubble.position-absolute {
-    top: 12rem;
+    top: 6rem;
   }
 }
 @media (max-width: 1399.98px) {
   .register-form .speech-bubble.position-absolute {
-    top: 14rem;
+    top: 8rem;
     right: 6rem;
   }
 }

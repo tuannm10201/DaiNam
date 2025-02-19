@@ -3,7 +3,7 @@
   --secondary-color: #f66600;
   --background-blue: rgba(0, 53, 143, 1);
   --light-blue-color: rgba(174, 204, 255, 1);
-  --background-off-white: rgba(244, 246, 252, 0.8);
+  --background-off-white: rgba(244, 246, 252, 1);
   --red-color: #ff4000;
 }
 
@@ -56,6 +56,7 @@
   font-style: normal;
 }
 
+/* bootstrap override */
 @media (min-width: 1400px) {
   .container,
   .container-lg,
@@ -64,6 +65,14 @@
   .container-xl,
   .container-xxl {
     max-width: 1450px;
+  }
+}
+h2 {
+  font-size: calc(1.525rem + 1vw);
+}
+@media (min-width: 1200px) {
+  h2 {
+    font-size: 2.375rem;
   }
 }
 
@@ -80,7 +89,12 @@ ul {
 ul li {
   cursor: pointer;
 }
-
+.rounded-14 {
+  border-radius: 0.875rem;
+}
+.rounded-12 {
+  border-radius: 0.75rem;
+}
 .color-primary {
   color: var(--primary-color);
 }
@@ -108,6 +122,12 @@ a {
 .fs-5-5 {
   font-size: 1.125rem;
 }
+.fs-4-5 {
+  font-size: calc(1.24rem + 0.15vw);
+}
+.fs-3-5 {
+  font-size: calc(1.31rem + 0.35vw);
+}
 
 .fw-extra {
   font-weight: 800;
@@ -122,6 +142,7 @@ a {
 .hover-f666,
 .hover-ff77 {
   transition: color 0.15s ease-in;
+  cursor: pointer;
 }
 .hover-f666:hover {
   color: var(--secondary-color);

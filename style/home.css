@@ -176,6 +176,9 @@
 .numbers-row:nth-child(odd) {
   color: var(--secondary-color);
 }
+.number-item-title {
+  font-size: calc(2.86rem + 1.12vw);
+}
 @media (max-width: 991.98px) {
   .number-item:not(:first-child) > * {
     padding-left: 0;

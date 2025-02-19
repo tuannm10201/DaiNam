@@ -36,7 +36,7 @@
 .bot-nav .nav-item {
   position: relative;
 }
-.bot-nav .nav-item::after {
+.bot-nav .nav-item:not(.nav-search-icon):after {
   content: "";
   position: absolute;
   bottom: calc(var(--header-line-selected-height) * -1);
