@@ -118,7 +118,9 @@ a {
   text-decoration: none;
   color: currentColor;
 }
-
+.fs-6-5 {
+  font-size: 0.875rem;
+}
 .fs-5-5 {
   font-size: 1.125rem;
 }
@@ -140,7 +142,8 @@ a {
 }
 
 .hover-f666,
-.hover-ff77 {
+.hover-ff77,
+.hover-red {
   transition: color 0.15s ease-in;
   cursor: pointer;
 }
@@ -149,6 +152,9 @@ a {
 }
 .hover-ff77:hover {
   color: #ff7700 !important;
+}
+.hover-red:hover {
+  color: var(--red-color) !important;
 }
 .zoom-105 {
   overflow: hidden;
