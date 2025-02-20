@@ -145,10 +145,10 @@ a {
   cursor: pointer;
 }
 .hover-f666:hover {
-  color: var(--secondary-color);
+  color: var(--secondary-color) !important;
 }
 .hover-ff77:hover {
-  color: #ff7700;
+  color: #ff7700 !important;
 }
 .zoom-105 {
   overflow: hidden;
@@ -219,6 +219,15 @@ form .invalid-feedback {
   color: rgba(255, 0, 0, 1);
   font-weight: 600;
   font-size: 13px;
+}
+
+.swiper-border-bottom {
+  position: absolute;
+  bottom: 0;
+  height: 5px;
+  width: 0%;
+  background-color: var(--secondary-color);
+  z-index: 1;
 }
 
 .to-top-btn {

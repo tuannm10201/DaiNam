@@ -1,3 +1,6 @@
+const SLIDE_DELAY = 5000;
+const eventSwiperBorderBottom = document.querySelector(".swiper-border-bottom");
+
 // handle scroll top btn
 const backToTopBtn = document.createElement("button");
 backToTopBtn.className = "btn btn-light to-top-btn fw-bold hover-ff77";

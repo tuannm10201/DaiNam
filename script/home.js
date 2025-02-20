@@ -14,7 +14,14 @@ new Swiper(".banner-swiper", {
     el: ".swiper-pagination",
     clickable: true,
   },
-  autoplay: false,
+  autoplay: {
+    delay: SLIDE_DELAY,
+  },
+  on: {
+    autoplayTimeLeft(s, time, progress) {
+      eventSwiperBorderBottom.style.width = (1 - progress) * 100 + "%";
+    },
+  },
 });
 
 new Swiper(".reason-swiper", {
