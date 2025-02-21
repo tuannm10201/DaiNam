@@ -95,6 +95,9 @@ ul li {
 .rounded-12 {
   border-radius: 0.75rem;
 }
+.rounded-8 {
+  border-radius: 0.5rem;
+}
 .color-primary {
   color: var(--primary-color);
 }
@@ -243,4 +246,39 @@ form .invalid-feedback {
   right: 30px;
   z-index: 99;
   border-radius: 50px;
+}
+
+.bg-badge {
+  background-color: #EFEFF2;
+}
+
+.breadcrumb-link {
+  font-weight: 700;
+  font-size: 16px;
+}
+.breadcrumb-link:hover {
+  color: var(--secondary-color);
+}
+
+.breadcrumb-unlink {
+  font-weight: 400;
+  font-size: 16px;
+}
+
+.hover-icon-social:hover {
+  filter: invert(52%) sepia(84%) saturate(619%) hue-rotate(2deg) brightness(99%) contrast(103%);
+}
+
+.hover-trigger {
+  transition: all 0.3s ease;
+  &:hover {
+    .title {
+  transition: all 0.3s ease;
+      color: #ff0000; 
+    }
+    .subtitle {
+  transition: all 0.3s ease;
+      color: #f66600;
+    }
+  }
 }
