@@ -19,142 +19,165 @@
     <main>
       <div class="container py-5">
         <div class="row">
-          <div class="col-4 pe-4">
+          <div class="col-xl-4 col-12 pe-xl-4">
             <h2 class="fw-extra">Tin tức Đại Nam</h2>
-            <div class="mt-4 mb-3 color-secondary fw-extra fs-4-5">
-              Tất cả tin tức
+
+            <div class="d-flex d-xl-none align-items-baseline gap-2 mt-4 mb-3">
+              <div class="color-primary">Danh mục tin tức:</div>
+              <div
+                class="d-flex gap-2"
+                id="trigger-new-see-all-mobile"
+                data-bs-toggle="collapse"
+                data-bs-target="#new-see-all-mobile"
+                aria-expanded="false"
+              >
+                <div class="fw-extra fs-5" role="button">Tất cả tin tức</div>
+                <img src="assets/icon/new-see-all.svg" alt="" />
+              </div>
             </div>
 
-            <div
-              class="menu fs-4-5 hover-f666"
-              role="button"
-              data-bs-toggle="collapse"
-              data-bs-target="#ban-tin-dn"
-              aria-expanded="false"
-            >
-              Bản tin Đại Nam
+            <div class="collapse d-xl-block" id="new-see-all-mobile">
+              <div class="mt-xl-4 mb-3 color-secondary fw-extra fs-4-5">
+                Tất cả tin tức
+              </div>
+
+              <div
+                class="menu fs-4-5 hover-f666"
+                role="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#ban-tin-dn"
+                aria-expanded="false"
+              >
+                Bản tin Đại Nam
+              </div>
+              <ul id="ban-tin-dn" class="collapse ps-3 mb-1">
+                <li>
+                  <a href="" class="menu-item"> Khoa Y </a>
+                </li>
+                <li>
+                  <a href="" class="menu-item"> Khoa Dược </a>
+                </li>
+                <li>
+                  <a href="" class="menu-item"> Khoa Điều dưỡng </a>
+                </li>
+              </ul>
+              <div
+                class="menu fs-4-5 hover-f666"
+                role="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#kght"
+                aria-expanded="false"
+              >
+                Không gian học thuật
+              </div>
+              <ul id="kght" class="collapse ps-3 mb-1">
+                <li>
+                  <a href="" class="menu-item"> Khối Sức khỏe</a>
+                </li>
+                <li>
+                  <a href="" class="menu-item"> Khối Viện - Trung tâm </a>
+                </li>
+                <li>
+                  <a href="" class="menu-item"> Khối Kỹ thuật - Công nghệ </a>
+                </li>
+                <li>
+                  <a href="" class="menu-item"> Khối Kinh doanh - Kinh tế </a>
+                </li>
+                <li>
+                  <a href="" class="menu-item">
+                    Khối Khoa học xã hội và nhân văn
+                  </a>
+                </li>
+              </ul>
+              <div class="menu fs-4-5">Đối tác hợp tác</div>
+              <div
+                class="menu fs-4-5 hover-f666"
+                role="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#ctdt"
+                aria-expanded="false"
+              >
+                Công trình, đề tài
+              </div>
+              <ul id="ctdt" class="collapse ps-3 mb-1">
+                <li>
+                  <a href="" class="menu-item"> Khối Sức khỏe</a>
+                </li>
+                <li>
+                  <a href="" class="menu-item"> Khối Viện - Trung tâm </a>
+                </li>
+                <li>
+                  <a href="" class="menu-item"> Khối Kỹ thuật - Công nghệ </a>
+                </li>
+                <li>
+                  <a href="" class="menu-item"> Khối Kinh doanh - Kinh tế </a>
+                </li>
+                <li>
+                  <a href="" class="menu-item">
+                    Khối Khoa học xã hội và nhân văn
+                  </a>
+                </li>
+              </ul>
+              <div
+                class="menu fs-4-5 hover-f666"
+                role="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#hnht"
+                aria-expanded="false"
+              >
+                Hội nghị hội thảo
+              </div>
+              <ul id="hnht" class="collapse ps-3 mb-1">
+                <li>
+                  <a href="" class="menu-item"> Khối Sức khỏe</a>
+                </li>
+                <li>
+                  <a href="" class="menu-item"> Khối Viện - Trung tâm </a>
+                </li>
+                <li>
+                  <a href="" class="menu-item"> Khối Kỹ thuật - Công nghệ </a>
+                </li>
+                <li>
+                  <a href="" class="menu-item"> Khối Kinh doanh - Kinh tế </a>
+                </li>
+                <li>
+                  <a href="" class="menu-item">
+                    Khối Khoa học xã hội và nhân văn
+                  </a>
+                </li>
+              </ul>
             </div>
-            <ul id="ban-tin-dn" class="collapse ps-3 mb-1">
-              <li>
-                <a href="" class="menu-item"> Khoa Y </a>
-              </li>
-              <li>
-                <a href="" class="menu-item"> Khoa Dược </a>
-              </li>
-              <li>
-                <a href="" class="menu-item"> Khoa Điều dưỡng </a>
-              </li>
-            </ul>
-            <div
-              class="menu fs-4-5 hover-f666"
-              role="button"
-              data-bs-toggle="collapse"
-              data-bs-target="#kght"
-              aria-expanded="false"
-            >
-              Không gian học thuật
-            </div>
-            <ul id="kght" class="collapse ps-3 mb-1">
-              <li>
-                <a href="" class="menu-item"> Khối Sức khỏe</a>
-              </li>
-              <li>
-                <a href="" class="menu-item"> Khối Viện - Trung tâm </a>
-              </li>
-              <li>
-                <a href="" class="menu-item"> Khối Kỹ thuật - Công nghệ </a>
-              </li>
-              <li>
-                <a href="" class="menu-item"> Khối Kinh doanh - Kinh tế </a>
-              </li>
-              <li>
-                <a href="" class="menu-item">
-                  Khối Khoa học xã hội và nhân văn
-                </a>
-              </li>
-            </ul>
-            <div class="menu fs-4-5">Đối tác hợp tác</div>
-            <div
-              class="menu fs-4-5 hover-f666"
-              role="button"
-              data-bs-toggle="collapse"
-              data-bs-target="#ctdt"
-              aria-expanded="false"
-            >
-              Công trình, đề tài
-            </div>
-            <ul id="ctdt" class="collapse ps-3 mb-1">
-              <li>
-                <a href="" class="menu-item"> Khối Sức khỏe</a>
-              </li>
-              <li>
-                <a href="" class="menu-item"> Khối Viện - Trung tâm </a>
-              </li>
-              <li>
-                <a href="" class="menu-item"> Khối Kỹ thuật - Công nghệ </a>
-              </li>
-              <li>
-                <a href="" class="menu-item"> Khối Kinh doanh - Kinh tế </a>
-              </li>
-              <li>
-                <a href="" class="menu-item">
-                  Khối Khoa học xã hội và nhân văn
-                </a>
-              </li>
-            </ul>
-            <div
-              class="menu fs-4-5 hover-f666"
-              role="button"
-              data-bs-toggle="collapse"
-              data-bs-target="#hnht"
-              aria-expanded="false"
-            >
-              Hội nghị hội thảo
-            </div>
-            <ul id="hnht" class="collapse ps-3 mb-1">
-              <li>
-                <a href="" class="menu-item"> Khối Sức khỏe</a>
-              </li>
-              <li>
-                <a href="" class="menu-item"> Khối Viện - Trung tâm </a>
-              </li>
-              <li>
-                <a href="" class="menu-item"> Khối Kỹ thuật - Công nghệ </a>
-              </li>
-              <li>
-                <a href="" class="menu-item"> Khối Kinh doanh - Kinh tế </a>
-              </li>
-              <li>
-                <a href="" class="menu-item">
-                  Khối Khoa học xã hội và nhân văn
-                </a>
-              </li>
-            </ul>
           </div>
-          <div class="col-8 ps-4">
+          <div class="col-xl-8 col-12 ps-xl-4">
             <div class="zoom-105 rounded-12">
               <img
                 src="assets/img/tintuc-img.png"
                 width="100%"
                 height="550"
-                class="object-fit-contain"
+                class="object-fit-cover"
               />
             </div>
 
-            <div class="color-secondary fw-bolder fs-5 hover-red mb-2">
+            <div class="color-secondary fw-bolder fs-5 hover-red my-2">
               Bản tin Đại Nam
             </div>
             <h3 class="fw-extra hover-f666 color-primary">
               Đại học Đại Nam khai giảng chương trình Cử nhân trực tuyến từ xa:
               Mở rộng cánh cửa tri thức thời đại số
             </h3>
-            <div class="fs-5-5 color-primary mb-2">
+            <div class="fs-5-5 color-primary mb-2 text-truncate-2">
               Ngày 29/12/2024, Trường Đại học Đại Nam (DNU) chính thức khai
               giảng chương trình đào tạo Cử nhân trực tuyến từ xa đánh dấu cột
               mốc quan trọng trong chiến lược mở rộng và đa dạng hóa hình thức
-              đào tạo, mang đến cơ hội học...
+              đào tạo, mang đến cơ hội học Lorem ipsum dolor sit amet
+              consectetur adipisicing elit. Doloribus, quaerat. Labore atque,
+              expedita est et quae placeat modi totam consequatur fuga repellat,
+              corrupti nostrum dolorum necessitatibus earum debitis officiis
+              voluptatibus.
             </div>
-            <div class="fw-bolder color-primary mb-5">Ban truyền thông</div>
+            <div class="fw-bolder color-primary mb-xl-5 mb-2">
+              Ban truyền thông
+            </div>
 
             <a
               href=""
@@ -167,7 +190,7 @@
               </div>
               <div class="col-xl-8 col-12">
                 <div
-                  class="d-flex justify-content-between align-items-center fw-bold color-secondary event-item-title"
+                  class="d-flex justify-content-between align-items-center fw-bold color-secondary event-item-title mt-xl-0 mt-3"
                 >
                   Khoa Y
                 </div>
@@ -176,7 +199,9 @@
                   hợp tác đào tạo - Bước đột phá trong đào tạo y khoa gắn liền
                   thực tiễn
                 </div>
-                <div class="color-primary fs-6-5 mb-2 event-desc">
+                <div
+                  class="color-primary fs-6-5 mb-2 event-desc text-truncate-2"
+                >
                   Trường Đại học Đại Nam và Bệnh viện Tai Mũi Họng Trung ương
                   vừa ký kết thỏa thuận hợp tác đào tạo, đánh dấu bước tiến quan
                   trọng trong chiến lược phát triển nguồn nhân lực y khoa chất
@@ -188,7 +213,7 @@
             </a>
             <a
               href=""
-              class="event-item row fs-5 align-items-center py-3 py-xl-0 mt-4"
+              class="event-item row fs-5 align-items-center py-3 py-xl-0 mt-xl-4"
             >
               <div class="col-xl-4 col-12">
                 <div class="overflow-hidden rounded-4">
@@ -197,7 +222,7 @@
               </div>
               <div class="col-xl-8 col-12">
                 <div
-                  class="d-flex justify-content-between align-items-center fw-bold color-secondary event-item-title"
+                  class="d-flex justify-content-between align-items-center fw-bold color-secondary event-item-title mt-xl-0 mt-3"
                 >
                   Bản tin Đại Nam
                 </div>
@@ -206,7 +231,9 @@
                   sinh viên Logistics và Quản lý chuỗi cung ứng trường Đại học
                   Đại Nam
                 </div>
-                <div class="color-primary fs-6-5 mb-2 event-desc">
+                <div
+                  class="color-primary fs-6-5 mb-2 event-desc text-truncate-2"
+                >
                   Đại học Đại Nam được biết đến là một trong những ngôi trường
                   đào tạo nguồn nhân lực chất lượng cao cho ngành Logistics và
                   Quản lý chuỗi cung ứng tại Việt Nam. Với phương châm "Học đi
@@ -217,7 +244,7 @@
             </a>
             <a
               href=""
-              class="event-item row fs-5 align-items-center py-3 py-xl-0 mt-4"
+              class="event-item row fs-5 align-items-center py-3 py-xl-0 mt-xl-4"
             >
               <div class="col-xl-4 col-12">
                 <div class="overflow-hidden rounded-4">
@@ -226,7 +253,7 @@
               </div>
               <div class="col-xl-8 col-12">
                 <div
-                  class="d-flex justify-content-between align-items-center fw-bold color-secondary event-item-title"
+                  class="d-flex justify-content-between align-items-center fw-bold color-secondary event-item-title mt-xl-0 mt-3"
                 >
                   Bản tin Đại Nam
                 </div>
@@ -235,7 +262,9 @@
                   Chụp ảnh thẻ, làm thẻ ngân hàng và khám sức khỏe hoàn toàn
                   miễn phí
                 </div>
-                <div class="color-primary fs-6-5 mb-2 event-desc">
+                <div
+                  class="color-primary fs-6-5 mb-2 event-desc text-truncate-2"
+                >
                   Trường Đại học Đại Nam khởi động loạt dịch vụ hỗ trợ miễn phí
                   dành cho 8.000 tân sinh viên, bao gồm chụp ảnh thẻ, làm thẻ
                   ngân hàng và khám sức khỏe tổng quát. Đây là chuỗi hoạt động
@@ -248,7 +277,7 @@
             </a>
             <a
               href=""
-              class="event-item row fs-5 align-items-center py-3 py-xl-0 mt-4"
+              class="event-item row fs-5 align-items-center py-3 py-xl-0 mt-xl-4"
             >
               <div class="col-xl-4 col-12">
                 <div class="overflow-hidden rounded-4">
@@ -257,7 +286,7 @@
               </div>
               <div class="col-xl-8 col-12">
                 <div
-                  class="d-flex justify-content-between align-items-center fw-bold color-secondary event-item-title"
+                  class="d-flex justify-content-between align-items-center fw-bold color-secondary event-item-title mt-xl-0 mt-3"
                 >
                   Khoa Thương mại điện tử và Kinh tế số
                 </div>
@@ -265,7 +294,9 @@
                   E-UNITOUR 2024 - Nơi sinh viên Đại Nam bứt phá cùng xu hướng
                   thương mại điện tử, kinh tế số
                 </div>
-                <div class="color-primary fs-6-5 mb-2 event-desc">
+                <div
+                  class="color-primary fs-6-5 mb-2 event-desc text-truncate-2"
+                >
                   Thương mại điện tử và kinh tế số đang định hình lại tương lai
                   của kinh doanh. Nhằm trang bị cho sinh viên những kiến thức và
                   kỹ năng cần thiết để thành công trong kỷ nguyên số, trường Đại
@@ -282,7 +313,7 @@
             </a>
             <a
               href=""
-              class="event-item row fs-5 align-items-center py-3 py-xl-0 mt-4"
+              class="event-item row fs-5 align-items-center py-3 py-xl-0 mt-xl-4"
             >
               <div class="col-xl-4 col-12">
                 <div class="overflow-hidden rounded-4">
@@ -291,7 +322,7 @@
               </div>
               <div class="col-xl-8 col-12">
                 <div
-                  class="d-flex justify-content-between align-items-center fw-bold color-secondary event-item-title"
+                  class="d-flex justify-content-between align-items-center fw-bold color-secondary event-item-title mt-xl-0 mt-3"
                 >
                   Đối tác hợp tác
                 </div>
@@ -299,7 +330,9 @@
                   Trường Đại học Đại Nam chính thức trở thành điểm thi Đánh giá
                   năng lực HSA của Đại học Quốc gia Hà Nội từ năm 2025
                 </div>
-                <div class="color-primary fs-6-5 mb-2 event-desc">
+                <div
+                  class="color-primary fs-6-5 mb-2 event-desc text-truncate-2"
+                >
                   Sự hợp tác giữa trường Đại học Đại Nam và Trung tâm Khảo thí
                   của Đại học Quốc gia Hà Nội (ĐHQGHN) sẽ tạo điều kiện thuận
                   lợi cho các sĩ tử tại Hà Nội và các tỉnh lân cận tham gia kỳ
