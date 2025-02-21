@@ -282,3 +282,9 @@ form .invalid-feedback {
     }
   }
 }
+
+@media (min-width: 992px) {
+  .custom-margin-lg {
+    margin-top: 210px;
+  }
+}
