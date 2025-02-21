@@ -4,18 +4,53 @@
 }
 .register-form form {
   background-color: rgba(244, 246, 252, 1);
+  padding: 1rem 1.5rem;
+  max-width: 762px;
+}
+.register-form input,
+.register-form .form-select {
+  border-radius: 9px;
+  height: 2.8125rem;
+  font-size: 1rem;
 }
 .admission-submit-btn {
   background-color: var(--secondary-color);
+  border-radius: 9px;
+  margin: 1.2rem 0 1.2rem;
+  padding: 0.65rem 0;
+}
+@media (min-width: 992px) {
+  .register-form input,
+  .register-form .form-select {
+    font-size: 1.25rem;
+    height: 3.5rem;
+  }
+  .admission-submit-btn {
+    margin: 2rem 0 1.5rem;
+    padding: 0.875rem 0;
+  }
+  .register-form form {
+    padding: 1.5rem 2.4rem;
+  }
+}
+.input-name-phone {
+  gap: 2.5rem;
+}
+.register-form input::placeholder {
+  opacity: 0.45;
+  font-weight: 500;
+}
+.register-form .form-select {
+  --bs-form-select-bg-img: url("../../assets/icon/form-chevron-down-bg-img.svg");
 }
 .admission-submit-btn:hover {
   background-color: var(--red-color);
 }
 .admissions-student {
   object-fit: cover;
-  height: 40vw;
-  min-height: 350px;
-  max-height: 600px;
+  height: 45vw;
+  min-height: 450px;
+  max-height: 750px;
 }
 .admissions-student-sm {
   object-fit: contain;
@@ -25,7 +60,7 @@
   max-height: fit-content;
 }
 .register-form .speech-bubble.position-absolute {
-  top: 6rem;
+  top: 8rem;
   right: 13rem;
 }
 .register-form .speech-bubble::after {
@@ -55,7 +90,7 @@
 }
 @media (max-width: 1399.98px) {
   .register-form .speech-bubble.position-absolute {
-    top: 8rem;
+    top: 16rem;
     right: 6rem;
   }
 }

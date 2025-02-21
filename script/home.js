@@ -47,7 +47,7 @@ new Swiper(".reason-swiper", {
       slidesPerView: 4,
     },
   },
-  spaceBetween: 25,
+  spaceBetween: 28,
 });
 
 new Swiper(".partner-swiper", {

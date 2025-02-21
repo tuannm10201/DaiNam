@@ -12,13 +12,16 @@
   color: #f66600;
 }
 .new-event-sm:first-child {
-  padding-bottom: 1.5rem;
+  padding-bottom: 1.3rem;
 }
 .new-event-sm:not(:last-child) {
   border-bottom: 1px solid rgba(218, 220, 224, 0.85);
 }
 .new-event-sm:not(:first-child) {
-  padding: 1.5rem 0;
+  padding: 1.3rem 0;
+}
+.main-event {
+  --bs-gutter-x: 3.3rem;
 }
 .new-event-item {
   min-width: 350px;
