@@ -186,9 +186,8 @@ function onMountLeaveDropdown() {
 
 function handleClickOutside(event) {
   const inputSearch = document.querySelector(".nav-search:not(.d-none)"); // Element to check
-  const iconSearchs = document.querySelectorAll(".nav-search-icon"); // Element to ignore
 
-  const clickedInsideExcluded = [...iconSearchs].some((exclude) =>
+  const clickedInsideExcluded = [...navSearchIcons].some((exclude) =>
     exclude.contains(event.target)
   );
 
@@ -202,3 +201,25 @@ function handleClickOutside(event) {
 }
 
 document.addEventListener("click", handleClickOutside);
+
+function updateNavbar() {
+  const isLargeScreen = window.innerWidth >= BOT_NAV_BREAKPOINT;
+
+  if (isLargeScreen) {
+    if (window.scrollY >= 47.5) {
+      botNav.classList.add("fixed-top");
+      document.body.style.marginTop = "47.5px";
+    } else {
+      botNav.classList.remove("fixed-top");
+      document.body.style.marginTop = "0";
+    }
+  } else {
+    botNav.classList.add("fixed-top");
+    document.body.style.marginTop = "72px";
+  }
+}
+
+updateNavbar();
+document.addEventListener("scroll", updateNavbar);
+
+window.addEventListener("resize", updateNavbar);

@@ -28,6 +28,7 @@ async function loadHeaderAndFooter() {
     loadScript("register-form");
   }
   document.body.insertAdjacentHTML("beforeend", footerHTML);
+  loadScript("footer");
 }
 
 loadHeaderAndFooter();

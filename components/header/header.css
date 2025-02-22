@@ -30,8 +30,9 @@
 }
 
 .bot-nav {
-  top: -1px !important;
   background-color: #fff;
+  z-index: 10002;
+  padding: 1px 0;
 }
 .bot-nav .nav-item {
   position: relative;
@@ -64,6 +65,9 @@
 .bot-nav .dropdown-menu {
   top: calc(100% + var(--header-line-selected-height));
 }
+.bot-nav-container.fixed-top {
+  z-index: 10003;
+}
 .top-nav-container .dropdown-item,
 .bot-nav-container .dropdown-item {
   padding: 0;
@@ -85,8 +89,6 @@
   border: none;
   border-radius: 0.75rem;
   margin-top: 0 !important;
-  /* transition: max-height 0.3s ease-out, padding 0.3s ease-out;
-  overflow: hidden; */
 }
 .top-nav-container .dropend .dropdown-menu,
 .bot-nav-container .dropend .dropdown-menu {
@@ -136,8 +138,15 @@
   .top-nav-container {
     border-bottom: var(--header-border);
   }
-}
 
+  #bottom-nav .navbar-nav {
+    gap: 1.9rem;
+  }
+
+  .bot-nav-link {
+    padding: 1.25rem 0 !important;
+  }
+}
 .search-container {
   display: flex;
   align-items: center;
@@ -165,6 +174,10 @@
   border-bottom: 2px solid currentColor;
   transform: rotate(45deg);
   margin-bottom: 5px;
+  margin-right: 5px;
+}
+.bot-nav-link > .chevron-down {
+  margin-right: 2px;
 }
 .top-nav-container .dropdown-toggle.show .chevron-down,
 .bot-nav-container .dropdown-toggle.show .chevron-down {
@@ -185,12 +198,15 @@
 .kvtt-dropdown-menu .nav-item:first-child .nav-link {
   padding-left: 0 !important;
 }
+.nav-search-icon:has(~ .navbar-toggler[aria-expanded="true"]) {
+  display: none;
+}
 .nav-search-icon:has(+ .nav-search:not(.d-none)) {
   display: none !important;
 }
 /* bottom header responsive */
 .navbar-toggler {
-  width: 47.5px;
+  width: 43px;
 }
 .navbar-toggler::before {
   content: "☰";
@@ -202,7 +218,20 @@
 .top-right-nav .nav-item {
   white-space: nowrap;
 }
-@media (max-width: 1199px) {
+
+.top-nav .dropdown {
+  z-index: 10003;
+}
+@media (max-width: 1199.98px) {
+  html:has(.navbar-collapse.show) {
+    overflow: hidden;
+  }
+  .navbar-brand:has(~ .navbar-collapse.show) {
+    padding-bottom: 1rem;
+  }
+  .bot-nav {
+    padding: 10px 0;
+  }
   .bot-nav > div {
     padding: 0;
   }
@@ -270,9 +299,17 @@
   .top-right-nav .nav-item {
     white-space: unset;
   }
+  .top-nav-container .dropdown-menu a {
+    padding-top: 0.85rem;
+    padding-bottom: 0.85rem;
+  }
   #bottom-nav.show {
-    height: calc(100vh - 65px);
+    height: calc(100vh - 90px);
     overflow: hidden auto;
+    scrollbar-width: none;
+  }
+  #bottom-nav.show::-webkit-scrollbar {
+    display: none;
   }
   body:has(#bottom-nav.show) {
     overflow: hidden;

@@ -76,6 +76,10 @@ h2 {
   }
 }
 
+html {
+  overflow-x: hidden;
+}
+
 body {
   font-family: "Manrope", sans-serif !important;
   font-weight: 400;
@@ -249,7 +253,7 @@ form .invalid-feedback {
 }
 
 .bg-badge {
-  background-color: #EFEFF2;
+  background-color: #efeff2;
 }
 
 .breadcrumb-link {
@@ -266,18 +270,19 @@ form .invalid-feedback {
 }
 
 .hover-icon-social:hover {
-  filter: invert(52%) sepia(84%) saturate(619%) hue-rotate(2deg) brightness(99%) contrast(103%);
+  filter: invert(52%) sepia(84%) saturate(619%) hue-rotate(2deg) brightness(99%)
+    contrast(103%);
 }
 
 .hover-trigger {
   transition: all 0.3s ease;
   &:hover {
     .title {
-  transition: all 0.3s ease;
-      color: #ff0000; 
+      transition: all 0.3s ease;
+      color: #ff0000;
     }
     .subtitle {
-  transition: all 0.3s ease;
+      transition: all 0.3s ease;
       color: #f66600;
     }
   }

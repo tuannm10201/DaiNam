@@ -5,7 +5,7 @@
   <div
     class="top-nav container-fluid container-xxl fw-semibold justify-content-between d-block d-xl-flex"
   >
-    <div class="dropdown click-dropdown top-left-nav pt-xl-0 pt-3 ms-2">
+    <div class="dropdown click-dropdown top-left-nav pt-xl-0 pt-3 ms-1">
       <a
         class="dropdown-toggle d-xxl-none d-flex align-items-center h-100 gap-2 user-select-none justify-content-between"
         id="kvtt-dropdown"
@@ -102,73 +102,93 @@
     </div>
 
     <!-- Right Navigation -->
-    <ul class="row top-right-nav ms-xl-0 gap-2">
-      <li class="col-6 col-xl p-0 ms-0 nav-item border-0">
-        <a href="#" class="nav-link px-2 ps-4 ps-xl-2"> Trang chủ </a>
-      </li>
-      <li class="col-6 col-xl p-0 ms-0 nav-item border-0">
-        <a href="#" class="nav-link px-2 ps-4 ps-xl-2"> Ngành học </a>
-      </li>
-      <li class="col-6 col-xl p-0 ms-0 nav-item border-0">
-        <a href="#" class="nav-link px-2 ps-4 ps-xl-2"> VR Tour </a>
-      </li>
-      <li class="col-6 col-xl p-0 ms-0 nav-item border-0">
-        <a href="#" class="nav-link px-2 ps-4 ps-xl-2">
-          Nộp hồ sơ xét tuyển online
-        </a>
-      </li>
-      <li class="col-6 col-xl p-0 ms-0 nav-item border-0">
-        <a href="#" class="nav-link px-2 ps-4 ps-xl-2"> Liên hệ </a>
-      </li>
+    <div class="ms-1 ms-xl-0">
+      <ul class="row top-right-nav gap-xl-2 me-0">
+        <li class="col-6 col-xl p-xl-0 ms-0 nav-item border-0">
+          <a href="#" class="nav-link px-xl-2"> Trang chủ </a>
+        </li>
+        <li class="col-6 col-xl p-xl-0 ms-0 nav-item border-0">
+          <a href="#" class="nav-link px-xl-2"> Ngành học </a>
+        </li>
+        <li class="col-6 col-xl p-xl-0 ms-0 nav-item border-0">
+          <a href="#" class="nav-link px-xl-2"> VR Tour </a>
+        </li>
+        <li class="col-6 col-xl p-xl-0 ms-0 nav-item border-0">
+          <a href="#" class="nav-link px-xl-2"> Nộp hồ sơ xét tuyển online </a>
+        </li>
+        <li class="col-6 col-xl p-xl-0 ms-0 nav-item border-0">
+          <a href="#" class="nav-link px-xl-2"> Liên hệ </a>
+        </li>
 
-      <!-- Language Dropdown -->
-      <li
-        class="col-12 col-xl ps-3 ps-xl-0 p-0 ms-0 nav-item dropdown click-dropdown"
-      >
-        <a
-          class="nav-link px-2 dropdown-toggle gap-2 d-flex align-items-center"
-          href="#"
-          role="button"
-          data-bs-toggle="dropdown"
-          aria-expanded="false"
+        <!-- Language Dropdown -->
+        <li
+          class="col-12 col-xl ps-xl-3 p-xl-0 ms-0 nav-item dropdown click-dropdown"
         >
-          <img src="assets/icon/language-english-flag.svg" alt="English Flag" />
-          English
-          <span class="chevron-down"></span>
-        </a>
-        <ul class="dropdown-menu dropdown-click-menu w-25">
-          <li class="dropdown-item">
-            <a href="/vi">
-              <img src="assets/icon/language-flag.svg" alt="Vietnamese Flag" />
-              Tiếng Việt
-            </a>
-          </li>
-          <li class="dropdown-item">
-            <a href="/en">
-              <img
-                src="assets/icon/language-english-flag.svg"
-                alt="English Flag"
-              />
-              English
-            </a>
-          </li>
-        </ul>
-      </li>
-    </ul>
+          <a
+            class="nav-link ps-xl-2 dropdown-toggle gap-2 d-flex align-items-center"
+            href="#"
+            role="button"
+            data-bs-toggle="dropdown"
+            aria-expanded="false"
+          >
+            <img
+              src="assets/icon/language-english-flag.svg"
+              alt="English Flag"
+            />
+            English
+            <span class="chevron-down"></span>
+          </a>
+          <ul class="dropdown-menu dropdown-click-menu w-25">
+            <li class="dropdown-item">
+              <a href="/vi">
+                <img
+                  src="assets/icon/language-flag.svg"
+                  alt="Vietnamese Flag"
+                />
+                Tiếng Việt
+              </a>
+            </li>
+            <li class="dropdown-item">
+              <a href="/en">
+                <img
+                  src="assets/icon/language-english-flag.svg"
+                  alt="English Flag"
+                />
+                English
+              </a>
+            </li>
+          </ul>
+        </li>
+      </ul>
+    </div>
   </div>
 </div>
 
 <!-- Bottom Header -->
-<nav class="bot-nav-container navbar bot-nav navbar-expand-xl sticky-top py-0">
+<nav class="bot-nav-container navbar bot-nav navbar-expand-xl">
   <div class="container-fluid container-xxl">
     <!-- Logo -->
-    <a class="navbar-brand zoom-105" href="/home.html">
-      <img src="assets/logo/logo-ngang.svg" alt="Dai Nam" />
+    <a
+      class="navbar-brand zoom-105 overflow-visible ps-2 ps-xl-0"
+      href="/home.html"
+    >
+      <img
+        src="assets/logo/logo-ngang.svg"
+        alt="Dai Nam"
+        class="d-xl-block d-none"
+      />
+      <img
+        src="assets/logo/logo-ngang-sm.svg"
+        alt="Dai Nam"
+        class="d-xl-none"
+      />
     </a>
 
-    <div class="d-flex align-items-center justify-content-end flex-fill">
+    <div
+      class="d-flex align-items-center justify-content-end flex-fill mobile-search-container"
+    >
       <!-- mobile search -->
-      <div class="p-3 nav-search-icon d-xl-none" role="button">
+      <div class="px-3 py-2 nav-search-icon d-xl-none" role="button">
         <img src="assets/icon/search.svg" alt="" />
       </div>
 
@@ -191,7 +211,7 @@
 
       <!-- Mobile Menu Toggle Button -->
       <div
-        class="navbar-toggler border-0 fs-2 py-2"
+        class="navbar-toggler border-0 fs-2 p-2"
         type="button"
         data-bs-toggle="collapse"
         data-bs-target="#bottom-nav"
@@ -200,11 +220,11 @@
 
     <!-- Bottom Nav Links -->
     <div class="collapse navbar-collapse" id="bottom-nav">
-      <ul class="navbar-nav ms-auto fw-bold fs-5 gap-2">
+      <ul class="navbar-nav ms-auto fw-bold fs-5">
         <li class="nav-item dropdown">
           <a
             href="#"
-            class="nav-link py-3 pe-3 dropdown-toggle d-flex align-items-center justify-content-between"
+            class="nav-link bot-nav-link py-3 pe-xl-0 pe-3 dropdown-toggle d-flex align-items-center justify-content-between"
             id="gt-dropdown"
             data-bs-toggle="dropdown"
             aria-expanded="false"
@@ -234,26 +254,30 @@
           </ul>
         </li>
         <li class="nav-item">
-          <a class="nav-link py-3" href="#">Đào tạo</a>
+          <a class="nav-link py-3 bot-nav-link" href="#">Đào tạo</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link py-3" href="#">Hợp tác đối ngoại</a>
+          <a class="nav-link py-3 bot-nav-link" href="#">Hợp tác đối ngoại</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link py-3" href="#">Tuyển sinh</a>
+          <a class="nav-link py-3 bot-nav-link" href="#">Tuyển sinh</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link py-3" href="#">Ba công khai</a>
+          <a class="nav-link py-3 bot-nav-link" href="#">Ba công khai</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link py-3" href="#">Tin tức & Sự kiện</a>
+          <a class="nav-link py-3 bot-nav-link" href="#">Tin tức & Sự kiện</a>
         </li>
         <li
           class="nav-item nav-search-icon d-none d-xl-block"
           selected
           role="button"
         >
-          <img class="nav-link py-3" src="assets/icon/search.svg" alt="" />
+          <img
+            class="nav-link py-3 bot-nav-link"
+            src="assets/icon/search.svg"
+            alt=""
+          />
         </li>
 
         <div class="search-container d-none nav-search">
