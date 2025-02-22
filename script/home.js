@@ -24,31 +24,55 @@ new Swiper(".banner-swiper", {
   },
 });
 
-new Swiper(".reason-swiper", {
-  pagination: {
-    el: ".swiper-pagination",
-    clickable: true,
-  },
-  slidesPerView: 4,
-  breakpoints: {
-    320: {
-      slidesPerView: 1,
-    },
-    576: {
-      slidesPerView: 1,
-    },
-    768: {
-      slidesPerView: 2,
-    },
-    992: {
-      slidesPerView: 3,
-    },
-    1200: {
+let reasonSwiper;
+const reasonSwiperContainer = document.querySelector(".reason-swiper");
+const reasonSwiperWrapper =
+  reasonSwiperContainer.querySelector(".swiper-wrapper");
+
+function initReasonSwiper() {
+  const isEnableSwiper = window.innerWidth >= 768;
+
+  reasonSwiperContainer.classList.toggle("swiper", isEnableSwiper);
+  reasonSwiperWrapper.classList.toggle("overflow-x-auto", !isEnableSwiper);
+  if (isEnableSwiper) {
+    reasonSwiper = new Swiper(".reason-swiper", {
+      loop: true,
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+      },
       slidesPerView: 4,
-    },
-  },
-  spaceBetween: 28,
-});
+      breakpoints: {
+        0: {
+          enabled: false,
+          spaceBetween: 0,
+        },
+        768: {
+          slidesPerView: 2,
+          enabled: true,
+          spaceBetween: 25,
+        },
+        992: {
+          slidesPerView: 3,
+          enabled: true,
+          spaceBetween: 25,
+        },
+        1200: {
+          slidesPerView: 4,
+          enabled: true,
+          spaceBetween: 25,
+        },
+      },
+      spaceBetween: 28,
+    });
+  } else if (reasonSwiper) {
+    reasonSwiper.destroy(true, true);
+    reasonSwiper = null;
+  }
+}
+
+initReasonSwiper();
+window.addEventListener("resize", initReasonSwiper);
 
 new Swiper(".partner-swiper", {
   pagination: {
@@ -75,31 +99,6 @@ new Swiper(".partner-swiper", {
   },
   spaceBetween: 25,
 });
-
-// training nav tab
-const navWrapper = document.querySelector(".nav-wrapper");
-const leftArrow = document.querySelector(".training-scroll-btn.start-0");
-const rightArrow = document.querySelector(".training-scroll-btn.end-0");
-
-function scrollNav(direction) {
-  navWrapper.scrollBy({ left: direction * 100, behavior: "smooth" });
-}
-function updateArrows() {
-  leftArrow.style.display = navWrapper.scrollLeft > 0 ? "block" : "none";
-  rightArrow.style.display =
-    navWrapper.scrollLeft < navWrapper.scrollWidth - navWrapper.clientWidth
-      ? "block"
-      : "none";
-}
-updateArrows();
-leftArrow.addEventListener("click", () => {
-  scrollNav(-1);
-});
-rightArrow.addEventListener("click", () => {
-  scrollNav(1);
-});
-navWrapper.addEventListener("scroll", updateArrows);
-window.addEventListener("resize", updateArrows);
 
 // reason video
 const reasonVideo = document.getElementById("reason-video");

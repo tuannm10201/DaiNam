@@ -24,9 +24,12 @@
   --bs-gutter-x: 3.3rem;
 }
 .new-event-item {
-  min-width: 350px;
+  min-width: 330px;
   width: calc(33.33vw - 1rem);
   max-width: 450px;
+}
+.event-item-img {
+  padding-left: 0;
 }
 @media (max-width: 1199.98px) {
   .new-event-sm:first-child {
@@ -35,5 +38,17 @@
   }
   .new-event-sm:last-child {
     border-bottom: 1px solid rgba(218, 220, 224, 0.85);
+  }
+}
+
+@media (max-width: 767.98px) {
+  .new-event-sm * {
+    font-size: 14px;
+  }
+  .new-event-item * {
+    font-size: 16px;
+  }
+  .event-item-img {
+    padding-left: 0.75rem;
   }
 }

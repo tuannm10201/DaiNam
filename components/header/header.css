@@ -208,13 +208,14 @@
 .navbar-toggler {
   width: 43px;
 }
-.navbar-toggler::before {
-  content: "☰";
+.navbar-toggler[aria-expanded="true"] .open-menu,
+.navbar-toggler[aria-expanded="false"] .close-menu {
+  display: none;
 }
-.navbar-toggler[aria-expanded="true"]::before {
-  content: "✕";
-  font-size: calc(1.2rem + 0.9vw) !important;
+.navbar-toggler[aria-expanded="true"] .close-menu {
+  display: block !important;
 }
+
 .top-right-nav .nav-item {
   white-space: nowrap;
 }
@@ -304,7 +305,7 @@
     padding-bottom: 0.85rem;
   }
   #bottom-nav.show {
-    height: calc(100vh - 90px);
+    height: calc(100vh - 72px);
     overflow: hidden auto;
     scrollbar-width: none;
   }

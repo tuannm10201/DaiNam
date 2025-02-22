@@ -64,7 +64,7 @@
   .container-sm,
   .container-xl,
   .container-xxl {
-    max-width: 1450px;
+    max-width: 1470px;
   }
 }
 h2 {
@@ -137,9 +137,23 @@ a {
 .fs-3-5 {
   font-size: calc(1.31rem + 0.35vw);
 }
-
+@media (min-width: 1200px) {
+  .fs-4-5 {
+    font-size: 1.375rem;
+  }
+}
 .fw-extra {
   font-weight: 800;
+}
+
+.lh-29 {
+  line-height: 1.8125rem;
+}
+.lh-36 {
+  line-height: 2.25rem;
+}
+.lh-24 {
+  line-height: 1.5rem;
 }
 
 .bg-icon {
@@ -196,7 +210,7 @@ form input::placeholder {
 }
 form input:not(.is-invalid),
 form .form-select {
-  border: 2px solid rgba(116, 117, 122, 1) !important;
+  border: 2px solid rgba(116, 117, 122, 1);
 }
 form .dropdown-toggle {
   overflow: hidden;

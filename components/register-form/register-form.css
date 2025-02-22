@@ -19,6 +19,27 @@
   margin: 1.2rem 0 1.2rem;
   padding: 0.65rem 0;
 }
+@media (max-width: 991.98px) {
+  .register-form form {
+    border: none !important;
+    padding: 1rem 1rem;
+  }
+  .register-form input,
+  .register-form .form-select {
+    border: 1px solid rgba(116, 117, 122, 1) !important;
+  }
+  .admission-submit-btn {
+    margin-bottom: 0.6rem;
+  }
+  .register-form input,
+  .register-form .form-select {
+    padding-left: 0.6rem !important;
+    padding-right: 0.6rem !important;
+  }
+  .admission-submit-btn {
+    font-size: 20px !important;
+  }
+}
 @media (min-width: 992px) {
   .register-form input,
   .register-form .form-select {
@@ -54,10 +75,14 @@
 }
 .admissions-student-sm {
   object-fit: contain;
+  height: auto;
+  min-height: auto;
+  right: -12px;
 }
 .register-form .speech-bubble {
   width: 300px;
   max-height: fit-content;
+  bottom: -10vw;
 }
 .register-form .speech-bubble.position-absolute {
   top: 8rem;
@@ -81,6 +106,13 @@
 @media (max-width: 991.98px) {
   .form-label {
     font-size: 0.875rem;
+  }
+  .register-form .speech-bubble::after {
+    right: 5.5rem;
+  }
+  .register-form-desc {
+    font-size: 1rem;
+    margin-bottom: -1rem;
   }
 }
 @media (max-width: 1199.98px) {

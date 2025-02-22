@@ -20,16 +20,17 @@
       <!-- Banner Slide -->
       <div class="swiper overflow-hidden banner-swiper">
         <div class="swiper-wrapper">
-          <div class="swiper-slide">
-            <img src="assets/img/hero-banner-1.png" />
+          <div class="swiper-slide zoom-105">
+            <img src="assets/img/hero-banner-1.png" class="d-none d-xl-block" />
+            <img src="assets/img/herobanner-sm.png" alt="" class="d-xl-none" />
           </div>
-          <div class="swiper-slide">
+          <div class="swiper-slide zoom-105">
             <img src="assets/img/slide-1.png" />
           </div>
-          <div class="swiper-slide">
+          <div class="swiper-slide zoom-105">
             <img src="assets/img/slide-2.png" />
           </div>
-          <div class="swiper-slide">
+          <div class="swiper-slide zoom-105">
             <img src="assets/img/slide-3.png" />
           </div>
         </div>
@@ -38,11 +39,11 @@
       </div>
 
       <!-- Khoa - Viện - Trung tâm -->
-      <section class="specialization py-5 position-relative">
+      <section class="specialization pt-5 position-relative">
         <div class="container">
           <div class="row">
-            <div class="col-xl-4 col-12 pb-xl-0">
-              <div class="specialization-border pb-4">
+            <div class="specialization-content-left col-12 pb-xl-0">
+              <div class="pb-4">
                 <h2 class="fw-extra">
                   <span class="color-secondary"> 36 </span>
                   <span class="color-primary"> Khoa - Viện - Trung tâm </span>
@@ -51,7 +52,7 @@
                   <span class="color-secondary"> 50 </span>
                   <span class="color-primary"> Chương trình đào tạo </span>
                 </h2>
-                <div class="color-primary mb-4 mt-3 fs-5-5">
+                <div class="color-primary my-4 fs-5-5 lh-29">
                   Trường đại học Đại Nam hiện có 36 ngành đạo tạo với nhiều
                   ngành nghề HOT đang được xã hội quan tâm nhất.
                 </div>
@@ -69,9 +70,9 @@
                 </a>
               </div>
             </div>
-            <div class="col-xl-8 col-12">
+            <div class="specialization-content-right col-12">
               <div class="row mt-2">
-                <div class="col-xl-4 col-lg-6 col-12">
+                <div class="col-xl-4 col-lg-6 col-12 specialization-group">
                   <div class="py-xl-0 py-2 specialization-border">
                     <h4 class="fw-extra d-none d-lg-block">Sức khỏe</h4>
                     <h4
@@ -104,7 +105,7 @@
                   </div>
                 </div>
 
-                <div class="col-xl-4 col-lg-6 col-12">
+                <div class="col-xl-4 col-lg-6 col-12 specialization-group">
                   <div class="py-xl-0 py-2 specialization-border">
                     <h4 class="fw-extra d-none d-lg-block">Khoa học cơ bản</h4>
                     <h4
@@ -135,7 +136,7 @@
                 </div>
 
                 <!-- Viện - Trung tâm -->
-                <div class="col-xl-4 col-lg-6 col-12">
+                <div class="col-xl-4 col-lg-6 col-12 specialization-group">
                   <div class="py-xl-0 py-2 specialization-border">
                     <h4 class="fw-extra d-none d-lg-block">Viện - Trung tâm</h4>
                     <h4
@@ -172,7 +173,7 @@
               </div>
               <!-- specialization row 2 -->
               <div class="row mt-2">
-                <div class="col-xl-4 col-lg-6 col-12">
+                <div class="col-xl-4 col-lg-6 col-12 specialization-group">
                   <div class="py-xl-0 py-2 specialization-border">
                     <h4 class="fw-extra d-none d-lg-block">
                       Kỹ thuật - Công nghệ
@@ -224,7 +225,7 @@
                   </div>
                 </div>
 
-                <div class="col-xl-4 col-lg-6 col-12">
+                <div class="col-xl-4 col-lg-6 col-12 specialization-group">
                   <div class="py-xl-0 py-2 specialization-border">
                     <h4 class="fw-extra d-none d-lg-block">
                       Kinh doanh - Kinh tế
@@ -275,8 +276,8 @@
                     </ul>
                   </div>
                 </div>
-                <div class="col-xl-4 col-lg-6 col-12">
-                  <div class="py-xl-0 py-2">
+                <div class="col-xl-4 col-lg-6 col-12 specialization-group">
+                  <div class="py-xl-0 py-2 specialization-border">
                     <h4 class="fw-extra d-none d-lg-block">
                       Khoa học xã hội và nhân văn
                     </h4>
@@ -353,11 +354,6 @@
           <h2 class="fw-extra">Chương trình đào tạo</h2>
 
           <div class="position-relative mt-3">
-            <button
-              class="start-0 training-scroll-btn h-75 rounded-circle z-3 position-absolute border-0"
-            >
-              &#9665;
-            </button>
             <div class="nav-wrapper overflow-x-auto text-nowrap">
               <nav class="nav nav-tabs training-nav flex-nowrap" role="tablist">
                 <div
@@ -368,7 +364,7 @@
                   aria-controls="nav-dai-hoc"
                   aria-selected="true"
                   id="nav-dai-hoc-tab"
-                  class="nav-link fw-medium fs-5 active"
+                  class="nav-link fw-medium fs-4-5 active"
                 >
                   Đào tạo Đại học
                 </div>
@@ -380,7 +376,7 @@
                   role="tab"
                   aria-controls="nav-thac-si"
                   aria-selected="false"
-                  class="nav-link fw-medium fs-5"
+                  class="nav-link fw-medium fs-4-5"
                 >
                   Đào tạo Thạc sĩ
                 </div>
@@ -392,7 +388,7 @@
                   role="tab"
                   aria-controls="nav-tien-si"
                   aria-selected="false"
-                  class="nav-link fw-medium fs-5"
+                  class="nav-link fw-medium fs-4-5"
                 >
                   Đào tạo Tiến sĩ
                 </div>
@@ -404,7 +400,7 @@
                   role="tab"
                   aria-controls="nav-lk-quoc-te"
                   aria-selected="false"
-                  class="nav-link fw-medium fs-5"
+                  class="nav-link fw-medium fs-4-5"
                 >
                   Đào tạo Liên kết quốc tế
                 </div>
@@ -416,7 +412,7 @@
                   role="tab"
                   aria-controls="nav-tu-xa"
                   aria-selected="false"
-                  class="nav-link fw-medium fs-5"
+                  class="nav-link fw-medium fs-4-5"
                 >
                   Đào tạo từ xa
                 </div>
@@ -428,17 +424,12 @@
                   role="tab"
                   aria-controls="nav-lien-thong"
                   aria-selected="false"
-                  class="nav-link fw-medium fs-5"
+                  class="nav-link fw-medium fs-4-5"
                 >
                   Đào tạo Liên thông
                 </div>
               </nav>
             </div>
-            <button
-              class="end-0 training-scroll-btn h-75 rounded-circle z-3 position-absolute border-0"
-            >
-              &#9655;
-            </button>
           </div>
 
           <div class="tab-content mt-4">
@@ -457,19 +448,21 @@
                   />
                 </div>
                 <div class="col-lg-7 col-12 ps-lg-3 mt-lg-0 mt-2">
-                  <div class="fs-3 mt-lg-0 mt-2 fw-extra">Đào tạo Đại học</div>
-                  <div class="fs-5-5 mt-2 mb-3 training-content">
-                    Tuyển sinh 36 ngành đào tạo thuộc 04 khối ngành bao gồm: Sức
-                    khoẻ, Kỹ thuật - Công nghệ, Kinh tế - Kinh doanh và Khoa học
-                    Xã hội & Nhân văn. Trong đó có nhiều ngành học HOT như Y
-                    khoa, Dược học, Công nghệ thông tin, Công nghệ bán dẫn, Công
-                    nghệ kỹ thuật ô tô, Quản trị kinh doanh, Marketing,
-                    Logistics & Quản lý chuỗi cung ứng, Thương mại điện tử,
-                    Thiết kế đồ hoạ, Truyền thông đa phương tiện, Ngôn ngữ Hàn
-                    Quốc, Ngôn ngữ Trung Quốc,...
+                  <div class="traininig-hover">
+                    <div class="fs-3 mt-2 fw-extra">Đào tạo Đại học</div>
+                    <div class="fs-5-5 mt-2 mb-3 training-content">
+                      Tuyển sinh 36 ngành đào tạo thuộc 04 khối ngành bao gồm:
+                      Sức khoẻ, Kỹ thuật - Công nghệ, Kinh tế - Kinh doanh và
+                      Khoa học Xã hội & Nhân văn. Trong đó có nhiều ngành học
+                      HOT như Y khoa, Dược học, Công nghệ thông tin, Công nghệ
+                      bán dẫn, Công nghệ kỹ thuật ô tô, Quản trị kinh doanh,
+                      Marketing, Logistics & Quản lý chuỗi cung ứng, Thương mại
+                      điện tử, Thiết kế đồ hoạ, Truyền thông đa phương tiện,
+                      Ngôn ngữ Hàn Quốc, Ngôn ngữ Trung Quốc,...
+                    </div>
                   </div>
-                  <a class="pt-2 d-flex gap-2 fs-5 fw-extra hover-ff77" href="">
-                    Tìm hiểu chương trình Đại học
+                  <a class="pt-4 d-flex gap-2 fs-5 fw-extra hover-ff77" href="">
+                    Tìm hiểu chương trình Đào tạo Đại học
                     <img src="assets/icon/see-all-plus.svg" />
                   </a>
                 </div>
@@ -490,18 +483,20 @@
                   />
                 </div>
                 <div class="col-lg-7 col-12 ps-lg-3 mt-lg-0 mt-2">
-                  <div class="fs-3 mt-lg-0 mt-2 fw-extra">Đào tạo Tiến sĩ</div>
-                  <div class="fs-5-5 mt-2 mb-3 training-content">
-                    Tuyển sinh 36 ngành đào tạo thuộc 04 khối ngành bao gồm: Sức
-                    khoẻ, Kỹ thuật - Công nghệ, Kinh tế - Kinh doanh và Khoa học
-                    Xã hội & Nhân văn. Trong đó có nhiều ngành học HOT như Y
-                    khoa, Dược học, Công nghệ thông tin, Công nghệ bán dẫn, Công
-                    nghệ kỹ thuật ô tô, Quản trị kinh doanh, Marketing,
-                    Logistics & Quản lý chuỗi cung ứng, Thương mại điện tử,
-                    Thiết kế đồ hoạ, Truyền thông đa phương tiện, Ngôn ngữ Hàn
-                    Quốc, Ngôn ngữ Trung Quốc,...
+                  <div class="traininig-hover">
+                    <div class="fs-3 mt-2 fw-extra">Đào tạo Tiến sĩ</div>
+                    <div class="fs-5-5 mt-2 mb-3 training-content">
+                      Tuyển sinh 36 ngành đào tạo thuộc 04 khối ngành bao gồm:
+                      Sức khoẻ, Kỹ thuật - Công nghệ, Kinh tế - Kinh doanh và
+                      Khoa học Xã hội & Nhân văn. Trong đó có nhiều ngành học
+                      HOT như Y khoa, Dược học, Công nghệ thông tin, Công nghệ
+                      bán dẫn, Công nghệ kỹ thuật ô tô, Quản trị kinh doanh,
+                      Marketing, Logistics & Quản lý chuỗi cung ứng, Thương mại
+                      điện tử, Thiết kế đồ hoạ, Truyền thông đa phương tiện,
+                      Ngôn ngữ Hàn Quốc, Ngôn ngữ Trung Quốc,...
+                    </div>
                   </div>
-                  <a class="pt-2 d-flex gap-2 fs-5 fw-extra hover-ff77" href="">
+                  <a class="pt-4 d-flex gap-2 fs-5 fw-extra hover-ff77" href="">
                     Tìm hiểu chương trình Đào tạo thạc sĩ
                     <img src="assets/icon/see-all-plus.svg" />
                   </a>
@@ -526,7 +521,9 @@
               <h2 class="color-primary fw-extra d-xl-block d-none mb-4">
                 Vì sao lựa chọn Đại học Đại Nam
               </h2>
-              <div class="my-3 color-primary fw-medium fs-5-5 reason-content">
+              <div
+                class="my-2 my-xl-4 color-primary fw-medium fs-5-5 reason-content"
+              >
                 Đại học Đại Nam là ngôi trường tiêu biểu trong mô hình đại học
                 ứng dụng, lấy khởi nghiệp và đổi mới sáng tạo làm định hướng
                 phát triển cốt lõi. Với đa dạng ngành nghề và lĩnh vực đào tạo,
@@ -543,15 +540,15 @@
                 Vì sao lựa chọn Đại học Đại Nam
               </h2>
               <div
-                class="position-relative reason-video-container w-100 mb-3 mb-xl-0 rounded-12 overflow-hidden"
+                class="position-relative reason-video-container w-100 mt-3 rounded-12 overflow-hidden"
               >
                 <video
                   width="100%"
                   height="100%"
-                  poster="assets/img/content-2.png"
+                  poster="assets/img/video-poster.png"
                   src=""
                   id="reason-video"
-                  class="object-fit-cover"
+                  class="object-fit-cover rounded-12"
                 ></video>
                 <button
                   id="reason-play-button"
@@ -564,30 +561,30 @@
           </div>
 
           <!-- Reason Slide  -->
-          <div class="swiper mt-4 reason-swiper">
+          <div class="swiper reason-swiper">
             <div class="swiper-wrapper">
               <div class="swiper-slide">
-                <img src="assets/img/event-1.png" width="100%" />
+                <img src="assets/img/img-reason-1.png" width="100%" />
                 <div class="fw-semibold color-primary fs-5-5 mt-3">
                   Cơ sở vật chất khang trang, hiện đại, tiện ích trong quần thể
                   10ha.
                 </div>
               </div>
               <div class="swiper-slide">
-                <img src="assets/img/event-4.png" width="100%" />
+                <img src="assets/img/img-reason-2.png" width="100%" />
                 <div class="fw-semibold color-primary fs-5-5 mt-3">
                   Đội ngũ cán bộ, giảng viên giỏi, chuyên nghiệp và tận tâm với
                   sinh viên.
                 </div>
               </div>
               <div class="swiper-slide">
-                <img src="assets/img/event-1.png" width="100%" />
+                <img src="assets/img/img-reason-3.png" width="100%" />
                 <div class="fw-semibold color-primary fs-5-5 mt-3">
                   Chương trình đào tạo gắn với nhu cầu doanh nghiệp.
                 </div>
               </div>
               <div class="swiper-slide">
-                <img src="assets/img/event-1.png" width="100%" />
+                <img src="assets/img/img-reason-4.png" width="100%" />
                 <div class="fw-semibold color-primary fs-5-5 mt-3">
                   Sinh viên được trang bị tiếng Anh và kỹ năng mềm.
                 </div>
@@ -625,7 +622,7 @@
       </section>
 
       <!-- Đại học Đại Nam qua những con số -->
-      <section class="numbers py-5 position-relative bg-blue">
+      <section class="numbers pt-5 pb-xl-5 pb-4 position-relative bg-blue">
         <div class="container">
           <h2 class="fw-extra text-white fw-extra mb-4 mb-lg-5">
             Đại học Đại Nam qua những con số
@@ -713,7 +710,7 @@
       </section>
 
       <!-- Các đối tác chiến lược -->
-      <section class="partner pt-5 pb-4">
+      <section class="partner py-4 pt-xl-5 mt-2">
         <div class="container">
           <h2 class="fw-extra mb-4">Các đối tác chiến lược</h2>
           <div class="fw-medium fs-5-5">
