@@ -24,13 +24,8 @@ const submitBtn = document.querySelector(".lookup-btn");
 const submitBtnDefaultHtml = submitBtn.innerHTML;
 
 idInput.addEventListener("input", function () {
-  clearIcon.style.display = this.value ? "block" : "none";
   this.value = this.value.replace(/\D/g, "");
-  if (this.value) {
-    submitBtn.removeAttribute("disabled");
-  } else {
-    submitBtn.setAttribute("disabled", "");
-  }
+  clearIcon.style.display = this.value ? "block" : "none";
 });
 
 clearIcon.addEventListener("click", function () {
@@ -99,7 +94,6 @@ function loading() {
     }
   );
 
-  submitBtn.disabled = true;
   customDropdown.disabled = true;
   idInput.disabled = true;
   submitBtn.innerHTML = `
@@ -109,7 +103,6 @@ function loading() {
 }
 
 function fillContent() {
-  submitBtn.disabled = false;
   customDropdown.disabled = false;
   idInput.disabled = false;
   submitBtn.innerHTML = submitBtnDefaultHtml;

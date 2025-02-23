@@ -114,7 +114,6 @@
                 <button
                   class="btn btn-lg lookup-btn mt-auto d-flex align-items-center justify-content-center gap-2 w-100"
                   type="submit"
-                  disabled
                 >
                   <img
                     src="assets/icon/lookup-icon.svg"
@@ -154,10 +153,10 @@
             </h4>
             <div class="px-4 py-2">
               <table class="table table-bordered table-candidate-info">
-                <colgroup>
+                <!-- <colgroup>
                   <col style="width: 25%" />
                   <col style="width: 75%" />
-                </colgroup>
+                </colgroup> -->
                 <tbody>
                   <tr class="border-top-0">
                     <td>Hệ đào tạo</td>
@@ -200,7 +199,9 @@
               Kết quả tuyển sinh
             </h4>
             <div class="px-4 pb-2">
-              <table class="table table-bordered table-admission-result">
+              <table
+                class="table table-bordered table-admission-result d-xl-table d-none"
+              >
                 <colgroup>
                   <col style="width: 25%" />
                   <col style="width: 25%" />
@@ -227,6 +228,29 @@
                   </tr>
                 </tbody>
               </table>
+
+              <ul class="fw-bolder color-primary d-xl-none">
+                <li class="py-2 border-bottom">
+                  <div class="opacity-50 result-title">Ngành</div>
+                  <div class="nganh">-</div>
+                </li>
+                <li class="py-2 border-bottom">
+                  <div class="opacity-50 result-title">Phương thức</div>
+                  <div class="phuong-thuc">-</div>
+                </li>
+                <li class="py-2 border-bottom">
+                  <div class="opacity-50 result-title">Tổ hợp</div>
+                  <div class="to-hop">-</div>
+                </li>
+                <li class="py-2 border-bottom">
+                  <div class="opacity-50 result-title">Tổng điểm</div>
+                  <div class="tong-diem">-</div>
+                </li>
+                <li class="py-2">
+                  <div class="opacity-50 result-title">Kết quả</div>
+                  <div class="ket-qua">-</div>
+                </li>
+              </ul>
             </div>
           </div>
 
@@ -239,10 +263,10 @@
             </h4>
             <div class="px-4 pb-2">
               <table class="table table-bordered table-file">
-                <colgroup>
+                <!-- <colgroup>
                   <col style="width: 50%" />
                   <col style="width: 50%" />
-                </colgroup>
+                </colgroup> -->
                 <thead>
                   <tr class="border-top-0">
                     <th>Loại giấy tờ</th>

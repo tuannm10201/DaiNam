@@ -28,18 +28,17 @@
   object-fit: cover;
   min-height: 500px;
 }
-/* .lookup-container {
-  min-height: 500px;
-  height: 65vh;
-} */
 .lookup-btn {
   background-color: rgba(246, 102, 0, 1);
   color: white;
   height: 50px;
 }
-.lookup-btn:hover,
 .lookup-btn:disabled {
   background-color: rgba(246, 102, 0, 1);
+  color: white;
+}
+.lookup-btn:hover {
+  background-color: var(--red-color);
   color: white;
 }
 .contact {
@@ -47,6 +46,9 @@
 }
 .lookup-input {
   border: 2px solid rgba(116, 117, 122, 1);
+  padding-right: 2.5rem !important;
+  position: relative;
+  z-index: 1;
 }
 .lookup-input:focus {
   box-shadow: none;
@@ -58,6 +60,7 @@
   cursor: pointer;
   color: gray;
   display: none;
+  z-index: 1;
 }
 input.lookup-input {
   padding-right: 35px;
@@ -73,7 +76,7 @@ th {
   border-right: none;
 }
 td {
-  font-weight: 600;
+  font-weight: 500;
 }
 tr:last-child {
   border-bottom: none;
@@ -83,20 +86,28 @@ th {
 }
 .guide-link {
   color: rgba(0, 18, 83, 1);
-  font-weight: 600;
-}
-a.guide-link {
-  text-decoration: none;
 }
 .guide-list {
   list-style-image: url("/assets/icon/guide-list-style.svg");
+  font-size: 14px;
+}
+.guide-list li:hover {
+  font-weight: 700;
+  color: var(--secondary-color);
 }
 
 .dropdown-toggle::after {
   display: none;
 }
+.dropdown-item {
+  white-space: normal;
+}
 .dropdown-item:hover,
 .dropdown-item[selected] {
   color: var(--secondary-color);
   cursor: pointer;
+}
+
+.result-title {
+  font-size: 15px;
 }
