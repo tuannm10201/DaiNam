@@ -131,6 +131,9 @@ a {
 .fs-5-5 {
   font-size: 1.125rem;
 }
+.fs-4-75 {
+  font-size: 1.375rem;
+}
 .fs-4-5 {
   font-size: calc(1.24rem + 0.15vw);
 }
@@ -305,5 +308,10 @@ form .invalid-feedback {
 @media (min-width: 992px) {
   .custom-margin-lg {
     margin-top: 210px;
+  }
+
+  .py-6 {
+    padding-top: 6rem !important;
+    padding-bottom: 6rem !important;
   }
 }
