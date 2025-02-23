@@ -86,7 +86,7 @@
   display: flex;
   justify-content: space-between;
   align-items: start;
-  padding: 1.5rem 1rem;
+  padding: 1.5rem 2rem;
   cursor: pointer;
 }
 .trainings-item-title,
@@ -104,7 +104,7 @@
 }
 @media (min-width: 992px) {
   .trainings-item {
-    padding-bottom: 4.5rem;
+    padding-bottom: 4rem;
   }
   .trainings-item:nth-child(2) {
     border-left: 1px solid rgba(27, 77, 161, 0.85);
