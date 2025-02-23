@@ -1,6 +1,17 @@
 /* khoa banner */
 .khoa-title {
-  font-size: calc(1.5rem + 1.2vw);
+  font-size: calc(2.175rem + 1vw);
+  margin-top: 0.4rem;
+}
+@media (min-width: 1200px) {
+  .khoa-title {
+    font-size: 3.375rem;
+  }
+}
+@media (max-width: 991.98px) {
+  .khoa-title {
+    font-size: 1.625rem;
+  }
 }
 .khoa-banner-img {
   max-height: 570px;
@@ -14,6 +25,9 @@
 }
 .quote-bg-icon {
   right: 12%;
+}
+.quote-content {
+  max-width: 860px;
 }
 
 /* numbers */
@@ -29,6 +43,7 @@
 }
 .number-item-title {
   font-size: calc(3rem + 1.25vw);
+  letter-spacing: -4px;
 }
 @media (max-width: 991.98px) {
   .number-item:not(:first-child) > * {

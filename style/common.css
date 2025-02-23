@@ -311,7 +311,7 @@ form .invalid-feedback {
   }
 
   .py-6 {
-    padding-top: 6rem !important;
-    padding-bottom: 6rem !important;
+    padding-top: 4rem !important;
+    padding-bottom: 4rem !important;
   }
 }
