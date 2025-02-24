@@ -28,8 +28,22 @@
   width: calc(33.33vw - 1rem);
   max-width: 450px;
 }
+.event-item-img img {
+  height: 123px;
+  object-fit: cover;
+}
 .event-item-img {
   padding-left: 0;
+}
+.new-event-img-main {
+  object-fit: cover;
+  aspect-ratio: 1.69;
+}
+.new-event-img-bot {
+  aspect-ratio: 1;
+}
+.new-event-bot {
+  gap: 30px;
 }
 @media (max-width: 1199.98px) {
   .new-event-sm:first-child {
@@ -50,5 +64,11 @@
   }
   .event-item-img {
     padding-left: 0.75rem;
+  }
+  .event-item-img img {
+    height: 72px;
+  }
+  .new-event-bot {
+    gap: 22px;
   }
 }

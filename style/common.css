@@ -141,6 +141,9 @@ a {
 .fw-extra {
   font-weight: 700;
 }
+.fw-600 {
+  font-weight: 600;
+}
 .fw-semibold {
   font-weight: 500 !important;
 }
@@ -275,7 +278,7 @@ form .invalid-feedback {
   .breadcrumb-link {
     font-size: 13px !important;
   }
- 
+
   .breadcrumb-unlink {
     font-size: 13px !important;
   }

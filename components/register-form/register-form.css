@@ -13,10 +13,13 @@
   height: 2.8125rem;
   font-size: 1rem;
 }
+.register-form .form-select {
+  background-position-x: calc(100% - 20px), calc(100% - 12px);
+}
 .admission-submit-btn {
   background-color: var(--secondary-color);
   border-radius: 9px;
-  margin: 1.2rem 0 1.2rem;
+  margin: 1rem 0 1.2rem;
   padding: 0.65rem 0;
 }
 @media (max-width: 991.98px) {
@@ -47,7 +50,7 @@
     height: 3.5rem;
   }
   .admission-submit-btn {
-    margin: 2rem 0 1.5rem;
+    margin: 1.3rem 0 1.5rem;
     padding: 0.875rem 0;
   }
   .register-form form {
@@ -83,6 +86,7 @@
   width: 300px;
   max-height: fit-content;
   bottom: -10vw;
+  font-size: 22px;
 }
 .register-form .speech-bubble.position-absolute {
   top: 8rem;
@@ -102,6 +106,9 @@
 .register-form .speech-bubble.position-absolute::after {
   border-left: 1rem solid transparent;
   border-right: 1rem solid transparent;
+}
+.register-form-desc {
+  max-width: 745px;
 }
 @media (max-width: 991.98px) {
   .form-label {

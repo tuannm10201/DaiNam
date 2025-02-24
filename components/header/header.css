@@ -146,13 +146,16 @@
   .bot-nav-link {
     padding: 1.25rem 0 !important;
   }
+  .search-container {
+    width: 518px;
+  }
 }
 .search-container {
   display: flex;
   align-items: center;
   border-right: var(--header-border);
   border-left: var(--header-border);
-  height: 65px;
+  height: 70px;
 }
 #clear-search {
   border-left: var(--header-border);
