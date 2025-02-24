@@ -18,8 +18,11 @@
 .top-input {
   min-height: 500px;
 }
-.title {
+.lookup-title {
   font-size: 3.5rem;
+}
+.lookup-title-sm {
+  font-size: 2.15rem;
 }
 .lookup-bg {
   position: absolute;
@@ -83,6 +86,7 @@ tr:last-child {
 }
 th {
   opacity: 0.5;
+  white-space: nowrap;
 }
 .guide-link {
   color: rgba(0, 18, 83, 1);
@@ -96,18 +100,27 @@ th {
   color: var(--secondary-color);
 }
 
-.dropdown-toggle::after {
+.lookup-container .dropdown-toggle::after {
   display: none;
 }
-.dropdown-item {
+.lookup-container .dropdown-item {
   white-space: normal;
 }
-.dropdown-item:hover,
-.dropdown-item[selected] {
+.lookup-container .dropdown-item:hover,
+.lookup-container .dropdown-item[selected] {
   color: var(--secondary-color);
   cursor: pointer;
 }
 
 .result-title {
   font-size: 15px;
+}
+@media (max-width: 1199.98px) {
+  .info h4 {
+    font-size: 17px;
+  }
+  .table-file th:last-child,
+  .table-file td:last-child {
+    text-align: right;
+  }
 }
