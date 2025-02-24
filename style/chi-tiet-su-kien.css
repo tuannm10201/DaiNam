@@ -1,0 +1,43 @@
+@media (max-width: 991.98px) {
+    .title-event {
+        font-size: 24px !important;
+        line-height: 36px !important;
+    }
+
+    .title-location {
+        font-size: 14px;
+    }
+
+    .detail-location {
+        font-size: 14px;
+        font-weight: 700;
+    }
+
+    .border-left-custom {
+        border-left: 3px solid #F66600;
+        padding-left: 0.75rem;
+    }
+
+    .share-social {
+        flex-flow: wrap !important;
+        justify-content: flex-start !important;
+        font-size: 12px !important;
+    }
+
+    .hidding-stack {
+        display: none !important;
+    }
+
+    .border-sm-none {
+        border: none !important;
+    }
+
+    .detail-content {
+        font-size: 16px !important;
+        line-height: 27.2px !important;
+    }
+}
+
+.title-location .detail-location {
+    font-size: 18px;
+}
