@@ -49,13 +49,6 @@
   font-style: normal;
 }
 
-@font-face {
-  font-family: "Manrope";
-  src: url("../assets/font/Manrope-ExtraBold.ttf") format("truetype");
-  font-weight: 800;
-  font-style: normal;
-}
-
 /* bootstrap override */
 @media (min-width: 1400px) {
   .container,
@@ -146,7 +139,7 @@ a {
   }
 }
 .fw-extra {
-  font-weight: 800;
+  font-weight: 700;
 }
 
 .lh-29 {
@@ -220,7 +213,7 @@ form .dropdown-toggle {
   text-overflow: ellipsis;
   padding-right: 1.5rem !important;
   text-align: start;
-  font-weight: 800;
+  font-weight: 700;
 }
 form .dropdown-toggle::after {
   display: none;
@@ -243,7 +236,7 @@ form .dropdown-item[selected] {
   cursor: pointer;
 }
 form .dropdown-item[selected] > * {
-  font-weight: 800 !important;
+  font-weight: 700 !important;
 }
 form .invalid-feedback {
   color: rgba(255, 0, 0, 1);
