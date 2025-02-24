@@ -74,31 +74,68 @@ function initReasonSwiper() {
 initReasonSwiper();
 window.addEventListener("resize", initReasonSwiper);
 
-new Swiper(".partner-swiper", {
-  pagination: {
-    el: ".swiper-pagination",
-    clickable: true,
-  },
-  slidesPerView: 4,
-  breakpoints: {
-    320: {
-      slidesPerView: 1,
+const swiperWrapper = document.querySelector(".partner-swiper .swiper-wrapper");
+const partnerImgLayout1 = swiperWrapper.innerHTML;
+let partnerImgLayout2 = "";
+let partnerSwiper;
+
+function createGroupedSlides() {
+  const originalSlides = Array.from(swiperWrapper.children).map(
+    (slide) => slide.querySelector("img").src
+  );
+  let groupedHTML = "";
+
+  for (let i = 0; i < originalSlides.length; i += 4) {
+    groupedHTML += `<div class="swiper-slide">`;
+    for (let j = i; j < i + 4 && j < originalSlides.length; j++) {
+      groupedHTML += `<img src="${originalSlides[j]}" />`;
+    }
+    groupedHTML += `</div>`;
+  }
+
+  return groupedHTML;
+}
+
+function updatePartnerSwiperStructure() {
+  if (window.innerWidth < 992) {
+    if (partnerImgLayout2 === "") {
+      partnerImgLayout2 = createGroupedSlides();
+    }
+    if (swiperWrapper.innerHTML !== partnerImgLayout2) {
+      swiperWrapper.innerHTML = partnerImgLayout2;
+      initSwiper();
+    }
+  } else if (swiperWrapper.innerHTML !== partnerImgLayout1) {
+    swiperWrapper.innerHTML = partnerImgLayout1;
+    initSwiper();
+  }
+  if (!partnerSwiper) initSwiper();
+}
+
+function initSwiper() {
+  if (partnerSwiper) {
+    partnerSwiper.destroy(true, true);
+  }
+  partnerSwiper = new Swiper(".partner-swiper", {
+    pagination: {
+      el: ".swiper-pagination",
+      clickable: true,
     },
-    576: {
-      slidesPerView: 2,
+    slidesPerView: 1,
+    breakpoints: {
+      992: {
+        slidesPerView: 4,
+      },
+      1200: {
+        slidesPerView: 5,
+      },
     },
-    768: {
-      slidesPerView: 3,
-    },
-    992: {
-      slidesPerView: 4,
-    },
-    1200: {
-      slidesPerView: 5,
-    },
-  },
-  spaceBetween: 25,
-});
+    spaceBetween: 25,
+  });
+}
+
+updatePartnerSwiperStructure();
+window.addEventListener("resize", updatePartnerSwiperStructure);
 
 // reason video
 const reasonVideo = document.getElementById("reason-video");

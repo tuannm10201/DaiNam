@@ -310,7 +310,25 @@
 .partner-swiper {
   height: 13rem;
 }
+@media (min-width: 992px) {
+  .partner-swiper img {
+    width: 100%;
+  }
+}
 @media (max-width: 991.98px) {
+  .partner-swiper .swiper-slide {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, auto);
+    place-items: center;
+    height: 186px;
+  }
+  .partner-swiper .swiper-slide img {
+    height: 93px;
+  }
+  .partner-swiper .swiper-pagination {
+    bottom: -1rem;
+  }
   .partner-swiper .swiper-pagination-bullet {
     width: 0.625rem;
     height: 0.625rem;
