@@ -13,6 +13,177 @@
     font-size: 1.625rem;
   }
 }
+
+@media (max-width: 576px) {
+  .khoa-banner-img {
+    min-height: 200px !important;
+    max-width: 350px !important;
+  }
+
+  .fs-sub {
+    font-size: 13px !important;
+    line-height: 20.8px !important;
+    color: #fff;
+  }
+
+  .quote-content {
+    font-size: 16px !important;
+    line-height: 25.8px !important;
+    font-weight: 700 !important;
+  }
+
+  .name-author {
+    font-size: 16px !important;
+    line-height: 25.8px !important;
+  }
+
+  .sub-author {
+    font-size: 14px !important;
+    line-height: 22.4px !important;
+  }
+
+  .quote-ts-img {
+    max-width: 270px !important;
+    max-height: 318.21px !important;
+  }
+
+  .title-achievement {
+    font-size: 28px !important;
+    line-height: 42px !important;
+    margin-bottom: 0px !important;
+  }
+
+  .sub-achievement {
+    font-size: 14px !important;
+    line-height: 22.4px !important;
+  }
+
+  .number-item-title {
+    font-size: 38px !important;
+    line-height: 59.91px !important;
+  }
+  
+  .title-highlight {
+    font-size: 28px !important;
+    line-height: 42px !important;
+  }
+
+  .sub-title-highlight {
+    font-size: 20px !important;
+    line-height: 28px !important;
+  }
+
+  .sub-highlight {
+    font-size: 16px !important;
+    line-height: 26px !important;
+    font-weight: 400 !important;
+  }
+
+  .title-trainings {
+    font-size: 28px !important;
+    line-height: 42px !important;
+  }
+
+  .sub-trainings {
+    font-size: 16px !important;
+    line-height: 25.6px !important;
+  }
+
+  .trainings-item {
+    padding: 1.5rem 0rem !important;
+  }
+    .trainings-item img {
+      padding: 0rem 1.5rem 0rem 0.5rem !important;
+      align-self: self-end;
+    }
+  .trainings-item-title {
+    font-size: 20px !important;
+    line-height: 27.32px !important;
+  }
+
+  .trainings-item-desc {
+    font-size: 14px !important;
+    line-height: 22.4px !important;
+  }
+
+  .title-partner {
+    font-size: 28px !important;
+      line-height: 42px !important;
+  }
+
+  .sub-partner {
+    font-size: 16px !important;
+    line-height: 25.6px !important;
+  }
+
+  .title-teacher {
+    font-size: 28px !important;
+    line-height: 42px !important;
+  }
+  
+  .sub-teacher {
+    font-size: 16px !important;
+    line-height: 25.6px !important;
+  }
+
+  .name-teacher {
+    font-size: 20px !important;
+  }
+
+  .position-teacher {
+    font-size: 16px !important;
+  }
+
+  .teacher-img {
+    width: 303.91px !important;
+    height: 356.8px !important;
+  }
+
+  .title-student {
+    font-size: 28px !important;
+    line-height: 42px !important;
+  }
+
+  .sub-student {
+    font-size: 16px !important;
+    line-height: 25.6px !important;
+    font-weight: 700 !important;
+  }
+
+  .name-student {
+    font-size: 18px !important;
+      line-height: 28.8px !important;
+      font-weight: 800 !important;
+  }
+
+  .position-student {
+    font-size: 14px !important;
+  }
+
+  .title-library {
+    font-size: 28px !important;
+    line-height: 42px !important;
+  }
+    .sub-library {
+      font-size: 16px !important;
+      line-height: 25.6px !important;
+    }
+
+  .title-contact {
+    font-size: 28px !important;
+    line-height: 42px !important;
+  }
+
+  .contact-item {
+    font-size: 16px !important;
+  }
+}
+
+.fs-sub {
+  font-size: 18px;
+  line-height: 32.4px;
+}
+
 .khoa-banner-img {
   max-height: 570px;
   object-fit: cover;
@@ -63,6 +234,7 @@
   }
   .number-item:nth-child(3):nth-last-child(1) {
     border-bottom: none;
+    padding-bottom: 0px !important;
   }
   .numbers-row > :nth-child(-n + 2) {
     color: var(--background-blue);
@@ -92,6 +264,7 @@
 .trainings-item-title,
 .trainings-item-desc {
   transition: color 0.1s ease-in;
+  font-size: 26px;
 }
 .trainings-item:hover .trainings-item-title {
   color: var(--secondary-color);

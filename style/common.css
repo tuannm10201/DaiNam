@@ -149,6 +149,10 @@ a {
   font-weight: 800;
 }
 
+.fw-md-extra {
+  font-weight: 800;
+}
+
 .lh-29 {
   line-height: 1.8125rem;
 }
@@ -313,5 +317,15 @@ form .invalid-feedback {
   .py-6 {
     padding-top: 4rem !important;
     padding-bottom: 4rem !important;
+  }
+}
+
+@media (max-width: 576px) {
+  .fs-md-5 {
+    font-size: 18px !important;
+  }
+
+  .fw-md-extra {
+    font-weight: 500;
   }
 }
