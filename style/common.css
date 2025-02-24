@@ -30,6 +30,13 @@
 
 @font-face {
   font-family: "Manrope";
+  src: url("../assets/font/Manrope-Medium.ttf") format("truetype");
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Manrope";
   src: url("../assets/font/Manrope-SemiBold.ttf") format("truetype");
   font-weight: 600;
   font-style: normal;
@@ -134,6 +141,9 @@ a {
 .fw-extra {
   font-weight: 700;
 }
+.fw-semibold {
+  font-weight: 500 !important;
+}
 .fw-medium {
   font-weight: 400 !important;
 }
@@ -219,7 +229,7 @@ form .dropdown-item {
 }
 form .dropdown-item > * {
   font-size: 17px;
-  font-weight: 600;
+  font-weight: 500;
   padding: 0.6rem 0;
   white-space: normal;
 }
@@ -236,7 +246,7 @@ form .dropdown-item[selected] > * {
 }
 form .invalid-feedback {
   color: rgba(255, 0, 0, 1);
-  font-weight: 600;
+  font-weight: 500;
   font-size: 13px;
 }
 
