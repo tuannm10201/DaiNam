@@ -1,7 +1,9 @@
 // handle layout
-const img = document.querySelector(".lookup-bg");
+const imgLg = document.querySelector(".lookup-bg-lg");
+const imgSm = document.querySelector(".lookup-bg-sm");
 const container = document.querySelector(".lookup-container");
 function adjustSectionHeight() {
+  const img = window.innerWidth >= 992 ? imgLg : imgSm;
   if (img.complete) {
     adjustHeight();
   } else {
@@ -9,6 +11,7 @@ function adjustSectionHeight() {
   }
 }
 function adjustHeight() {
+  const img = window.innerWidth >= 992 ? imgLg : imgSm;
   container.style.height = img.offsetHeight + "px";
   container.style.display = "flex";
 }

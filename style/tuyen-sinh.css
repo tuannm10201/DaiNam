@@ -62,7 +62,7 @@
 .new::after {
   content: "Mới";
   text-transform: uppercase;
-  font-weight: 800;
+  font-weight: 700;
   font-size: 15px;
   color: white;
   padding: 2px 8px;

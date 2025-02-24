@@ -59,7 +59,7 @@
 }
 .register-form input::placeholder {
   opacity: 0.45;
-  font-weight: 500;
+  font-weight: 400;
 }
 .register-form .form-select {
   --bs-form-select-bg-img: url("../../assets/icon/form-chevron-down-bg-img.svg");

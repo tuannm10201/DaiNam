@@ -119,7 +119,7 @@
 .bot-nav-container .dropdown-menu a {
   display: block;
   margin-left: 1.5rem;
-  font-weight: 600;
+  font-weight: 500;
   padding: 0.5rem 1rem 0.5rem 0;
 }
 .top-nav-container .dropdown-toggle::after,

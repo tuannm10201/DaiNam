@@ -49,13 +49,6 @@
   font-style: normal;
 }
 
-@font-face {
-  font-family: "Manrope";
-  src: url("../assets/font/Manrope-ExtraBold.ttf") format("truetype");
-  font-weight: 800;
-  font-style: normal;
-}
-
 /* bootstrap override */
 @media (min-width: 1400px) {
   .container,
@@ -146,7 +139,13 @@ a {
   }
 }
 .fw-extra {
-  font-weight: 800;
+  font-weight: 700;
+}
+.fw-semibold {
+  font-weight: 500 !important;
+}
+.fw-medium {
+  font-weight: 400 !important;
 }
 
 .fw-md-extra {
@@ -213,7 +212,7 @@ form .form-select:focus {
 }
 form input::placeholder {
   opacity: 0.45;
-  font-weight: 500;
+  font-weight: 400;
 }
 form input:not(.is-invalid),
 form .form-select {
@@ -224,7 +223,7 @@ form .dropdown-toggle {
   text-overflow: ellipsis;
   padding-right: 1.5rem !important;
   text-align: start;
-  font-weight: 800;
+  font-weight: 700;
 }
 form .dropdown-toggle::after {
   display: none;
@@ -234,7 +233,7 @@ form .dropdown-item {
 }
 form .dropdown-item > * {
   font-size: 17px;
-  font-weight: 600;
+  font-weight: 500;
   padding: 0.6rem 0;
   white-space: normal;
 }
@@ -247,11 +246,11 @@ form .dropdown-item[selected] {
   cursor: pointer;
 }
 form .dropdown-item[selected] > * {
-  font-weight: 800 !important;
+  font-weight: 700 !important;
 }
 form .invalid-feedback {
   color: rgba(255, 0, 0, 1);
-  font-weight: 600;
+  font-weight: 500;
   font-size: 13px;
 }
 

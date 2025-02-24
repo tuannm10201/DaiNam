@@ -57,11 +57,11 @@ footer {
   padding: 0.4rem 0;
   display: block;
   transition: color 0.1s ease-in;
-  font-weight: 500;
+  font-weight: 400;
 }
 .footer-about a:hover {
   color: #ff7700;
-  font-weight: 600;
+  font-weight: 500;
 }
 .text-title-footer {
   color: rgba(160, 196, 255, 1);
