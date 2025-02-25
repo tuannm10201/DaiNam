@@ -80,3 +80,40 @@ document
     galleryImgRow2.classList.remove("d-none");
     this.classList.add("d-none");
   });
+
+// animate number
+const DURATION = 1200;
+function animateNumber(element, target) {
+  let startTime = null;
+
+  function step(timestamp) {
+    if (!startTime) startTime = timestamp;
+    const progress = Math.min((timestamp - startTime) / DURATION, 1);
+    element.textContent = Math.floor(progress * target).toLocaleString("vi-VN");
+    if (progress < 1) {
+      requestAnimationFrame(step);
+    } else {
+      element.textContent = target.toLocaleString("vi-VN");
+    }
+  }
+
+  requestAnimationFrame(step);
+}
+
+const observer = new IntersectionObserver(
+  (entries) => {
+    entries.forEach((entry) => {
+      if (entry.isIntersecting) {
+        const numberElement = entry.target;
+        const target = parseInt(numberElement.dataset.numberTarget);
+        animateNumber(numberElement, target);
+        observer.unobserve(numberElement);
+      }
+    });
+  },
+  { threshold: 0.5 }
+);
+
+document
+  .querySelectorAll("[data-number-target]")
+  .forEach((num) => observer.observe(num));
