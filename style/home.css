@@ -7,6 +7,14 @@
   width: 100vw;
   height: 470px;
 }
+
+.banner-swiper .swiper-pagination-bullet {
+  background-color: rgba(255, 255, 255, 1) !important;
+  opacity: 0.45;
+  width: 10px;
+  height: 10px;
+  margin: 10px !important;
+}
 @media (min-width: 1200px) {
   .banner-swiper .swiper-pagination {
     bottom: 1.6rem !important;
@@ -14,20 +22,25 @@
   .banner-swiper .swiper-slide img {
     height: calc(100vh - 120px);
   }
+  .banner-swiper .swiper-pagination-bullet {
+    width: 1rem;
+    height: 1rem;
+    margin: 1rem !important;
+  }
 }
-.banner-swiper .swiper-pagination-bullet {
-  background-color: rgba(255, 255, 255, 1) !important;
-  opacity: 0.45;
-  width: 1rem;
-  height: 1rem;
-  margin: 1rem !important;
-}
+
 .banner-swiper .swiper-pagination-bullet:hover {
   opacity: 0.8;
 }
 .banner-swiper .swiper-pagination-bullet-active {
   background-color: rgba(242, 116, 35, 1) !important;
   opacity: 1;
+}
+
+@media (max-width: 1199.98px) {
+  .row {
+    --bs-gutter-x: 2.5rem;
+  }
 }
 
 /* specialization */
@@ -58,10 +71,10 @@
   height: 1rem;
   border-right: 3px solid currentColor;
   border-bottom: 3px solid currentColor;
-  transform: translateY(-50%) rotate(45deg);
+  transform: translateY(-65%) rotate(45deg);
 }
 .toggle-chevron[aria-expanded="true"]::after {
-  transform: translateY(-50%) rotate(-135deg);
+  transform: translateY(-40%) rotate(-135deg);
 }
 .toggle-chevron[aria-expanded="true"] {
   color: var(--secondary-color);
@@ -88,6 +101,12 @@
   }
 }
 @media (max-width: 991.98px) {
+  .specialization .see-all {
+    font-size: 18px !important;
+  }
+  .specialization h4 {
+    font-size: 22px;
+  }
   .specialization-border {
     border-top: 1px solid rgba(5, 6, 8, 0.15);
     padding: 1rem 0 !important;
@@ -101,7 +120,6 @@
   }
   .specialization-group {
     padding-right: 0;
-    padding-left: 1rem;
   }
 }
 
@@ -147,6 +165,29 @@
 .traininig-hover:hover {
   color: white;
 }
+@media (max-width: 991.98px) {
+  .training-nav [role="tab"]:not(:last-child) {
+    margin-right: 30px;
+  }
+  .training-content-title {
+    font-size: 28px;
+    line-height: 38px;
+  }
+  .training-content {
+    display: -webkit-box;
+    -webkit-line-clamp: 6;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    word-wrap: break-word;
+  }
+  .training-nav [role="tab"] {
+    color: rgba(199, 220, 255, 1) !important;
+  }
+  .training-nav [role="tab"].active {
+    border-bottom-width: 4px;
+  }
+}
 @media (min-width: 992px) {
   .training-content-container {
     padding-left: 2.2rem;
@@ -183,6 +224,7 @@
   right: 0;
   bottom: 0;
   width: 20vw;
+  min-width: 250px;
 }
 
 /* reason */
@@ -209,7 +251,7 @@
 /* reason swiper */
 .reason-swiper {
   height: 22rem;
-  margin-top: 2.5rem;
+  margin-top: 1.5rem;
 }
 .reason-swiper img {
   border-radius: 0.75rem;
@@ -231,6 +273,9 @@
   opacity: 1;
 }
 @media (min-width: 1200px) {
+  .reason-swiper {
+    margin-top: 2.5rem;
+  }
   .reason-play-button {
     width: 96px;
   }
@@ -264,6 +309,7 @@
   width: 20vw;
   max-width: 20rem;
   right: 3rem;
+  min-width: 300px;
 }
 .number-item:not(:first-child) > * {
   padding-left: 1rem;
@@ -285,6 +331,17 @@
   }
 }
 @media (max-width: 991.98px) {
+  .number-item-title {
+    font-size: 38px;
+    letter-spacing: -2px;
+  }
+  .number-item > .fw-semibold {
+    font-size: 14px;
+    line-height: 22px;
+  }
+  .numbers-row {
+    padding-right: 0 !important;
+  }
   .number-item:not(:first-child) > * {
     padding-left: 0;
     border-left: none;
@@ -296,9 +353,6 @@
   }
   .number-item:nth-child(odd) {
     padding-left: 0;
-  }
-  .number-item:nth-child(even) {
-    padding-right: 0;
   }
   .number-item:nth-child(3):nth-last-child(1) {
     border-bottom: none;
@@ -346,11 +400,12 @@
     height: 93px;
   }
   .partner-swiper .swiper-pagination {
-    bottom: -1rem;
+    bottom: 4px;
   }
   .partner-swiper .swiper-pagination-bullet {
     width: 0.625rem;
     height: 0.625rem;
+    margin: 0.625rem !important;
   }
 }
 
@@ -364,7 +419,24 @@
   max-width: 30rem;
   min-width: 20rem;
 }
-
+.feelings-content {
+  line-height: 35px;
+}
+@media (max-width: 991.98px) {
+  .feelings-content {
+    font-size: 18px;
+    line-height: 29px;
+  }
+  .feelings .nav-tabs {
+    gap: 2.5rem;
+  }
+  .feelings .tab-pane .color-primary {
+    font-size: 16px !important;
+  }
+  .feelings {
+    padding-bottom: 2.2rem !important;
+  }
+}
 .feeling-person-img {
   padding: 0;
   background-color: transparent !important;

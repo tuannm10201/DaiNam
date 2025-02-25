@@ -48,10 +48,16 @@
 @media (max-width: 1199.98px) {
   .new-event-sm:first-child {
     border-top: 1px solid rgba(218, 220, 224, 0.85);
-    padding-top: 1.5rem;
+    padding-top: 1rem;
+  }
+  .new-event-sm:not(:first-child) {
+    padding: 1rem 0;
   }
   .new-event-sm:last-child {
     border-bottom: 1px solid rgba(218, 220, 224, 0.85);
+  }
+  .new-event {
+    padding: 2rem 0 !important;
   }
 }
 

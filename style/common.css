@@ -5,6 +5,7 @@
   --light-blue-color: rgba(174, 204, 255, 1);
   --background-off-white: rgba(244, 246, 252, 1);
   --red-color: #ff4000;
+  --padding-sm-container: 20px;
 }
 
 @font-face {
@@ -50,6 +51,15 @@
 }
 
 /* bootstrap override */
+@media (max-width: 575.98px) {
+  .container {
+    padding-left: var(--padding-sm-container);
+    padding-right: var(--padding-sm-container);
+  }
+  .mr-sm-n20 {
+    margin-right: calc(-1 * var(--padding-sm-container));
+  }
+}
 @media (min-width: 1400px) {
   .container,
   .container-lg,
@@ -66,6 +76,12 @@ h2 {
 @media (min-width: 1200px) {
   h2 {
     font-size: 2.375rem;
+  }
+}
+
+@media (max-width: 991.98px) {
+  .fs-lg-18 {
+    font-size: 18px !important;
   }
 }
 

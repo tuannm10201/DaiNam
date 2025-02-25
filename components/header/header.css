@@ -177,7 +177,13 @@
   border-bottom: 2px solid currentColor;
   transform: rotate(45deg);
   margin-bottom: 5px;
-  margin-right: 5px;
+  margin-right: 14px;
+}
+.chevron-down.icon-language {
+  width: 10px;
+  border-width: 2px;
+  height: 10px;
+  margin-bottom: 4px;
 }
 .bot-nav-link > .chevron-down {
   margin-right: 2px;
@@ -209,7 +215,7 @@
 }
 /* bottom header responsive */
 .navbar-toggler {
-  width: 43px;
+  /* width: 43px; */
 }
 .navbar-toggler[aria-expanded="true"] .open-menu,
 .navbar-toggler[aria-expanded="false"] .close-menu {
@@ -233,7 +239,13 @@
   .navbar-brand:has(~ .navbar-collapse.show) {
     padding-bottom: 1rem;
   }
-  .bot-nav {
+  .navbar-brand:has(+ .mobile-search-container .search-container:not(.d-none)) {
+    display: none;
+  }
+  .search-container:not(.d-none) + .navbar-toggler {
+    display: none;
+  }
+  .bot-nav:not(:has(.search-container:not(.d-none))) {
     padding: 10px 0;
   }
   .bot-nav > div {
@@ -256,7 +268,7 @@
   .bot-nav .nav-item {
     position: static;
     border-bottom: 1px solid rgba(199, 220, 255, 0.15);
-    margin-left: 1rem;
+    padding-left: 1.25rem;
   }
   .chevron-down {
     width: 13px;

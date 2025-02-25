@@ -5,7 +5,7 @@
   <div
     class="top-nav container-fluid container-xxl fw-semibold justify-content-between d-block d-xl-flex"
   >
-    <div class="dropdown click-dropdown top-left-nav pt-xl-0 pt-3 ms-1">
+    <div class="dropdown click-dropdown top-left-nav pt-xl-0 pt-3 ms-2 ms-xl-1">
       <a
         class="dropdown-toggle d-xxl-none d-flex align-items-center h-100 gap-2 user-select-none justify-content-between"
         id="kvtt-dropdown"
@@ -102,7 +102,7 @@
     </div>
 
     <!-- Right Navigation -->
-    <div class="ms-1 ms-xl-0">
+    <div class="ms-2 ms-xl-1 ms-xl-0">
       <ul class="row top-right-nav gap-xl-2 me-0">
         <li class="col-6 col-xl p-xl-0 ms-0 nav-item border-0">
           <a href="#" class="nav-link px-xl-2"> Trang chủ </a>
@@ -115,6 +115,9 @@
         </li>
         <li class="col-6 col-xl p-xl-0 ms-0 nav-item border-0">
           <a href="#" class="nav-link px-xl-2"> Thư viện số </a>
+        </li>
+        <li class="col-6 col-xl p-xl-0 ms-0 nav-item border-0 d-xl-none">
+          <a href="#" class="nav-link px-xl-2"> Sinh viên </a>
         </li>
         <li class="col-6 col-xl p-xl-0 ms-0 nav-item border-0">
           <a href="#" class="nav-link px-xl-2"> Liên hệ </a>
@@ -133,7 +136,7 @@
           >
             <img src="assets/icon/language-flag.svg" alt="Vietnamese Flag" />
             Tiếng Việt
-            <span class="chevron-down"></span>
+            <span class="chevron-down icon-language"></span>
           </a>
           <ul class="dropdown-menu dropdown-click-menu w-25">
             <li class="dropdown-item">
@@ -166,7 +169,7 @@
   <div class="container-fluid container-xxl">
     <!-- Logo -->
     <a
-      class="navbar-brand zoom-105 overflow-visible ps-2 ps-xl-0"
+      class="navbar-brand zoom-105 overflow-visible ps-3 ps-xl-0"
       href="/home.html"
     >
       <img
@@ -178,6 +181,8 @@
         src="assets/logo/logo-ngang-sm.svg"
         alt="Dai Nam"
         class="d-xl-none"
+        width="167"
+        height="42"
       />
     </a>
 
@@ -185,15 +190,17 @@
       class="d-flex align-items-center justify-content-end flex-fill mobile-search-container"
     >
       <!-- mobile search -->
-      <div class="px-3 py-2 nav-search-icon d-xl-none" role="button">
+      <div class="px-3 py-2 nav-search-icon d-xl-none me-2" role="button">
         <img src="assets/icon/search-sm.svg" alt="" />
       </div>
 
       <div class="search-container d-none nav-search flex-fill">
         <img
           src="assets/icon/input-search.svg"
-          class="search-icon px-3"
+          class="mx-3"
           alt=""
+          width="18"
+          height="18"
         />
 
         <input
@@ -201,23 +208,38 @@
           class="search-input fw-semibold border-0 nav-search-input"
           placeholder="Bạn đang tìm kiếm gì?"
         />
-        <span class="py-3 px-4 fs-4 fw-lighter clear-search-icon" role="button">
-          ✕
+        <span class="py-3 px-4 clear-search-icon" role="button">
+          <img
+            src="assets/icon/menu-close.svg"
+            class="close-menu"
+            alt=""
+            width="18"
+            height="18"
+          />
         </span>
       </div>
 
       <!-- Mobile Menu Toggle Button -->
       <div
-        class="navbar-toggler border-0 fs-2 p-2"
+        class="navbar-toggler border-0 fs-2 p-1"
+        style="margin-right: 18px"
         type="button"
         data-bs-toggle="collapse"
         data-bs-target="#bottom-nav"
       >
-        <img src="assets/icon/hambuger.svg" class="open-menu" alt="" />
+        <img
+          src="assets/icon/hambuger.svg"
+          class="open-menu"
+          alt=""
+          width="26"
+          height="26"
+        />
         <img
           src="assets/icon/menu-close.svg"
           class="close-menu d-none"
           alt=""
+          width="22"
+          height="22"
         />
       </div>
     </div>
@@ -228,7 +250,7 @@
         <li class="nav-item dropdown">
           <a
             href="#"
-            class="nav-link bot-nav-link py-3 pe-xl-0 pe-3 dropdown-toggle d-flex align-items-center justify-content-between"
+            class="nav-link bot-nav-link py-3 pe-xl-0 pe-4 dropdown-toggle d-flex align-items-center justify-content-between"
             id="gt-dropdown"
             data-bs-toggle="dropdown"
             aria-expanded="false"
@@ -287,7 +309,7 @@
         <div class="search-container d-none nav-search">
           <img
             src="assets/icon/input-search.svg"
-            class="search-icon px-3"
+            class="search-icon pe-3 ps-4"
             alt=""
           />
 
@@ -296,11 +318,14 @@
             class="search-input fw-semibold border-0 nav-search-input"
             placeholder="Bạn đang tìm kiếm gì?"
           />
-          <span
-            class="py-3 px-4 fs-4 fw-lighter clear-search-icon"
-            role="button"
-          >
-            ✕
+          <span class="py-3 px-4 clear-search-icon" role="button">
+            <img
+              src="assets/icon/menu-close.svg"
+              class="close-menu"
+              alt=""
+              width="18"
+              height="18"
+            />
           </span>
         </div>
       </ul>
