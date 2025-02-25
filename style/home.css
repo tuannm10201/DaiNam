@@ -263,7 +263,7 @@
   opacity: 0.2;
   width: 1.125rem;
   height: 1.125rem;
-  margin: 0.6rem !important;
+  margin: 1rem !important;
 }
 .reason-swiper .swiper-pagination-bullet:hover {
   opacity: 0.5;
@@ -487,4 +487,16 @@
   border-bottom: 3px solid currentColor;
   transform: rotate(45deg);
   margin-bottom: 5px;
+}
+@media (max-width: 767.98px) {
+  .student-life {
+    padding: 2.2rem 0;
+  }
+  .student-img-row-1,
+  .student-img-row-2 {
+    margin-top: 1.2rem !important;
+  }
+  .gutter-x-2 {
+    --bs-gutter-x: 1.2rem !important;
+  }
 }

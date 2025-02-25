@@ -7,6 +7,15 @@ footer {
   position: relative;
 }
 
+@media (min-width: 1200px) {
+  .footer-bottom {
+    margin-top: 2.3rem !important;
+  }
+
+  .footer-top {
+    padding-bottom: 1.8rem !important;
+  }
+}
 @media (max-width: 1199.98px) {
   .footer-contact-first {
     position: static;
@@ -18,7 +27,7 @@ footer {
     border-bottom: 1px solid rgba(255, 255, 255, 0.15);
     padding-left: 0;
     padding-right: 0;
-    margin-left: 1rem;
+    margin-left: 20px;
   }
   .footer-about a {
     color: rgba(199, 220, 255, 1);
@@ -41,6 +50,20 @@ footer {
     height: 0.7rem;
     border-width: 3px;
     top: 40%;
+  }
+  .logo-footer {
+    width: 235px;
+    height: 59px;
+  }
+  .text-title-footer {
+    font-size: 14px;
+    font-weight: 400 !important;
+  }
+  .text-content-footer {
+    font-size: 1rem !important;
+  }
+  .copy-right {
+    font-size: 13px;
   }
 }
 .footer-contact::before {

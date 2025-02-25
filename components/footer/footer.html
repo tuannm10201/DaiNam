@@ -1,29 +1,45 @@
 <link rel="stylesheet" href="./components/footer/footer.css" />
 
-<footer class="py-3 py-lg-4 py-xl-5 text-white">
+<footer class="py-3 py-lg-4 text-white">
   <div class="container">
     <div class="row">
-      <div class="col-xl-3 col-12 zoom-105 pb-3 py-2 pb-lg-4">
-        <img src="assets/logo/dai-nam-logo-ngang.svg" alt="" />
+      <div class="col-xl-3 col-12 zoom-105 pb-3 py-2 pb-lg-4 footer-top">
+        <img
+          src="assets/logo/dai-nam-logo-ngang.svg"
+          class="logo-footer"
+          alt=""
+        />
       </div>
 
       <div
-        class="col-xl-3 col-lg-4 col-12 py-3 pb-lg-4 footer-contact footer-contact-first"
+        class="col-xl-3 col-lg-4 col-12 py-3 pb-lg-4 footer-contact footer-contact-first footer-top"
       >
         <div class="text-title-footer mb-2">Email</div>
-        <a class="fw-extra fs-5 hover-ff77" href="mailto:dnu@dainam.edu.vn">
+        <a
+          class="fw-extra fs-5 hover-ff77 text-content-footer"
+          href="mailto:dnu@dainam.edu.vn"
+        >
           dnu@dainam.edu.vn
         </a>
       </div>
-      <div class="col-xl-3 col-lg-4 col-12 py-3 pb-lg-4 footer-contact">
+      <div
+        class="col-xl-3 col-lg-4 col-12 py-3 pb-lg-4 footer-contact footer-top"
+      >
         <div class="text-title-footer mb-2">Điện thoại</div>
-        <a class="fw-extra fs-5 hover-ff77" href="tel:02435577799">
+        <a
+          class="fw-extra fs-5 hover-ff77 text-content-footer"
+          href="tel:02435577799"
+        >
           (024) 35577799
         </a>
       </div>
-      <div class="col-xl-3 col-lg-4 col-12 py-3 pb-lg-4 footer-contact">
+      <div
+        class="col-xl-3 col-lg-4 col-12 py-3 pb-lg-4 footer-contact footer-top"
+      >
         <div class="text-title-footer mb-2">Hotline</div>
-        <div class="d-inline-flex align-items-center gap-2 fs-5 fw-extra">
+        <div
+          class="d-inline-flex align-items-center gap-2 fs-5 fw-extra text-content-footer"
+        >
           <a href="tel:0961595599" class="hover-ff77">0961.595.599</a>
           <div class="footer-contact-divider"></div>
           <a href="tel:0931595599" class="hover-ff77">0931.595.599</a>
@@ -31,10 +47,10 @@
       </div>
 
       <div
-        class="py-3 pb-lg-4 footer-contact d-lg-none d-flex align-items-center gap-2 pe-3"
+        class="py-3 pb-lg-4 footer-contact d-lg-none d-flex align-items-start gap-2 pe-3"
       >
-        <img src="assets/icon/location.svg" alt="" />
-        <div>
+        <img src="assets/icon/location.svg" alt="" class="mt-1" />
+        <div style="margin-right: 0.3rem; line-height: 29px">
           Địa chỉ:
           <a class="fw-extra color-secondary" href="">
             Số 1 Phố Xốm, Phú Lãm, Hà Đông, Hà Nội.
@@ -47,7 +63,9 @@
 
     <div class="row mt-2 footer-about">
       <div class="col-lg-3 col-12">
-        <div class="fs-5 fw-extra d-none d-lg-block">Về Đại học Đại Nam</div>
+        <div class="fs-5 fw-extra d-none d-lg-block text-content-footer">
+          Về Đại học Đại Nam
+        </div>
         <div
           class="d-lg-none fw-extra toggle-chevron fs-5"
           role="button"
@@ -59,7 +77,7 @@
         </div>
         <ul
           id="footer-about-dn"
-          class="collapse ps-3 mb-1 d-lg-block ps-lg-0 mt-2 mt-lg-3"
+          class="collapse ps-3 mb-1 d-lg-block ps-lg-0 mt-2 mt-lg-4"
         >
           <li><a href="">Sự mệnh - Tầm nhìn</a></li>
           <li><a href="">Giá trị cốt lõi</a></li>
@@ -68,7 +86,9 @@
         </ul>
       </div>
       <div class="col-lg-3 col-12">
-        <div class="fs-5 fw-extra d-none d-lg-block">Truy cập nhanh</div>
+        <div class="fs-5 fw-extra d-none d-lg-block text-content-footer">
+          Truy cập nhanh
+        </div>
         <div
           class="d-lg-none fw-extra toggle-chevron fs-5"
           role="button"
@@ -80,7 +100,7 @@
         </div>
         <ul
           id="footer-quick-access"
-          class="collapse ps-3 mb-1 d-lg-block ps-lg-0 mt-2 mt-lg-3"
+          class="collapse ps-3 mb-1 d-lg-block ps-lg-0 mt-2 mt-lg-4"
         >
           <li><a href="">Danh sách phòng ban</a></li>
           <li><a href="">VR360 Tour</a></li>
@@ -89,7 +109,9 @@
         </ul>
       </div>
       <div class="col-lg-3 col-12">
-        <div class="fs-5 fw-extra d-none d-lg-block">Theo dõi Đại Nam</div>
+        <div class="fs-5 fw-extra d-none d-lg-block text-content-footer">
+          Theo dõi Đại Nam
+        </div>
         <div
           class="d-lg-none fw-extra toggle-chevron fs-5"
           role="button"
@@ -101,7 +123,7 @@
         </div>
         <ul
           id="footer-follow-dn"
-          class="collapse ps-3 mb-1 d-lg-block ps-lg-0 mt-2 mt-lg-3"
+          class="collapse ps-3 mb-1 d-lg-block ps-lg-0 mt-2 mt-lg-4"
         >
           <li>
             <a class="d-flex align-items-center gap-3" href="">
@@ -154,7 +176,9 @@
         </ul>
       </div>
       <div class="col-lg-3 col-12">
-        <div class="fs-5 fw-extra d-none d-lg-block">Khối ngành đào tạo</div>
+        <div class="fs-5 fw-extra d-none d-lg-block text-content-footer">
+          Khối ngành đào tạo
+        </div>
         <div
           class="d-lg-none fw-extra toggle-chevron fs-5"
           role="button"
@@ -166,7 +190,7 @@
         </div>
         <ul
           id="footer-training-sector"
-          class="collapse ps-3 mb-1 d-lg-block ps-lg-0 mt-2 mt-lg-3"
+          class="collapse ps-3 mb-1 d-lg-block ps-lg-0 mt-2 mt-lg-4"
         >
           <li><a href="">Khối ngành Sức khỏe</a></li>
           <li><a href="">Khối ngành Khoa học cơ bản</a></li>
@@ -177,8 +201,8 @@
       </div>
     </div>
 
-    <div class="row mt-4">
-      <div class="col-xl-4 col-lg-5 col-12">
+    <div class="row mt-4 footer-bottom">
+      <div class="col-lg-3 col-12">
         <div
           class="mb-3 d-flex gap-2 hover-ff77 fw-bolder back-to-top d-lg-none"
           role="button"
@@ -187,7 +211,7 @@
         </div>
         <div class="copy-right">Copyright @2025. Trường đại học Đại Nam.</div>
       </div>
-      <div class="col-xl-8 col-lg-7 d-none d-lg-flex align-items-center gap-2">
+      <div class="col-lg-7 d-none d-lg-flex align-items-center gap-2">
         <img src="assets/icon/location.svg" alt="" />
         <div class="fs-5">
           Địa chỉ:
