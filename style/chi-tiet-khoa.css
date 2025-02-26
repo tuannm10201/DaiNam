@@ -1,7 +1,13 @@
 /* khoa banner */
+.khoa-banner {
+  padding: 38px 0 42px;
+}
 .khoa-title {
   font-size: calc(2.175rem + 1vw);
   margin-top: 0.4rem;
+}
+.khoa-content {
+  line-height: 32.4px;
 }
 @media (min-width: 1200px) {
   .khoa-title {
@@ -11,6 +17,13 @@
 @media (max-width: 991.98px) {
   .khoa-title {
     font-size: 1.625rem;
+  }
+  .khoa-title-top {
+    font-size: 18px;
+  }
+  .khoa-content {
+    font-size: 13px;
+    line-height: 20.8px;
   }
 }
 .khoa-banner-img {
@@ -33,7 +46,25 @@
   max-width: 860px;
   line-height: 35px;
 }
-
+@media (max-width: 991.98px) {
+  .quote-content {
+    font-size: 1rem;
+    line-height: 25.6px;
+  }
+  .quote-name {
+    font-size: 1rem;
+  }
+  .quote-desc {
+    font-size: 14px;
+  }
+  .quote-ts-img {
+    width: 270px;
+    height: 318px;
+  }
+  .quote {
+    padding-bottom: 2.2rem;
+  }
+}
 /* numbers */
 .number-item:not(:first-child) > * {
   padding-left: 1rem;
@@ -61,6 +92,15 @@
   }
 }
 @media (max-width: 991.98px) {
+  .numbers-title {
+    line-height: 42px;
+  }
+  .number-item-title {
+    font-size: 38px;
+  }
+  .number-item-desc {
+    font-size: 14px;
+  }
   .number-item:not(:first-child) > * {
     padding-left: 0;
     border-left: none;
@@ -95,6 +135,11 @@
 .key-features-item {
   max-width: 650px;
 }
+@media (max-width: 991.98px) {
+  .key-features-item-title {
+    font-size: 20px !important;
+  }
+}
 @media (min-width: 1200px) {
   .key-features {
     padding-bottom: 58px !important;
@@ -116,9 +161,6 @@
   padding: 1.5rem 30px 1.5rem 0.75rem;
   cursor: pointer;
 }
-.trainings-item:not(:first-child) {
-  padding-left: 30px;
-}
 .trainings-container-top {
   margin-top: 2rem;
 }
@@ -135,10 +177,22 @@
 .trainings-item img {
   padding: 2rem 0 2rem 1.5rem;
 }
-.trainings-container-bot .trainings-item {
-  padding-bottom: 6rem;
+@media (min-width: 1200px) {
+  .trainings {
+    padding-top: 3.5rem !important;
+  }
+  .trainings-item-title {
+    font-size: 26px;
+  }
+
+  .trainings-container-bot .trainings-item {
+    padding-bottom: 6rem;
+  }
 }
 @media (min-width: 992px) {
+  .trainings-item:not(:first-child) {
+    padding-left: 30px;
+  }
   .trainings-item {
     padding-bottom: 4.5rem;
   }
@@ -148,11 +202,32 @@
   }
 }
 @media (max-width: 991.98px) {
+  .trainings-container-top {
+    margin-top: 1rem;
+  }
+  .trainings-items-title {
+    font-size: 20px;
+  }
+  .trainings-item-desc {
+    font-size: 14px;
+    color: var(--light-blue-color) !important;
+  }
+  .trainings-item {
+    padding-top: 1.4rem;
+    padding-bottom: 1.4rem;
+    align-items: end;
+  }
+  .trainings-item img {
+    padding: 1.4rem 0 1.4rem 1.5rem;
+  }
   .trainings-item {
     border-bottom: 1px solid rgba(224, 236, 255, 0.12);
   }
   .trainings-container:not(.trainings-container-top) {
     border-top: none;
+  }
+  .trainings-item:last-child {
+    padding-bottom: 2.4rem;
   }
 }
 
@@ -177,6 +252,9 @@
 @media (min-width: 992px) {
   .partner-swiper img {
     width: 100%;
+  }
+  .partner-desc {
+    padding-left: 2rem;
   }
 }
 @media (max-width: 991.98px) {
@@ -212,13 +290,30 @@
 }
 .teacher-list,
 .teacher-row {
-  gap: 2rem;
+  gap: 30px;
 }
-@media (min-width: 1400px) {
+@media (min-width: 1200px) {
+  .teachers {
+    padding-bottom: 3.3rem !important;
+  }
+  .teacher-list,
   .teacher-row:not(:first-child) {
-    margin-top: 2rem;
+    margin-top: 30px !important;
   }
 }
+@media (max-width: 991.98px) {
+  .teachers {
+    padding: 2rem 0 !important;
+  }
+  .teacher-name {
+    font-size: 20px !important;
+  }
+  .teacher-img {
+    width: 304px;
+    height: 357px;
+  }
+}
+
 /* shares */
 .shares-bg-icon {
   left: 3rem;
@@ -240,6 +335,38 @@
 .feeling-person-img.active {
   width: 72px;
 }
+
+.share-content {
+  max-width: 857px;
+  line-height: 35px;
+}
+@media (min-width: 1200px) {
+  .shares {
+    padding: 3.1rem 0 3.5rem !important;
+  }
+}
+@media (max-width: 991.98px) {
+  .share-content {
+    font-size: 1rem;
+    line-height: 25.6px;
+  }
+  .shares .nav-tabs {
+    gap: 2.5rem;
+  }
+  .shares .tab-pane .color-primary {
+    font-size: 16px !important;
+  }
+  .shares {
+    padding-bottom: 2.2rem !important;
+  }
+  .share-person-name {
+    font-size: 18px;
+  }
+  .share-person-desc {
+    margin-top: 2px;
+    font-size: 14px;
+  }
+}
 /* student life */
 .gallery .zoom-105 img {
   width: 100%;
@@ -249,6 +376,20 @@
 }
 .gallery .zoom-105 {
   border-radius: 12px;
+}
+@media (min-width: 1200px) {
+  .gallery {
+    padding-top: 3.5rem !important;
+  }
+}
+.gallery-desc {
+  max-width: 708px;
+  line-height: 29px;
+}
+@media (max-width: 991.98px) {
+  .gallery-desc {
+    line-height: 25.6px;
+  }
 }
 @media (min-width: 992px) {
   .student-img-row-1 {
@@ -296,16 +437,14 @@
   color: var(--background-blue);
   font-weight: 700;
 }
-/* .contact-item:first-child {
-  margin-bottom: 0.5rem;
-}
-.contact-item:last-child {
-  margin-top: 0.5rem;
-}
-.contact-item:first-child,
-.contact-item:last-child {
-  line-height: 0.8;
-} */
 .contact-item {
   list-style-type: initial;
+}
+@media (max-width: 991.98px) {
+  .contact-item {
+    font-size: 1rem;
+  }
+  .contact-item::marker {
+    font-size: 0.8rem;
+  }
 }
