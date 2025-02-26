@@ -95,23 +95,29 @@
 .key-features-item {
   max-width: 650px;
 }
-
+@media (min-width: 1200px) {
+  .key-features {
+    padding-bottom: 58px !important;
+  }
+}
 /* trainings */
 .trainings-container {
   border-top: 1px solid rgba(27, 77, 161, 0.85);
 }
 .trainings-desc {
   max-width: 613px;
+  line-height: 29px;
+  max-width: 650px;
 }
 .trainings-item {
   display: flex;
   justify-content: space-between;
   align-items: start;
-  padding: 1.5rem 2rem 1.5rem 0.75rem;
+  padding: 1.5rem 30px 1.5rem 0.75rem;
   cursor: pointer;
 }
 .trainings-item:not(:first-child) {
-  padding-left: 2rem;
+  padding-left: 30px;
 }
 .trainings-container-top {
   margin-top: 2rem;

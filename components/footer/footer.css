@@ -8,6 +8,9 @@ footer {
 }
 
 @media (min-width: 1200px) {
+  .footer {
+    padding-bottom: 2rem !important;
+  }
   .footer-bottom {
     margin-top: 2.3rem !important;
   }
@@ -25,9 +28,8 @@ footer {
   .footer-contact {
     position: static;
     border-bottom: 1px solid rgba(255, 255, 255, 0.15);
+    margin-left: var(--padding-sm-container);
     padding-left: 0;
-    padding-right: 0;
-    margin-left: 20px;
   }
   .footer-about a {
     color: rgba(199, 220, 255, 1);
@@ -37,19 +39,22 @@ footer {
     margin-top: 0.5rem;
   }
   .footer-about > * {
-    padding: 1rem 0 1rem;
-    margin-left: 1rem;
+    padding: 1rem 0 var(--padding-sm-container);
+    margin-left: var(--padding-sm-container);
     border-bottom: 1px solid rgba(255, 255, 255, 0.15);
   }
+  .footer-about .toggle-chevron {
+    font-size: 1rem !important;
+  }
   .footer-about .toggle-chevron[aria-expanded="true"]::after {
-    top: 50%;
+    top: 55%;
   }
   .footer-about .toggle-chevron::after {
-    right: -1.3rem;
-    width: 0.7rem;
-    height: 0.7rem;
-    border-width: 3px;
-    top: 40%;
+    right: -1.2rem;
+    width: 0.55rem;
+    height: 0.55rem;
+    border-width: 2px;
+    top: 46%;
   }
   .logo-footer {
     width: 235px;

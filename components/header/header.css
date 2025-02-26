@@ -334,4 +334,12 @@
   body:has(#bottom-nav.show) {
     overflow: hidden;
   }
+  .header-logo {
+    width: 167px;
+    height: 42px;
+  }
+
+  .nav-search-input::placeholder {
+    opacity: 0.65;
+  }
 }

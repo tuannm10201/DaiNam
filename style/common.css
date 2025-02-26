@@ -83,6 +83,9 @@ h2 {
   .fs-lg-18 {
     font-size: 18px !important;
   }
+  h2 {
+    font-size: 27px;
+  }
 }
 
 html {
