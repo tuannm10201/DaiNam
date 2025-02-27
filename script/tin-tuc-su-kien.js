@@ -4,9 +4,9 @@ new Swiper(".new-swiper", {
     el: ".swiper-pagination",
     clickable: true,
   },
-  // autoplay: {
-  //   delay: SLIDE_DELAY,
-  // },
+  autoplay: {
+    delay: SLIDE_DELAY,
+  },
   on: {
     autoplayTimeLeft(s, time, progress) {
       eventSwiperBorderBottom.style.width = (1 - progress) * 100 + "%";
@@ -40,12 +40,12 @@ function initSwiper() {
         992: {
           slidesPerView: 2,
           enabled: true,
-          spaceBetween: 25,
+          spaceBetween: 30,
         },
         1200: {
           slidesPerView: 3,
           enabled: true,
-          spaceBetween: 25,
+          spaceBetween: 30,
         },
       },
     });
