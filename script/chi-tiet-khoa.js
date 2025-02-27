@@ -75,7 +75,7 @@ window.addEventListener("resize", updatePartnerSwiperStructure);
 // gallery
 const galleryImgRow2 = document.querySelector(".student-img-row-2");
 document
-  .querySelector(".gallery .see-more-container")
+  .querySelector(".see-more-container")
   .addEventListener("click", function () {
     galleryImgRow2.classList.remove("d-none");
     this.classList.add("d-none");

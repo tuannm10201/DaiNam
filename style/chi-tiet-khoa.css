@@ -368,20 +368,6 @@
   }
 }
 /* student life */
-.gallery .zoom-105 img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  border-radius: 0.75rem;
-}
-.gallery .zoom-105 {
-  border-radius: 12px;
-}
-@media (min-width: 1200px) {
-  .gallery {
-    padding-top: 3.5rem !important;
-  }
-}
 .gallery-desc {
   max-width: 708px;
   line-height: 29px;
@@ -391,17 +377,26 @@
     line-height: 25.6px;
   }
 }
-@media (min-width: 992px) {
-  .student-img-row-1 {
-    margin-top: 2.5rem !important;
-  }
+.student-life {
+  padding: 3.5rem 0;
+}
+.student-life img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.student-img-row-2 {
+  margin-top: 2rem;
+}
+.gutter-x-2 {
+  --bs-gutter-x: 1.7rem;
 }
 .student-img-row-2 img {
   aspect-ratio: 1;
 }
-.gallery .see-more-container {
+.student-life .see-more-container {
   cursor: pointer;
-  height: 200px;
+  height: 170px;
   background: linear-gradient(
     180deg,
     rgba(255, 255, 255, 0) 0%,
@@ -409,13 +404,25 @@
     #ffffff 100%
   );
 }
-.gallery .see-more-icon {
+.student-life .see-more-icon {
   width: 13px;
   height: 13px;
   border-right: 3px solid currentColor;
   border-bottom: 3px solid currentColor;
   transform: rotate(45deg);
   margin-bottom: 5px;
+}
+@media (max-width: 767.98px) {
+  .student-life {
+    padding: 2.2rem 0;
+  }
+  .student-img-row-1,
+  .student-img-row-2 {
+    margin-top: 1.2rem !important;
+  }
+  .gutter-x-2 {
+    --bs-gutter-x: 1.2rem !important;
+  }
 }
 
 /* contact */
