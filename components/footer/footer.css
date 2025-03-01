@@ -24,7 +24,7 @@ footer {
   .footer-contact-first {
     position: static;
   }
-  .row {
+  footer .row {
     --bs-gutter-x: 2.5rem;
   }
 }
