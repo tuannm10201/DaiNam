@@ -340,10 +340,6 @@ form .invalid-feedback {
 }
 
 @media (min-width: 992px) {
-  .custom-margin-lg {
-    margin-top: 210px;
-  }
-
   .py-6 {
     padding-top: 4rem !important;
     padding-bottom: 4rem !important;
