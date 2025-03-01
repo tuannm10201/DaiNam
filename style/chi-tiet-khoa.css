@@ -19,7 +19,7 @@
     font-size: 1.625rem;
   }
   .khoa-title-top {
-    font-size: 18px;
+    font-size: 18px !important;
   }
   .khoa-content {
     font-size: 13px;
@@ -47,6 +47,9 @@
   line-height: 35px;
 }
 @media (max-width: 991.98px) {
+  .quote {
+    padding-top: 2.25rem;
+  }
   .quote-content {
     font-size: 1rem;
     line-height: 25.6px;
@@ -202,6 +205,9 @@
   }
 }
 @media (max-width: 991.98px) {
+  .trainings-item-title {
+    font-size: 20px;
+  }
   .trainings-container-top {
     margin-top: 1rem;
   }
@@ -215,19 +221,17 @@
   .trainings-item {
     padding-top: 1.4rem;
     padding-bottom: 1.4rem;
+    padding-right: 1rem;
     align-items: end;
   }
   .trainings-item img {
-    padding: 1.4rem 0 1.4rem 1.5rem;
+    padding: 0;
   }
   .trainings-item {
     border-bottom: 1px solid rgba(224, 236, 255, 0.12);
   }
   .trainings-container:not(.trainings-container-top) {
     border-top: none;
-  }
-  .trainings-item:last-child {
-    padding-bottom: 2.4rem;
   }
 }
 
@@ -258,6 +262,9 @@
   }
 }
 @media (max-width: 991.98px) {
+  .partner {
+    padding: 36px 0 !important;
+  }
   .partner-swiper .swiper-slide {
     display: grid;
     grid-template-columns: repeat(2, 1fr);

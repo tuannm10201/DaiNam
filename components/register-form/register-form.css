@@ -165,6 +165,7 @@
 
 @media (max-width: 767.98px) {
   .register-form {
+    padding-top: 2.25rem !important;
     --padding-sm-container: 0.5rem;
   }
   .register-form input,

@@ -19,9 +19,13 @@ footer {
     padding-bottom: 1.8rem !important;
   }
 }
+
 @media (max-width: 1199.98px) {
   .footer-contact-first {
     position: static;
+  }
+  .row {
+    --bs-gutter-x: 2.5rem;
   }
 }
 @media (max-width: 991.98px) {
