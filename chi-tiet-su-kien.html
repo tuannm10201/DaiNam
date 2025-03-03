@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
+  <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Dai Nam university</title>
@@ -13,274 +12,413 @@
 
     <script src="script/common-components-loader.js"></script>
     <script src="script/lib/swiper-bundle.min.js" defer></script>
+    <script src="script/chi-tiet-su-kien.js" type="module" defer></script>
     <script src="script/common.js" defer></script>
-    <script src="script/tin-tuc.js" defer></script>
     <script src="script/lib/bootstrap.min.js" defer></script>
-    <style>
+  </head>
 
-    </style>
-</head>
-
-<body>
-    <main>
-        <div class="border-bottom border-sm-none">
-            <div class="container ">
-                    <div class="d-flex flex-column-reverse flex-md-row gap-4 px-2 px-md-0">
-                        <div class="d-none d-md-block">
-                            <img src="./assets/img/chi-tiet-su-kien.png" alt="chi tiet" />
-                        </div>
-                        <div class="d-flex flex-column gap-2" style="max-width: 950px;">
-                            <nav aria-label="breadcrumb">
-                                <ol class="breadcrumb" id="breadcrumb">
-                                </ol>
-                            </nav>
-                            <div class="fw-bolder fs-1 title-event">
-                                Lễ Khai giảng năm học 2024 - 2025 và Đại nhạc hội Chào tân sinh viên K18
-                            </div>
-                            <div class="d-flex flex-column flex-lg-row justify-content-between border-left-custom">
-                                <div class="d-flex flex-column gap-2">
-                                    <div class="title-location">Tổ chức bởi</div>
-                                    <div class="fw-bolder detail-location">Đại học Đại Nam</div>
-                                </div>
-                                <div class="d-flex flex-column gap-2">
-                                    <div class="title-location">Thời gian diễn ra</div>
-                                    <div class="fw-bolder detail-location">Thứ 7, ngày 26/10/2024 05:00 pm - 10:00 pm</div>
-                                </div>
-                                <div class="d-flex flex-column gap-2">
-                                    <div class="title-location">Địa điểm tổ chức</div>
-                                    <div class="fw-bolder detail-location">Hội trường 1 - GĐ2</div>
-                                </div>
-                            </div>
-                            <div class="d-flex flex-row gap-4">
-                                <div class="d-sm-block d-md-none">
-                                    <img src="./assets/img/chi-tiet-su-kien.png" alt="chi tiet" style="height: 100px; width: 100px;" />
-                                </div>
-                                <div class="hstack gap-2 py-0 py-md-2 share-social">
-                                    <div>Đăng ngày 03/12/2024</div>
-                                    <div class="vr"></div>
-                                    <div>14.966 lượt xem</div>
-                                    <div class="vr hidding-stack"></div>
-                                    <div class="d-flex flex-row gap-4 ">Chia sẻ:
-                                        <a href="https://facebook.com" target="_blank" rel="noopener noreferrer">
-                                            <img src="assets/logo/facebook-detail.svg" alt="fb" class="hover-icon-social" />
-                                        </a>
-                                        <a href="https://x.com" target="_blank" rel="noopener noreferrer">
-                                            <img src="assets/logo/x-detail.svg" alt="x" class="hover-icon-social" />
-                                        </a>
-                                        <a href="https://pinterest.com" target="_blank" rel="noopener noreferrer">
-                                            <img src="assets/logo/zalo.svg" alt="zalo" class="hover-icon-social" />
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+  <body>
+    <main class="border-top">
+      <div
+        class="container pt-xl-5 pt-3 pb-xl-4 pb-2 border-bottom border-sm-none"
+      >
+        <div
+          class="d-flex flex-column-reverse flex-md-row gap-4 align-items-center"
+        >
+          <div class="d-none d-md-block">
+            <img src="./assets/img/chi-tiet-su-kien.png" alt="chi tiet" />
+          </div>
+          <div class="d-flex flex-column gap-2" style="max-width: 950px">
+            <nav aria-label="breadcrumb">
+              <ol class="breadcrumb" id="breadcrumb"></ol>
+            </nav>
+            <div class="fw-bolder fs-1 title-event">
+              Lễ Khai giảng năm học 2024 - 2025 và Đại nhạc hội Chào tân sinh
+              viên K18
             </div>
+            <div
+              class="d-flex flex-column flex-lg-row justify-content-between border-left-custom"
+            >
+              <div class="d-flex flex-column gap-2">
+                <div class="title-location">Tổ chức bởi</div>
+                <div class="fw-bolder detail-location">Đại học Đại Nam</div>
+              </div>
+              <div class="d-flex flex-column gap-2">
+                <div class="title-location">Thời gian diễn ra</div>
+                <div class="fw-bolder detail-location">
+                  Thứ 7, ngày 26/10/2024 05:00 pm - 10:00 pm
+                </div>
+              </div>
+              <div class="d-flex flex-column gap-2">
+                <div class="title-location">Địa điểm tổ chức</div>
+                <div class="fw-bolder detail-location">Hội trường 1 - GĐ2</div>
+              </div>
+            </div>
+            <div class="d-flex flex-row gap-xl-4 gap-3 mt-xl-0 mt-2">
+              <div class="d-sm-block d-md-none">
+                <img
+                  src="./assets/img/chi-tiet-su-kien.png"
+                  alt="chi tiet"
+                  style="height: 100px; width: 100px"
+                />
+              </div>
+              <div
+                class="d-flex align-items-xl-center justify-content-center gap-3 gap-xl-0 align-items-baseline gap-xl-3 gap-2 py-0 py-md-2 share-social flex-column flex-xl-row"
+              >
+                <div class="d-flex align-items-center gap-xl-3 gap-2">
+                  <div>Đăng ngày 03/12/2024</div>
+                  <div class="vr"></div>
+                  <div>14.966 lượt xem</div>
+                </div>
+                <div class="vr hidding-stack"></div>
+                <div class="d-flex flex-row gap-xl-4 gap-3 align-items-center">
+                  Chia sẻ:
+                  <a
+                    href="https://facebook.com"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <img
+                      src="assets/logo/facebook-detail.svg"
+                      alt="fb"
+                      class="hover-icon-social"
+                    />
+                  </a>
+                  <a
+                    href="https://x.com"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <img
+                      src="assets/logo/x-detail.svg"
+                      alt="x"
+                      class="hover-icon-social"
+                    />
+                  </a>
+                  <a
+                    href="https://pinterest.com"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <img
+                      src="assets/logo/zalo.svg"
+                      alt="zalo"
+                      class="hover-icon-social"
+                    />
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
-    <div class="container py-3 ">
-        <nav aria-label="breadcrumb">
-            <ol class="breadcrumb ps-xl-2" id="breadcrumb">
-            </ol>
-        </nav>
+      </div>
+      <div class="container py-4">
         <div class="row">
-            <div class="col-xl-8 col-12 ps-xl-4 d-flex flex-column gap-3 px-3 px-md-0">
-                <div>
-                    <div class="fw-bold detail-content">
-                        [CHÍNH THỨC] - DÀN LINE-UP “CHẤT HƠN NƯỚC CẤT” TRONG LỄ KHAI GIẢNG VÀ ĐẠI NHẠC HỘI CHÀO TÂN SINH VIÊN K18
-                    </div>
-                    <p class="fs-5-5 detail-content">Dainam-ers đã sẵn sàng “cháy” hết mình tại Lễ Khai giảng và Đại nhạc hội Chào tân sinh viên K18 chưa?</p>
-                    <p class="fs-5-5 detail-content">Ngày 28/9 tới đây, sân khấu 14.000m2 với sức chứa lên đến 15.000 người của trường Đại học Đại Nam sẽ bùng nổ với những
-                    nghệ sĩ nổi tiếng:</p>
+          <div class="col-xl-8 col-12">
+            <div class="content">
+              <div>
+                <div class="fw-bold detail-content">
+                  [CHÍNH THỨC] - DÀN LINE-UP “CHẤT HƠN NƯỚC CẤT” TRONG LỄ KHAI
+                  GIẢNG VÀ ĐẠI NHẠC HỘI CHÀO TÂN SINH VIÊN K18
                 </div>
-                <div class="rounded-12">
-                    <img src="assets/img/tintuc-img.png" alt="tin-tuc" width="100%" height="550" class="object-fit-cover" />
-                    <div class="text-center fst-italic fw-medium">
-                        Sinh viên Đại Nam trải nghiệm thực tế ngành Logistics & Quản lý chuỗi cung ứng
-                    </div>
+                <p class="fs-5-5 detail-content">
+                  Dainam-ers đã sẵn sàng “cháy” hết mình tại Lễ Khai giảng và
+                  Đại nhạc hội Chào tân sinh viên K18 chưa?
+                </p>
+                <p class="fs-5-5 detail-content">
+                  Ngày 28/9 tới đây, sân khấu 14.000m2 với sức chứa lên đến
+                  15.000 người của trường Đại học Đại Nam sẽ bùng nổ với những
+                  nghệ sĩ nổi tiếng:
+                </p>
+              </div>
+              <div class="rounded-12">
+                <img
+                  src="assets/img/tintuc-img.png"
+                  alt="tin-tuc"
+                  width="100%"
+                  height="550"
+                  class="object-fit-cover"
+                />
+                <div class="text-center fst-italic fw-medium">
+                  Sinh viên Đại Nam trải nghiệm thực tế ngành Logistics & Quản
+                  lý chuỗi cung ứng
                 </div>
-    
-                <div>
-                    <p class="fs-5-5">
-                        <span class="fw-bold">Noo Phước Thịnh</span> - “hoàng tử Vpop” với loạt bản hit triệu view. Sự kết hợp giữa giọng hát nội lực và phong cách biểu diễn
-                        đỉnh cao nhất định khiến sân khấu Chào tân "bùng cháy".
-                    </p>
-                    <p class="fs-5-5">
-                        <span class="fw-bold">Amee</span> - nàng “công chúa” thế hệ mới của V-pop, sở hữu hàng loạt bản hit ngọt ngào như: Shay Nắng, Anh Nhà Ở Đâu Thế, Hai
-                        Mươi Hai... Amee chắc chắn hút mọi sự chú ý bởi giọng hát ngọt ngào, phong cách trình diễn chuyên nghiệp.
-                    </p>
-                    <p class="fs-5-5">
-                        <span class="fw-bold">DJ Huy Lee</span> sẵn sàng “quẩy” tung sân khấu với những bản mix cực chất, đưa cảm xúc của bạn lên đến đỉnh điểm.
-                        Và không thể thiếu, Nam MC Hàn Minh Xập Xình – người kết nối tất cả cảm xúc để tạo nên một đêm nhạc bùng nổ không thể
-                        quên.
-                    </p>
-                    <p class="fs-5-5">
-                        Đêm Đại nhạc hội không chỉ là bữa tiệc âm nhạc, mà còn là lời chào thân thương từ Đại học Đại Nam dành tặng các tân sinh
-                        viên K18, mở đầu cho những kỷ niệm đáng nhớ của tuổi trẻ.
-                    </p>
-                    <p class="fs-5-5">
-                        Trường Đại học Đại Nam hân hoan chào mừng tân sinh viên K18 gia nhập ngôi nhà chung. Hẹn gặp lại các bạn tại sân khấu
-                        vào ngày 28/9
-                    </p>
-                    <p class="fs-5-5">
-                        --------------------------------------------------
-                    </p>
-                    <p class="fs-5-5">
-                        Đại học Đại Nam – Học để thay đổi
-                    </p>
-                    <p class="fs-5-5">
-                        Hotline: 0961.595599 / 0931.595599
-                    </p>
-                    <p class="fs-5-5">
-                        Địa chỉ: Số 1, Phố Xốm, Phú Lãm, Hà Đông, Hà Nội
-                    </p>
+              </div>
+
+              <div>
+                <p class="fs-5-5">
+                  <span class="fw-bold">Noo Phước Thịnh</span> - “hoàng tử Vpop”
+                  với loạt bản hit triệu view. Sự kết hợp giữa giọng hát nội lực
+                  và phong cách biểu diễn đỉnh cao nhất định khiến sân khấu Chào
+                  tân "bùng cháy".
+                </p>
+                <p class="fs-5-5">
+                  <span class="fw-bold">Amee</span> - nàng “công chúa” thế hệ
+                  mới của V-pop, sở hữu hàng loạt bản hit ngọt ngào như: Shay
+                  Nắng, Anh Nhà Ở Đâu Thế, Hai Mươi Hai... Amee chắc chắn hút
+                  mọi sự chú ý bởi giọng hát ngọt ngào, phong cách trình diễn
+                  chuyên nghiệp.
+                </p>
+                <p class="fs-5-5">
+                  <span class="fw-bold">DJ Huy Lee</span> sẵn sàng “quẩy” tung
+                  sân khấu với những bản mix cực chất, đưa cảm xúc của bạn lên
+                  đến đỉnh điểm. Và không thể thiếu, Nam MC Hàn Minh Xập Xình –
+                  người kết nối tất cả cảm xúc để tạo nên một đêm nhạc bùng nổ
+                  không thể quên.
+                </p>
+                <p class="fs-5-5">
+                  Đêm Đại nhạc hội không chỉ là bữa tiệc âm nhạc, mà còn là lời
+                  chào thân thương từ Đại học Đại Nam dành tặng các tân sinh
+                  viên K18, mở đầu cho những kỷ niệm đáng nhớ của tuổi trẻ.
+                </p>
+                <p class="fs-5-5">
+                  Trường Đại học Đại Nam hân hoan chào mừng tân sinh viên K18
+                  gia nhập ngôi nhà chung. Hẹn gặp lại các bạn tại sân khấu vào
+                  ngày 28/9
+                </p>
+                <p class="fs-5-5">
+                  --------------------------------------------------
+                </p>
+                <p class="fs-5-5">Đại học Đại Nam – Học để thay đổi</p>
+                <p class="fs-5-5">Hotline: 0961.595599 / 0931.595599</p>
+                <p class="fs-5-5">
+                  Địa chỉ: Số 1, Phố Xốm, Phú Lãm, Hà Đông, Hà Nội
+                </p>
+              </div>
+
+              <div
+                class="d-flex flex-row justify-content-end color-primary gap-1"
+              >
+                Tác giả:
+                <p class="fw-bold">Ban truyền thông</p>
+              </div>
+
+              <div
+                class="d-flex color-primary flex-column flex-lg-row gap-2 fs-5-5"
+              >
+                <span class="fw-bold"> Tag: </span>
+                <div class="d-flex gap-md-2 gap-1 flex-wrap">
+                  <a
+                    class="badge bg-badge color-primary fw-semibold p-2 align-self-center hover-f666"
+                    href=""
+                  >
+                    Bản tin Đại Nam
+                  </a>
+                  <a
+                    class="badge bg-badge color-primary fw-semibold p-2 align-self-center hover-f666"
+                    href=""
+                  >
+                    Đối tác hợp tác
+                  </a>
+                  <a
+                    class="badge bg-badge color-primary fw-semibold p-2 align-self-center hover-f666"
+                    href=""
+                  >
+                    Bản tin hướng nghiệp
+                  </a>
                 </div>
-                <div class="d-flex flex-row justify-content-end color-primary gap-1">
-                    Tác giả:
-                    <p class="fw-bold">
-                        Ban truyền thông
-                    </p>
-                </div>
-                <div class="d-flex flex-row color-primary gap-1">
-                    Tag:
-                    <span class="badge bg-badge text-center color-primary fw-medium align-self-center hover-f666">
-                        Bản tin Đại Nam
-                    </span>
-                    <span class="badge bg-badge text-center color-primary fw-medium align-self-center hover-f666">
-                        Đối tác hợp tác
-                    </span>
-                    <span class="badge bg-badge text-center color-primary fw-medium align-self-center hover-f666">
-                        Bản tin hướng nghiệp
-                    </span>
-                </div>
+              </div>
             </div>
-            <div class="col-lg-4 col-md-12 relevant-content pe-1 d-flex flex-column gap-4">
-                <div class="sticky-lg-top" style=" z-index: 2;">
-                    <div class="d-flex flex-column gap-3 border-bottom pb-4">
-                        <div class="fw-bolder" style="font-size: 26px;">
-                            Bài viết mới nhất
-                        </div>
-                        <div class="d-flex flex-column gap-3">
-                            <div class="d-flex flex-row gap-2 align-items-center hover-trigger">
-                                <div>
-                                    <img src="assets/img/chi-tiet-tin-tuc-ex.png" width="144" height="95"
-                                        class="object-fit-cover rounded-8" alt="Chi tiết tin tức" />
-                                </div>
-                
-                                <div class="d-flex flex-column gap-2">
-                                    <div class="fw-bold title fs-6 color-secondary">Khoa Thương mại điện tử và Kinh tế số</div>
-                                    <div class="fw-bold subtitle fs-6">
-                                        E-UNITOUR 2024 - Nơi sinh viên Đại Nam bứt phá cùng xu hướng thương mại điện tử, kinh tế
-                                        số
-                                    </div>
-                                </div>
-                            </div>
-                
-                            <div class="d-flex flex-row gap-2 align-items-center hover-trigger">
-                                <div>
-                                    <img src="assets/img/chi-tiet-tin-tuc-ex.png" width="144" height="95"
-                                        class="object-fit-cover rounded-8" alt="Chi tiết tin tức" />
-                                </div>
-                
-                                <div class="d-flex flex-column gap-2">
-                                    <div class="fw-bold title fs-6 color-secondary">Bản tin Đại Nam</div>
-                                    <div class="fw-bold subtitle fs-6">
-                                        Lễ Khai giảng năm học 2024 - 2025 và Đại nhạc hội Chào tân sinh viên K18
-                                    </div>
-                                </div>
-                            </div>
-                
-                            <div class="d-flex flex-row gap-2 align-items-center hover-trigger">
-                                <div>
-                                    <img src="assets/img/chi-tiet-tin-tuc-ex.png" width="144" height="95"
-                                        class="object-fit-cover rounded-8" alt="Chi tiết tin tức" />
-                                </div>
-                
-                                <div class="d-flex flex-column gap-2">
-                                    <div class="fw-bold title fs-6 color-secondary">Khoa Y</div>
-                                    <div class="fw-bold subtitle fs-6">
-                                        Trường Đại học Đại Nam và Bệnh viện Tai Mũi Họng Trung ương hợp tác đào tạo - Bước đột
-                                        phá trong đào tạo
-                                        y khoa gắn liền
-                                        thực tiễn
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <a href="" class="fs-5 d-flex align-items-center gap-2 fw-extra hover-f666">
-                            Xem tất cả Bài viết
-                            <img src="assets/icon/see-all-plus.svg" alt="" width="25px" height="25px" />
-                        </a>
+          </div>
+          <div class="col-xl-4 col-12 mt-xl-0 mt-5">
+            <div class="border-bottom pb-4">
+              <div class="fw-bolder relevant-title">Bài viết mới nhất</div>
+              <div class="post-item">
+                <a class="row align-items-center" href="">
+                  <div class="col-4">
+                    <div class="zoom-105 side-menu-img rounded-8">
+                      <img
+                        src="assets/img/chi-tiet-tin-tuc-ex.png"
+                        width="100%"
+                        height="100%"
+                        class="object-fit-cover"
+                        alt="Chi tiết tin tức"
+                      />
                     </div>
-                    <div class="d-flex flex-column gap-3 py-4">
-                        <div class="fw-bolder" style=" font-size: 26px;">
-                            Sự kiện gần đây
-                        </div>
-                        <div class="d-flex flex-column gap-3">
-                            <div class="d-flex flex-row gap-2 align-items-center hover-trigger">
-                                <div>
-                                    <img src="assets/img/example-img-events.png" width="144" height="144"
-                                        class="object-fit-cover rounded-8" alt="Chi tiết tin tức" />
-                                </div>
-                
-                                <div class="d-flex flex-column gap-2">
-                                    <div class="fw-bold title fs-6 color-secondary">Sự kiện cấp trường</div>
-                                    <div class="fw-bold subtitle fs-6">
-                                        Hội thảo khoa học quốc tế "Sự phát triển Fintech và những tác động về mặt xã hội – Kinh
-                                        nghiệm quốc tế và hàm ý đối với
-                                        Việt Nam"
-                                    </div>
-                                </div>
-                            </div>
-                
-                            <div class="d-flex flex-row gap-2 align-items-center hover-trigger">
-                                <div>
-                                    <img src="assets/img/example-img-events.png" width="144" height="144"
-                                        class="object-fit-cover rounded-8" alt="Chi tiết tin tức" />
-                                </div>
-                
-                                <div class="d-flex flex-column gap-2">
-                                    <div class="fw-bold title fs-6 color-secondary">Sự kiện cấp trường</div>
-                                    <div class="fw-bold subtitle fs-6">
-                                        Lễ Khai giảng năm học 2024 - 2025 và Đại nhạc hội Chào tân sinh viên K18
-                                    </div>
-                                </div>
-                            </div>
-                
-                            <div class="d-flex flex-row gap-2 align-items-center hover-trigger">
-                                <div>
-                                    <img src="assets/img/example-img-events.png" width="144" height="144"
-                                        class="object-fit-cover rounded-8" alt="Chi tiết tin tức" />
-                                </div>
-                
-                                <div class="d-flex flex-column gap-2">
-                                    <div class="fw-bold title fs-6 color-secondary">Sự kiện cấp trường</div>
-                                    <div class="fw-bold subtitle fs-6">
-                                        Ngày hội việc làm sinh viên - DNU Job Fair 2024 - đợt 2
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <a href="" class="fs-5 d-flex align-items-center gap-2 fw-extra hover-f666">
-                            Xem tất cả Bài viết liên quan
-                            <img src="assets/icon/see-all-plus.svg" alt="" width="25px" height="25px" />
-                        </a>
+                  </div>
+
+                  <div class="col-8">
+                    <div
+                      class="fw-bold fs-6 color-secondary hover-red post-item-title"
+                    >
+                      Khoa Thương mại điện tử và Kinh tế số
                     </div>
-                
-                
-                </div>
+                    <div class="fw-bold subtitle fs-6 mt-2 hover-f666">
+                      E-UNITOUR 2024 - Nơi sinh viên Đại Nam bứt phá cùng xu
+                      hướng thương mại điện tử, kinh tế số
+                    </div>
+                  </div>
+                </a>
+              </div>
+
+              <div class="post-item">
+                <a class="row align-items-center" href="">
+                  <div class="col-4">
+                    <div class="zoom-105 side-menu-img rounded-8">
+                      <img
+                        src="assets/img/chi-tiet-tin-tuc-ex.png"
+                        width="100%"
+                        class="object-fit-cover rounded-8"
+                        alt="Chi tiết tin tức"
+                      />
+                    </div>
+                  </div>
+
+                  <div class="col-8">
+                    <div
+                      class="fw-bold fs-6 color-secondary hover-red post-item-title"
+                    >
+                      Bản tin Đại Nam
+                    </div>
+                    <div class="fw-bold subtitle fs-6 mt-2 hover-f666">
+                      Lễ Khai giảng năm học 2024 - 2025 và Đại nhạc hội Chào tân
+                      sinh viên K18
+                    </div>
+                  </div>
+                </a>
+              </div>
+
+              <div class="post-item">
+                <a class="row align-items-center" href="">
+                  <div class="col-4">
+                    <div class="zoom-105 side-menu-img rounded-8">
+                      <img
+                        src="assets/img/chi-tiet-tin-tuc-ex.png"
+                        width="100%"
+                        class="object-fit-cover rounded-8"
+                        alt="Chi tiết tin tức"
+                      />
+                    </div>
+                  </div>
+
+                  <div class="col-8">
+                    <div
+                      class="fw-bold fs-6 color-secondary hover-red post-item-title"
+                    >
+                      Khoa Y
+                    </div>
+                    <div class="fw-bold subtitle fs-6 mt-2 hover-f666">
+                      Trường Đại học Đại Nam và Bệnh viện Tai Mũi Họng Trung
+                      ương hợp tác đào tạo - Bước đột phá trong đào tạo y khoa
+                      gắn liền thực tiễn
+                    </div>
+                  </div>
+                </a>
+              </div>
+
+              <a
+                href=""
+                class="see-all d-flex align-items-center gap-2 fw-extra hover-f666 pt-2"
+              >
+                Xem tất cả Bài viết
+                <img
+                  src="assets/icon/see-all-plus.svg"
+                  alt=""
+                  width="24px"
+                  height="24px"
+                />
+              </a>
             </div>
-    
+
+            <div class="py-4">
+              <div class="fw-bolder relevant-title">Sự kiện gần đây</div>
+              <div class="post-item">
+                <a class="row align-items-center" href="">
+                  <div class="col-4">
+                    <div class="zoom-105 side-menu-img rounded-8">
+                      <img
+                        src="assets/img/example-img-events.png"
+                        width="100%"
+                        class="object-fit-cover rounded-8"
+                        alt="Chi tiết tin tức"
+                      />
+                    </div>
+                  </div>
+
+                  <div class="col-8">
+                    <div
+                      class="fw-bold fs-6 color-secondary hover-red post-item-title"
+                    >
+                      Sự kiện cấp trường
+                    </div>
+                    <div class="fw-bold subtitle fs-6 mt-2 hover-f666">
+                      Hội thảo khoa học quốc tế "Sự phát triển Fintech và những
+                      tác động về mặt xã hội – Kinh nghiệm quốc tế và hàm ý đối
+                      với Việt Nam"
+                    </div>
+                  </div>
+                </a>
+              </div>
+
+              <div class="post-item">
+                <a class="row align-items-center" href="">
+                  <div class="col-4">
+                    <div class="zoom-105 side-menu-img rounded-8">
+                      <img
+                        src="assets/img/example-img-events.png"
+                        width="100%"
+                        class="object-fit-cover rounded-8"
+                        alt="Chi tiết tin tức"
+                      />
+                    </div>
+                  </div>
+
+                  <div class="col-8">
+                    <div
+                      class="fw-bold fs-6 color-secondary hover-red post-item-title"
+                    >
+                      Sự kiện cấp trường
+                    </div>
+                    <div class="fw-bold subtitle fs-6 mt-2 hover-f666">
+                      Lễ Khai giảng năm học 2024 - 2025 và Đại nhạc hội Chào tân
+                      sinh viên K18
+                    </div>
+                  </div>
+                </a>
+              </div>
+
+              <div class="post-item">
+                <a class="row align-items-center" href="">
+                  <div class="col-4">
+                    <div class="zoom-105 side-menu-img rounded-8">
+                      <img
+                        src="assets/img/example-img-events.png"
+                        width="100%"
+                        class="object-fit-cover rounded-8"
+                        alt="Chi tiết tin tức"
+                      />
+                    </div>
+                  </div>
+
+                  <div class="col-8">
+                    <div
+                      class="fw-bold fs-6 color-secondary hover-red post-item-title"
+                    >
+                      Sự kiện cấp trường
+                    </div>
+                    <div class="fw-bold subtitle fs-6 mt-2 hover-f666">
+                      Ngày hội việc làm sinh viên - DNU Job Fair 2024 - đợt 2
+                    </div>
+                  </div>
+                </a>
+              </div>
+
+              <a
+                href=""
+                class="see-all d-flex align-items-center gap-2 fw-extra hover-f666 pt-2"
+              >
+                Xem tất cả Sự kiện
+                <img
+                  src="assets/icon/see-all-plus.svg"
+                  alt=""
+                  width="24px"
+                  height="24px"
+                />
+              </a>
+            </div>
+          </div>
         </div>
-    </div>
+      </div>
     </main>
-</body>
-<script type="module">
-    import { renderBreadcrumb } from './components/breadcrumb/breadcrumb.js';
-    const breadcrumbLinks = [
-        { name: "Tin tức & Sự kiện", url: "index.html" },
-        { name: "Tin tức ", url: "library.html" },
-        { name: "Khoa Thương mại điện tử và Kinh tế số", url: null }, // Active page (không có link)
-    ];
-    renderBreadcrumb(breadcrumbLinks);
-</script>
+  </body>
 </html>
