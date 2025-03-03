@@ -90,10 +90,22 @@ th {
 }
 .guide-link {
   color: rgba(0, 18, 83, 1);
+  font-weight: 700;
+  transition: color 0.15s ease-in;
+}
+.guide-link:not(.no-hover):hover {
+  color: var(--secondary-color);
 }
 .guide-list {
-  list-style-image: url("/assets/icon/guide-list-style.svg");
   font-size: 14px;
+}
+.guide-marker {
+  position: absolute;
+  left: -1.5rem;
+  top: 3px;
+}
+.guide-list li {
+  font-weight: 500;
 }
 .guide-list li:hover {
   font-weight: 700;
@@ -122,5 +134,25 @@ th {
   .table-file th:last-child,
   .table-file td:last-child {
     text-align: right;
+  }
+}
+
+.guide-item {
+  list-style-type: initial;
+  font-weight: 500;
+}
+
+@media (min-width: 768px) {
+  .d-md-table-col-group {
+    display: table-column-group !important;
+  }
+}
+@media (max-width: 767.98px) {
+  .guide-item {
+    font-size: 15px !important;
+  }
+  .lookup-icon {
+    width: 20px;
+    height: 20px;
   }
 }

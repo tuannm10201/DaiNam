@@ -35,18 +35,21 @@
           <img
             src="assets/img/lookup-bg-people-sm.png"
             class="d-lg-none object-fit-contain"
+            style="margin-bottom: -4px"
             alt=""
             height="220"
           />
-          <div class="mb-3 mb-lg-5 bg-white card px-4 py-3 rounded-4">
+          <div
+            class="mb-3 mb-lg-5 bg-white card p-4 rounded-4 position-relative"
+          >
             <form class="row gap-3 gap-lg-0" id="form">
               <div class="col-lg-5 col-12">
-                <label for="customDropdown" class="fw-semibold">
+                <label for="customDropdown" class="fw-600 color-primary">
                   Chọn thông tin bạn cần tra cứu
                 </label>
                 <div class="dropdown mt-2">
                   <button
-                    class="dropdown-toggle custom-select-dropdown lookup-input fw-medium form-select form-select-lg text-start"
+                    class="dropdown-toggle custom-select-dropdown lookup-input fw-bolder form-select form-select-lg text-start"
                     type="button"
                     id="customDropdown"
                     data-bs-toggle="dropdown"
@@ -98,13 +101,13 @@
                 </div>
               </div>
               <div class="col-lg-5 col-12 position-relative">
-                <label for="input" class="fw-semibold">
+                <label for="input" class="fw-600 color-primary">
                   Nhập số CCCD/CMND
                 </label>
                 <input
                   type="input"
                   id="input"
-                  class="form-control form-control-lg mt-2 lookup-input fw-medium"
+                  class="form-control form-control-lg mt-2 lookup-input fw-bolder"
                   placeholder="Nhập số CCCD/CMND(*)"
                   inputmode="numeric"
                   pattern="[0-9]*"
@@ -120,25 +123,27 @@
               </div>
               <div class="col-lg-2 col-12 d-flex mt-lg-0 mt-2">
                 <button
-                  class="btn btn-lg lookup-btn mt-auto d-flex align-items-center justify-content-center gap-2 w-100"
+                  class="btn btn-lg lookup-btn mt-auto d-flex align-items-center justify-content-center gap-2 w-100 z-1"
                   type="submit"
                 >
-                  <img
-                    src="assets/icon/lookup-icon.svg"
-                    alt=""
-                    class="d-none d-xl-block"
-                  />
-                  <div class="fw-medium">Tra cứu</div>
+                  <img src="assets/icon/lookup-icon.svg" alt="" />
+                  <div class="fw-bolder text-nowrap">Tra cứu</div>
                 </button>
               </div>
             </form>
 
             <div class="mt-3">
               Trong trường hợp không tra cứu được, vui lòng liên hệ hotline
-              <span class="fw-semibold contact"> 0961.595.559 </span> hoặc
-              <span class="fw-semibold contact"> 0931.595.599 </span>
+              <span class="fw-bolder contact"> 0961.595.559 </span> hoặc
+              <span class="fw-bolder contact"> 0931.595.599 </span>
               để được hỗ trợ.
             </div>
+
+            <img
+              src="assets/icon/lookup-bg-icon.svg"
+              class="bg-icon end-0 top-0 d-none d-lg-block"
+              alt=""
+            />
           </div>
         </div>
 
@@ -157,49 +162,57 @@
         />
       </section>
 
-      <section class="info py-4">
+      <section class="info py-4 color-primary">
         <div class="container">
           <div class="rounded-4 bg-white">
             <h4
-              class="d-flex align-items-center gap-2 border-bottom px-4 pt-4 pb-3 fw-extra"
+              class="d-flex align-items-center gap-2 border-bottom px-lg-4 px-3 pt-4 pb-3 fw-extra"
             >
-              <img src="assets/icon/candidate-info.svg" alt="" />
+              <img
+                src="assets/icon/candidate-info.svg"
+                alt=""
+                class="lookup-icon"
+              />
               Thông tin thí sinh/Người dự tuyển
             </h4>
-            <div class="px-4 py-2">
+            <div class="px-lg-4 px-3 py-2">
               <table class="table table-bordered table-candidate-info">
-                <!-- <colgroup>
+                <colgroup class="d-md-table-col-group d-none">
                   <col style="width: 25%" />
                   <col style="width: 75%" />
-                </colgroup> -->
+                </colgroup>
+                <colgroup class="d-md-none">
+                  <col style="width: 45%" />
+                  <col style="width: 55%" />
+                </colgroup>
                 <tbody>
                   <tr class="border-top-0">
-                    <td>Hệ đào tạo</td>
-                    <td id="he-dao-tao">-</td>
+                    <td class="fw-bolder">Hệ đào tạo</td>
+                    <td class="fw-medium" id="he-dao-tao">-</td>
                   </tr>
                   <tr>
-                    <td>Họ và tên</td>
-                    <td id="ho-va-ten">-</td>
+                    <td class="fw-bolder">Họ và tên</td>
+                    <td class="fw-medium" id="ho-va-ten">-</td>
                   </tr>
                   <tr>
-                    <td>Ngày sinh</td>
-                    <td id="ngay-sinh">-</td>
+                    <td class="fw-bolder">Ngày sinh</td>
+                    <td class="fw-medium" id="ngay-sinh">-</td>
                   </tr>
                   <tr>
-                    <td>Giới tính</td>
-                    <td id="gioi-tinh">-</td>
+                    <td class="fw-bolder">Giới tính</td>
+                    <td class="fw-medium" id="gioi-tinh">-</td>
                   </tr>
                   <tr>
-                    <td>Số CCCD/CMND</td>
-                    <td id="so-cccd">-</td>
+                    <td class="fw-bolder">Số CCCD/CMND</td>
+                    <td class="fw-medium" id="so-cccd">-</td>
                   </tr>
                   <tr>
-                    <td>Địa chỉ</td>
-                    <td id="dia-chi">-</td>
+                    <td class="fw-bolder">Địa chỉ</td>
+                    <td class="fw-medium" id="dia-chi">-</td>
                   </tr>
                   <tr>
-                    <td>Điện thoại</td>
-                    <td id="dien-thoai">-</td>
+                    <td class="fw-bolder">Điện thoại</td>
+                    <td class="fw-medium" id="dien-thoai">-</td>
                   </tr>
                 </tbody>
               </table>
@@ -208,21 +221,25 @@
 
           <div class="rounded-4 bg-white mt-4">
             <h4
-              class="d-flex align-items-center gap-2 border-bottom px-4 pt-4 pb-3 fw-extra"
+              class="d-flex align-items-center gap-2 border-bottom px-lg-4 px-3 pt-4 pb-3 fw-extra"
             >
-              <img src="assets/icon/admission-result.svg" alt="" />
+              <img
+                src="assets/icon/admission-result.svg"
+                alt=""
+                class="lookup-icon"
+              />
               Kết quả tuyển sinh
             </h4>
-            <div class="px-4 pb-2">
+            <div class="px-lg-4 px-3 pb-2">
               <table
                 class="table table-bordered table-admission-result d-xl-table d-none"
               >
                 <colgroup>
-                  <col style="width: 25%" />
-                  <col style="width: 25%" />
-                  <col style="width: 15%" />
-                  <col style="width: 15%" />
-                  <col style="width: 20%" />
+                  <col style="width: 30%" />
+                  <col style="width: 30%" />
+                  <col style="width: 12%" />
+                  <col style="width: 12%" />
+                  <col style="width: 16%" />
                 </colgroup>
                 <thead>
                   <tr class="border-top-0">
@@ -230,21 +247,21 @@
                     <th>Phương thức</th>
                     <th>Tổ hợp</th>
                     <th>Tổng điểm</th>
-                    <th>Kết quả</th>
+                    <th class="text-end">Kết quả</th>
                   </tr>
                 </thead>
                 <tbody>
                   <tr>
-                    <td>-</td>
-                    <td>-</td>
-                    <td>-</td>
-                    <td>-</td>
-                    <td>-</td>
+                    <td class="fs-5-5 fw-bolder">-</td>
+                    <td class="fs-5-5 fw-bolder">-</td>
+                    <td class="fs-5-5 fw-bolder">-</td>
+                    <td class="fs-5-5 fw-bolder">-</td>
+                    <td class="fs-5-5 fw-bolder text-end">-</td>
                   </tr>
                 </tbody>
               </table>
 
-              <ul class="fw-bolder color-primary d-xl-none">
+              <ul class="fw-bolder d-xl-none">
                 <li class="py-2 border-bottom">
                   <div class="opacity-50 result-title">Ngành</div>
                   <div class="nganh">-</div>
@@ -271,17 +288,17 @@
 
           <div class="rounded-4 bg-white mt-4">
             <h4
-              class="d-flex align-items-center gap-2 border-bottom px-4 pt-4 pb-3 fw-extra"
+              class="d-flex align-items-center gap-2 border-bottom px-lg-4 px-3 pt-4 pb-3 fw-extra"
             >
-              <img src="assets/icon/file.svg" alt="" />
+              <img src="assets/icon/file.svg" alt="" class="lookup-icon" />
               Hồ sơ đã nộp/Cần bổ sung
             </h4>
-            <div class="px-4 pb-2">
-              <table class="table table-bordered table-file">
-                <!-- <colgroup>
-                  <col style="width: 50%" />
-                  <col style="width: 50%" />
-                </colgroup> -->
+            <div class="px-lg-4 px-3 pb-2">
+              <table class="table table-bordered table-file fs-5-5">
+                <colgroup>
+                  <col style="width: 60%" />
+                  <col style="width: 40%" />
+                </colgroup>
                 <thead>
                   <tr class="border-top-0">
                     <th>Loại giấy tờ</th>
@@ -290,35 +307,41 @@
                 </thead>
                 <tbody>
                   <tr>
-                    <td>Học bạ THPT</td>
-                    <td>-</td>
+                    <td class="fw-bolder">Học bạ THPT</td>
+                    <td class="fw-medium">-</td>
                   </tr>
                   <tr>
-                    <td>Bằng tốt nghiệp THPT</td>
-                    <td>-</td>
+                    <td class="fw-bolder">Bằng tốt nghiệp THPT</td>
+                    <td class="fw-medium">-</td>
                   </tr>
                   <tr>
-                    <td>Chứng nhận tốt nghiệp THPT năm 2025</td>
-                    <td>-</td>
+                    <td class="fw-bolder">
+                      Chứng nhận tốt nghiệp THPT năm 2025
+                    </td>
+                    <td class="fw-medium">-</td>
                   </tr>
                   <tr>
-                    <td>Chứng minh nhân dân/ Căn cước công dân</td>
-                    <td>-</td>
+                    <td class="fw-bolder">
+                      Chứng minh nhân dân/ Căn cước công dân
+                    </td>
+                    <td class="fw-medium">-</td>
                   </tr>
                   <tr>
-                    <td>Giấy khai sinh</td>
-                    <td>-</td>
+                    <td class="fw-bolder">Giấy khai sinh</td>
+                    <td class="fw-medium">-</td>
                   </tr>
                   <tr>
-                    <td>Sơ yếu lý lịch</td>
-                    <td>-</td>
+                    <td class="fw-bolder">Sơ yếu lý lịch</td>
+                    <td class="fw-medium">-</td>
                   </tr>
                   <tr>
-                    <td>Giấy tạm hoãn nghĩa vụ quân sự</td>
-                    <td>-</td>
+                    <td class="fw-bolder">Giấy tạm hoãn nghĩa vụ quân sự</td>
+                    <td class="fw-medium">-</td>
                   </tr>
                   <tr class="border-bottom">
-                    <td>Phiếu báo điểm thi tốt nghiệp THPT năm 2025</td>
+                    <td class="fw-bolder">
+                      Phiếu báo điểm thi tốt nghiệp THPT năm 2025
+                    </td>
                     <td>-</td>
                   </tr>
                 </tbody>
@@ -337,14 +360,14 @@
 
           <div class="rounded-4 bg-white mt-4">
             <h4
-              class="d-flex align-items-center gap-2 border-bottom px-4 pt-4 pb-3 fw-extra"
+              class="d-flex align-items-center gap-2 border-bottom px-lg-4 px-3 pt-4 pb-3 fw-extra"
             >
-              <img src="assets/icon/guide.svg" alt="" />
+              <img src="assets/icon/guide.svg" alt="" class="lookup-icon" />
               Hướng dẫn thí sinh/Người dự tuyển
             </h4>
-            <div class="px-4 pb-2">
+            <div class="px-lg-4 px-3 pb-2">
               <ul class="ps-3 d-flex flex-column gap-2">
-                <li>
+                <li class="guide-item">
                   Tất cả sinh viên phải xác nhận nhập học từ ngày 27/12 đến 12h
                   ngày 04/01 trực tuyến tại website
                   <a
@@ -358,7 +381,7 @@
                   (xác nhận nhập học thành công sẽ có thời khóa biểu gửi qua
                   email).
                 </li>
-                <li>
+                <li class="guide-item">
                   Thời gian nộp kinh phi đào tạo: từ 02/01 đến 12h ngày 04/01
                   tại website
                   <a
@@ -374,17 +397,17 @@
                   dẫn thanh toán kinh phí nhập học
                   <a href="" class="guide-link"> TẠI ĐÂY </a>
                 </li>
-                <li>
+                <li class="guide-item">
                   Kinh phí nhập học:
-                  <span class="guide-link"> 25.400.000 đ </span> - Gồm học phí
-                  kỳ 1 (25.000.000 đ) + Lệ phí nhập học (200.000 đ) + Làm thẻ
-                  sinh viên (200.000 ₫)
+                  <span class="guide-link no-hover"> 25.400.000 đ </span> - Gồm
+                  học phí kỳ 1 (25.000.000 đ) + Lệ phí nhập học (200.000 đ) +
+                  Làm thẻ sinh viên (200.000 ₫)
                 </li>
-                <li>
+                <li class="guide-item">
                   Lịch học chính thức: ngày 04/01/2025 (sáng từ 8h-11h35, chiều
                   từ 13h-16h45)
                 </li>
-                <li>
+                <li class="guide-item">
                   Hotline hỗ trợ:
                   <span class="guide-link">
                     <a class="guide-link" href="tel:0931595599">0931595599</a> |
@@ -393,13 +416,32 @@
                 </li>
               </ul>
 
-              <h5 class="mt-4">
+              <div class="mt-4 mb-3 fw-bolder">
                 Thí sinh có thể xem các hướng dẫn khác như sau:
-              </h5>
+              </div>
               <ul class="ps-4 d-flex flex-column gap-2 guide-list">
-                <li>Xác nhận nhập học trực tuyến Đại học Đại Nam năm 2025</li>
-                <li>Nộp học phí trực tuyến Đại học Đại Nam năm 2025</li>
-                <li>
+                <li class="position-relative">
+                  <img
+                    src="assets/icon/guide-list-style.svg"
+                    class="guide-marker"
+                    alt=""
+                  />
+                  Xác nhận nhập học trực tuyến Đại học Đại Nam năm 2025
+                </li>
+                <li class="position-relative">
+                  <img
+                    src="assets/icon/guide-list-style.svg"
+                    class="guide-marker"
+                    alt=""
+                  />
+                  Nộp học phí trực tuyến Đại học Đại Nam năm 2025
+                </li>
+                <li class="position-relative">
+                  <img
+                    src="assets/icon/guide-list-style.svg"
+                    class="guide-marker"
+                    alt=""
+                  />
                   Hướng dẫn nộp học phí trực tuyến Đại học Đại Nam năm 2025
                 </li>
               </ul>

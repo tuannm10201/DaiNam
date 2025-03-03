@@ -4,9 +4,9 @@ new Swiper(".new-swiper", {
     el: ".swiper-pagination",
     clickable: true,
   },
-  // autoplay: {
-  //   delay: SLIDE_DELAY,
-  // },
+  autoplay: {
+    delay: SLIDE_DELAY,
+  },
   on: {
     autoplayTimeLeft(s, time, progress) {
       eventSwiperBorderBottom.style.width = (1 - progress) * 100 + "%";
