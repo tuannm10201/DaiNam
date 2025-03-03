@@ -1,4 +1,4 @@
-import { renderBreadcrumb } from "/components/breadcrumb/breadcrumb.js";
+import { renderBreadcrumb } from "../components/breadcrumb/breadcrumb.js";
 
 const breadcrumbLinks = [
   { name: "Tin tức & Sự kiện", url: "index.html" },
