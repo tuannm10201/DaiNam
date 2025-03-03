@@ -5,9 +5,9 @@ new Swiper(".banner-swiper", {
     el: ".swiper-pagination",
     clickable: true,
   },
-  autoplay: {
-    delay: SLIDE_DELAY,
-  },
+  // autoplay: {
+  //   delay: SLIDE_DELAY,
+  // },
   on: {
     autoplayTimeLeft(s, time, progress) {
       eventSwiperBorderBottom.style.width = (1 - progress) * 100 + "%";
@@ -115,12 +115,39 @@ reasonVideo.addEventListener("click", () => {
   }
 });
 
-// student life
-const studentImgRow2 = document.querySelector(".student-img-row-2");
-const studentShowMore = document.querySelector(
-  ".student-life .see-more-container"
+// animate number
+const DURATION = 1200;
+function animateNumber(element, target) {
+  let startTime = null;
+
+  function step(timestamp) {
+    if (!startTime) startTime = timestamp;
+    const progress = Math.min((timestamp - startTime) / DURATION, 1);
+    element.textContent = Math.floor(progress * target).toLocaleString("vi-VN");
+    if (progress < 1) {
+      requestAnimationFrame(step);
+    } else {
+      element.textContent = target.toLocaleString("vi-VN");
+    }
+  }
+
+  requestAnimationFrame(step);
+}
+
+const observer = new IntersectionObserver(
+  (entries) => {
+    entries.forEach((entry) => {
+      if (entry.isIntersecting) {
+        const numberElement = entry.target;
+        const target = parseInt(numberElement.dataset.numberTarget);
+        animateNumber(numberElement, target);
+        observer.unobserve(numberElement);
+      }
+    });
+  },
+  { threshold: 0.5 }
 );
-studentShowMore.addEventListener("click", function () {
-  studentImgRow2.classList.remove("d-none");
-  this.classList.add("d-none");
-});
+
+document
+  .querySelectorAll("[data-number-target]")
+  .forEach((num) => observer.observe(num));
