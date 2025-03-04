@@ -37,6 +37,9 @@
   -webkit-line-clamp: 3;
 }
 @media (min-width: 1200px) {
+  .event-content-desc {
+    line-height: 32px;
+  }
   .news-slide-item {
     margin-bottom: 8rem !important;
   }
