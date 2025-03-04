@@ -14,6 +14,34 @@
   background-color: var(--background-blue);
 }
 
+form label {
+  margin-bottom: 2px;
+}
+@media (max-width: 991.98px) {
+  .lookup-input,
+  .dropdown * {
+    font-size: 1rem !important;
+  }
+
+  td {
+    font-size: 15px;
+  }
+  .note {
+    font-size: 12px !important;
+  }
+}
+@media (min-width: 992px) {
+  form label {
+    font-size: 20px;
+  }
+  .lookup-input {
+    height: 64px;
+  }
+  .card {
+    padding-top: 30px !important;
+    padding-bottom: 30px !important;
+  }
+}
 /* section top-input */
 .top-input {
   min-height: 500px;
@@ -87,6 +115,7 @@ tr:last-child {
 th {
   opacity: 0.5;
   white-space: nowrap;
+  font-size: 1rem;
 }
 .guide-link {
   color: rgba(0, 18, 83, 1);
@@ -155,4 +184,8 @@ th {
     width: 20px;
     height: 20px;
   }
+}
+
+.note {
+  font-size: 14px;
 }
