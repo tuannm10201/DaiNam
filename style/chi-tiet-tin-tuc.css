@@ -11,6 +11,9 @@
   .see-all {
     font-size: 18px;
   }
+  .badge {
+    padding: 0.815rem 0.75rem !important;
+  }
 }
 .relevant-title {
   font-size: 26px;
@@ -34,6 +37,18 @@
   .see-all {
     font-size: 18px;
   }
+  .share-content,
+  .badge {
+    font-size: 12px;
+  }
+
+  .badge {
+    padding: 0.56rem 0.465rem !important;
+  }
+  .see-all-icon {
+    width: 18.3px;
+    height: 18.3px;
+  }
 }
 .post-item {
   padding: 1rem 0;
@@ -41,4 +56,28 @@
 }
 .post-item:last-of-type {
   border-bottom: none;
+}
+
+@media (max-width: 575.98px) {
+  .side-content {
+    padding-right: 0;
+  }
+  .post-item .row {
+    --bs-gutter-x: 0;
+  }
+  .side-menu-img {
+    padding-left: 0;
+    width: 120px;
+  }
+  .post-item .container {
+    padding: 0;
+  }
+  .post-item .container > * {
+    padding-left: var(--padding-sm-container);
+  }
+  .post-item .col-8 {
+    padding-left: 1rem;
+    padding-right: 6px;
+    width: calc(100% - 120px);
+  }
 }
