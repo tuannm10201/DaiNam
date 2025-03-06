@@ -1,0 +1,306 @@
+.lh-16 {
+  line-height: 1.6;
+}
+
+/* nganh banner */
+.nganh-title-top {
+  font-size: 28px;
+}
+.nganh-title {
+  font-size: 3.375rem;
+}
+.nganh-content {
+  line-height: 180%;
+}
+@media (min-width: 1200px) {
+  .nganh-banner-content {
+    max-width: calc(691px + var(--bs-gutter-x));
+  }
+}
+@media (max-width: 1199.98px) {
+  .nganh-banner .w-50 {
+    width: 100% !important;
+  }
+  .banner-chi-tiet-nganh {
+    aspect-ratio: 1.6;
+  }
+  .nganh-title {
+    font-size: 2rem;
+  }
+}
+@media (max-width: 991.98px) {
+  .nganh-title-top {
+    font-size: 18px !important;
+  }
+  .nganh-content {
+    font-size: 13px;
+  }
+}
+
+/* study-overview */
+.study-overview-left {
+  max-width: 982px;
+}
+.study-overview-right {
+  min-width: 372px;
+}
+.study-overview-right img {
+  max-height: 600px;
+}
+.study-overview-list-item {
+  font-size: 18px;
+  font-weight: 600;
+}
+
+/* highlight-point */
+.highlight-li-item {
+  list-style-type: initial;
+}
+
+/* ability */
+.ability {
+  background-color: rgba(246, 102, 0, 1);
+}
+.ability-row {
+  --bs-gutter-x: 3rem;
+}
+.ability-right-container {
+  padding: 1rem 2rem 1.5rem;
+}
+.ability-li-item:not(:last-child) {
+  border-bottom: 0.5px solid rgba(216, 216, 216, 1);
+}
+.ability-li-item {
+  padding: 1rem 0;
+}
+.ability-swiper .swiper-pagination,
+.methods-swiper .swiper-pagination {
+  width: unset;
+  bottom: -1rem;
+}
+.ability-swiper .swiper-pagination-bullet,
+.methods-swiper .swiper-pagination-bullet {
+  background-color: rgba(5, 6, 8, 1) !important;
+  opacity: 0.2;
+  width: 1rem;
+  height: 1rem;
+  margin: 1rem !important;
+}
+.ability-swiper .swiper-pagination-bullet:first-child,
+.methods-swiper .swiper-pagination-bullet:first-child {
+  margin-left: 0 !important;
+}
+.ability-swiper .swiper-pagination-bullet:hover,
+.methods-swiper .swiper-pagination-bullet:hover {
+  opacity: 0.5;
+}
+.ability-swiper .swiper-pagination-bullet-active,
+.methods-swiper .swiper-pagination-bullet-active {
+  background-color: rgba(242, 116, 35, 1) !important;
+  opacity: 1;
+}
+@media (max-width: 991.98px) {
+  .ability-swiper .swiper-pagination-bullet,
+  .ability-swiper .swiper-pagination-bullet {
+    width: 0.625rem;
+    height: 0.625rem;
+  }
+}
+
+/* structure */
+.structure-nav {
+  position: relative;
+  border-bottom: none;
+}
+.nav-wrapper::after {
+  position: absolute;
+  height: 1px;
+  background-color: rgba(160, 196, 255, 0.2);
+  width: 100%;
+  content: "";
+  bottom: -1px;
+}
+.structure-nav [role="tab"] {
+  border: none;
+  color: currentColor;
+  user-select: none;
+  padding: 0.5rem 0;
+}
+.structure-nav [role="tab"]:not(:last-child) {
+  margin-right: 2.35rem;
+}
+.structure-nav [role="tab"]:hover {
+  color: #ff7700;
+}
+.structure-nav [role="tab"].active::after {
+  width: 0;
+}
+.structure-nav [role="tab"].active {
+  border-bottom: 5px solid var(--secondary-color);
+  font-weight: 700 !important;
+  z-index: 1;
+  background-color: transparent;
+  color: currentColor;
+}
+.structure-ul-content {
+  padding-left: 2rem;
+  list-style-type: initial;
+}
+@media (max-width: 991.98px) {
+  .structure-nav [role="tab"]:not(:last-child) {
+    margin-right: 30px;
+  }
+  .structure-content-title {
+    font-size: 27px !important;
+    line-height: 38px;
+  }
+  .structure-content {
+    display: -webkit-box;
+    -webkit-line-clamp: 6;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    word-wrap: break-word;
+  }
+  .structure-nav [role="tab"].active {
+    border-bottom-width: 4px;
+  }
+}
+@media (min-width: 992px) {
+  .structure-content-container {
+    padding-left: 2.2rem;
+  }
+}
+.structure-content {
+  line-height: 1.8125rem;
+  max-width: 743px;
+}
+
+/* methods */
+.methods-swiper .swiper-pagination {
+  bottom: -1.3rem;
+}
+@media (min-width: 1400px) {
+  .methods-content-left {
+    max-width: 748px;
+  }
+  .methods-content-right {
+    max-width: 640px;
+  }
+}
+
+/* contact */
+.oppoturnity-main-ul > li {
+  padding-left: 2.7rem;
+}
+.oppoturnity-list-icon {
+  position: absolute;
+  left: 0;
+}
+.ppoturnity-sub-ul {
+  list-style-type: initial;
+  display: flex;
+  flex-direction: column;
+  gap: 0.2rem;
+}
+
+/* training */
+.method-guide-nav {
+  position: relative;
+  border-bottom: none;
+}
+.nav-wrapper::after {
+  position: absolute;
+  height: 1px;
+  background-color: rgba(160, 196, 255, 0.2);
+  width: 100%;
+  content: "";
+  bottom: -1px;
+}
+.method-guide-nav [role="tab"] {
+  border: none;
+  color: currentColor;
+  user-select: none;
+  padding: 0.5rem 0;
+}
+.method-guide-nav [role="tab"]:not(:last-child) {
+  margin-right: 2.35rem;
+}
+.method-guide-nav [role="tab"]:hover {
+  color: #ff7700;
+}
+.method-guide-nav [role="tab"].active::after {
+  width: 0;
+}
+.method-guide-nav [role="tab"].active {
+  border-bottom: 5px solid var(--secondary-color);
+  font-weight: 700 !important;
+  z-index: 1;
+  background-color: transparent;
+  color: currentColor;
+}
+.traininig-hover {
+  color: rgba(174, 204, 255, 1);
+}
+@media (max-width: 991.98px) {
+  .method-guide-nav [role="tab"]:not(:last-child) {
+    margin-right: 30px;
+  }
+  .method-guide-content-title {
+    font-size: 27px !important;
+    line-height: 38px;
+  }
+  .method-guide-content {
+    display: -webkit-box;
+    -webkit-line-clamp: 6;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    word-wrap: break-word;
+  }
+  .method-guide-nav [role="tab"].active {
+    border-bottom-width: 4px;
+  }
+}
+@media (min-width: 992px) {
+  .method-guide-content-container {
+    padding-left: 2.2rem;
+  }
+}
+.method-guide-content {
+  line-height: 1.8125rem;
+  max-width: 743px;
+  list-style-type: initial;
+  padding-left: 1.8rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.2rem;
+}
+
+/* nav tab */
+.nav-wrapper {
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+  scroll-behavior: smooth;
+}
+.nav-wrapper::-webkit-scrollbar {
+  display: none;
+}
+.method-guide-scroll-btn {
+  top: 50%;
+  transform: translateY(-50%);
+  display: none;
+  aspect-ratio: 1;
+  transition: opacity 0.3s, background-color 0.3s;
+  opacity: 0.2;
+}
+.method-guide-scroll-btn:hover {
+  opacity: 1;
+}
+/* end nav tab */
+
+.method-guide-bg-icon {
+  bottom: 0;
+  left: 40vw;
+  min-width: 250px;
+}
