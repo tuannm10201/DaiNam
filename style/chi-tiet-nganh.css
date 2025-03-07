@@ -49,23 +49,44 @@
 }
 .study-overview-list-item {
   font-size: 18px;
-  font-weight: 600;
+  font-weight: 500;
 }
 
 /* highlight-point */
 .highlight-li-item {
   list-style-type: initial;
 }
+.highlight-point-title {
+  height: 50px;
+  margin-bottom: 0.75rem;
+}
+@media (min-width: 1200px) {
+  .highlight-point {
+    padding-bottom: 70px !important;
+  }
+}
 
 /* ability */
 .ability {
   background-color: rgba(246, 102, 0, 1);
 }
-.ability-row {
-  --bs-gutter-x: 3rem;
+@media (min-width: 1200px) {
+  .ability {
+    padding: 54px 0 !important;
+  }
+}
+@media (min-width: 1399.98px) {
+  .ability-content-right {
+    min-width: 500px;
+    max-width: 748px;
+  }
+  .ability-img {
+    width: 640px;
+    height: 420px;
+  }
 }
 .ability-right-container {
-  padding: 1rem 2rem 1.5rem;
+  padding: 1rem 2rem 1.8rem;
 }
 .ability-li-item:not(:last-child) {
   border-bottom: 0.5px solid rgba(216, 216, 216, 1);
@@ -108,6 +129,11 @@
 }
 
 /* structure */
+@media (min-width: 1200px) {
+  .structure {
+    padding-bottom: 56px !important;
+  }
+}
 .structure-nav {
   position: relative;
   border-bottom: none;
@@ -177,6 +203,8 @@
 }
 
 /* methods */
+@media (min-width: 1200px) {
+}
 .methods-swiper .swiper-pagination {
   bottom: -1.3rem;
 }
@@ -189,7 +217,12 @@
   }
 }
 
-/* contact */
+/* oppoturnity */
+@media (min-width: 1200px) {
+  .oppoturnity {
+    padding: 50px 0 34px !important;
+  }
+}
 .oppoturnity-main-ul > li {
   padding-left: 2.7rem;
 }
@@ -204,7 +237,20 @@
   gap: 0.2rem;
 }
 
-/* training */
+/* method-guide */
+
+.method-guide-bg-icon {
+  bottom: 0;
+  min-width: 250px;
+  right: calc(50vw - 100px);
+}
+
+@media (max-width: 1199.98px) {
+  .method-guide {
+    padding-bottom: 56px !important;
+  }
+}
+
 .method-guide-nav {
   position: relative;
   border-bottom: none;
@@ -298,9 +344,3 @@
   opacity: 1;
 }
 /* end nav tab */
-
-.method-guide-bg-icon {
-  bottom: 0;
-  left: 40vw;
-  min-width: 250px;
-}
