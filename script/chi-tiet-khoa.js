@@ -8,6 +8,58 @@ fetch("components/new-event/new-event.html")
   });
 
 // setup swiper
+const keyFeaturesSwiperWrapper = document.querySelector(
+  ".key-features-swiper .swiper-wrapper"
+);
+const originalSlides = Array.from(keyFeaturesSwiperWrapper.children);
+const keyFeaturesContent1 = keyFeaturesSwiperWrapper.innerHTML;
+let keyFeaturesContent2 = "";
+let keyFeaturesSwiper;
+
+function createGroupedKeyFeaturesSlides() {
+  let groupedHTML = "";
+
+  const row = window.innerWidth >= 1400 ? 4 : 3;
+
+  for (let i = 0; i < originalSlides.length; i += row) {
+    groupedHTML += `<div class="swiper-slide d-flex flex-column gap-3 mb-1">`;
+    for (let j = i; j < i + row && j < originalSlides.length; j++) {
+      groupedHTML += originalSlides[j].outerHTML;
+    }
+    groupedHTML += `</div>`;
+  }
+
+  return groupedHTML;
+}
+
+function updateKeyFeaturesSwiperStructure() {
+  if (window.innerWidth >= 1200) {
+    keyFeaturesContent2 = createGroupedKeyFeaturesSlides();
+    if (keyFeaturesSwiperWrapper.innerHTML !== keyFeaturesContent2) {
+      keyFeaturesSwiperWrapper.innerHTML = keyFeaturesContent2;
+      initKeyFeaturesSwiper();
+    }
+  } else if (keyFeaturesSwiperWrapper.innerHTML !== keyFeaturesContent1) {
+    keyFeaturesSwiperWrapper.innerHTML = keyFeaturesContent1;
+    initKeyFeaturesSwiper();
+  }
+  if (!keyFeaturesSwiper) initKeyFeaturesSwiper();
+}
+
+function initKeyFeaturesSwiper() {
+  if (keyFeaturesSwiper) {
+    keyFeaturesSwiper.destroy(true, true);
+  }
+  keyFeaturesSwiper = new Swiper(".key-features-swiper", {
+    pagination: {
+      el: ".swiper-pagination",
+      clickable: true,
+    },
+  });
+}
+
+updateKeyFeaturesSwiperStructure();
+window.addEventListener("resize", updateKeyFeaturesSwiperStructure);
 
 const swiperWrapper = document.querySelector(".partner-swiper .swiper-wrapper");
 const partnerImgLayout1 = swiperWrapper.innerHTML;
