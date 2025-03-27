@@ -12,7 +12,9 @@ function loadScript(name) {
 
 async function loadHeaderAndFooter() {
   const components = ["header", "footer"];
-  const shouldLoadRegisterForm = window.location.pathname !== "/lookup.html";
+  const shouldLoadRegisterForm =
+    window.location.pathname !== "/lookup.html" &&
+    window.location.pathname !== "/404.html";
   if (shouldLoadRegisterForm) {
     components.push("register-form");
   }
