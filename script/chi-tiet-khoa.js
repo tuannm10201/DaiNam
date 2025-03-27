@@ -33,17 +33,11 @@ function createGroupedKeyFeaturesSlides() {
 }
 
 function updateKeyFeaturesSwiperStructure() {
-  if (window.innerWidth >= 1200) {
-    keyFeaturesContent2 = createGroupedKeyFeaturesSlides();
-    if (keyFeaturesSwiperWrapper.innerHTML !== keyFeaturesContent2) {
-      keyFeaturesSwiperWrapper.innerHTML = keyFeaturesContent2;
-      initKeyFeaturesSwiper();
-    }
-  } else if (keyFeaturesSwiperWrapper.innerHTML !== keyFeaturesContent1) {
-    keyFeaturesSwiperWrapper.innerHTML = keyFeaturesContent1;
+  keyFeaturesContent2 = createGroupedKeyFeaturesSlides();
+  if (keyFeaturesSwiperWrapper.innerHTML !== keyFeaturesContent2) {
+    keyFeaturesSwiperWrapper.innerHTML = keyFeaturesContent2;
     initKeyFeaturesSwiper();
   }
-  if (!keyFeaturesSwiper) initKeyFeaturesSwiper();
 }
 
 function initKeyFeaturesSwiper() {
