@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dai Nam university</title>
+    <link rel="stylesheet" href="style/lib/bootstrap.min.temp.css" />
+    <link rel="stylesheet" href="style/common.css" />
+    <link rel="stylesheet" href="style/thong-tin-giang-vien.css" />
+
+    <script src="script/common-components-loader.js"></script>
+    <script src="script/common.js" defer></script>
+    <script src="script/tin-tuc.js" defer></script>
+    <script src="script/lib/bootstrap.min.js" defer></script>
+  </head>
+  <body>
+    <main class="border-top">
+      <div class="container py-xl-5 py-4">
+        <div class="row">
+          <div class="col-xl-4 col-12 pe-xl-5">
+            <h2 class="fw-extra">Thông tin Giảng viên</h2>
+
+            <div class="d-flex d-xl-none align-items-baseline gap-2 mt-4 mb-3">
+              <div class="color-primary">Tất cả Giảng viên</div>
+              <div
+                class="d-flex gap-2"
+                id="trigger-new-see-all-mobile"
+                data-bs-toggle="collapse"
+                data-bs-target="#new-see-all-mobile"
+                aria-expanded="false"
+              >
+                <div class="fw-extra fs-5" role="button">Tất cả Giảng viên</div>
+                <img src="assets/icon/new-see-all.svg" alt="" />
+              </div>
+            </div>
+
+            <div class="collapse d-xl-block" id="new-see-all-mobile">
+              <div class="mt-xl-4 mb-3 color-secondary fw-extra fs-4-5">
+                Tất cả Giảng viên
+              </div>
+
+              <div
+                class="menu fs-4-5 hover-f666"
+                role="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#ban-tin-dn"
+                aria-expanded="false"
+              >
+                Khối Sức Khoẻ
+              </div>
+              <ul id="ban-tin-dn" class="collapse ps-3 mb-1">
+                <li>
+                  <a href="" class="menu-item"> Khoa Y </a>
+                </li>
+                <li>
+                  <a href="" class="menu-item"> Khoa Dược </a>
+                </li>
+                <li>
+                  <a href="" class="menu-item"> Khoa Điều dưỡng </a>
+                </li>
+              </ul>
+              <div
+                class="menu fs-4-5 hover-f666"
+                role="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#kght"
+                aria-expanded="false"
+              >
+                Khối Khoa Học Cơ Bản
+              </div>
+              <ul id="kght" class="collapse ps-3 mb-1">
+                <li>
+                  <a href="" class="menu-item"> Khối Sức khỏe</a>
+                </li>
+                <li>
+                  <a href="" class="menu-item"> Khối Viện - Trung tâm </a>
+                </li>
+                <li>
+                  <a href="" class="menu-item"> Khối Kỹ thuật - Công nghệ </a>
+                </li>
+                <li>
+                  <a href="" class="menu-item"> Khối Kinh doanh - Kinh tế </a>
+                </li>
+                <li>
+                  <a href="" class="menu-item">
+                    Khối Khoa học xã hội và nhân văn
+                  </a>
+                </li>
+              </ul>
+              <div
+                class="menu fs-4-5 hover-f666"
+                role="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#ctdt"
+                aria-expanded="false"
+              >
+                Khối Kỹ thuật Công Nghệ
+              </div>
+              <ul id="ctdt" class="collapse ps-3 mb-1">
+                <li>
+                  <a href="" class="menu-item"> Khối Sức khỏe</a>
+                </li>
+                <li>
+                  <a href="" class="menu-item"> Khối Viện - Trung tâm </a>
+                </li>
+                <li>
+                  <a href="" class="menu-item"> Khối Kỹ thuật - Công nghệ </a>
+                </li>
+                <li>
+                  <a href="" class="menu-item"> Khối Kinh doanh - Kinh tế </a>
+                </li>
+                <li>
+                  <a href="" class="menu-item">
+                    Khối Khoa học xã hội và nhân văn
+                  </a>
+                </li>
+              </ul>
+              <div
+                class="menu fs-4-5 hover-f666"
+                role="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#hnht"
+                aria-expanded="false"
+              >
+                Khối Kinh doanh Kinh tế
+              </div>
+              <ul id="hnht" class="collapse ps-3 mb-1">
+                <li>
+                  <a href="" class="menu-item"> Khối Sức khỏe</a>
+                </li>
+                <li>
+                  <a href="" class="menu-item"> Khối Viện - Trung tâm </a>
+                </li>
+                <li>
+                  <a href="" class="menu-item"> Khối Kỹ thuật - Công nghệ </a>
+                </li>
+                <li>
+                  <a href="" class="menu-item"> Khối Kinh doanh - Kinh tế </a>
+                </li>
+                <li>
+                  <a href="" class="menu-item">
+                    Khối Khoa học xã hội và nhân văn
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-xl-8 col-12 right-content">
+            <div class="row pt-0 pt-lg-3 pt-xl-0">
+              <div class="col-xxl-4 col-xl-6 col-lg-4 col-6 mt-lg-5 mt-4">
+                <img
+                  src="assets/img/ts-TranDangCong.png"
+                  alt=""
+                  class="teacher-img"
+                />
+                <h5 class="color-secondary fw-bold mt-3">
+                  Khoa Công nghệ thông tin
+                </h5>
+                <div class="fw-extra fs-4 teacher-name color-primary">
+                  TS. Trần Đăng Công
+                </div>
+                <div class="teach-role mt-1 fw-bold color-primary">
+                  Trưởng khoa
+                </div>
+                <small class="color-primary text-truncate-2 lh-16"
+                  >Tiến sĩ</small
+                >
+              </div>
+              <div class="col-xxl-4 col-xl-6 col-lg-4 col-6 mt-lg-5 mt-4">
+                <img
+                  src="assets/img/ts-DauHaiPhong.png"
+                  alt=""
+                  class="teacher-img"
+                />
+                <h5 class="color-secondary fw-bold mt-3">
+                  Khoa Công nghệ thông tin
+                </h5>
+                <div class="fw-extra fs-4 teacher-name color-primary">
+                  TS. Đậu Hải Phong
+                </div>
+                <div class="teach-role mt-1 fw-bold color-primary">
+                  Phó Trưởng khoa
+                </div>
+                <small class="color-primary text-truncate-2 lh-16"
+                  >Tiến sĩ</small
+                >
+              </div>
+              <div class="col-xxl-4 col-xl-6 col-lg-4 col-6 mt-lg-5 mt-4">
+                <img
+                  src="assets/img/ts-HoangDucHanh.png"
+                  alt=""
+                  class="teacher-img"
+                />
+                <h5 class="color-secondary fw-bold mt-3">Khoa Y</h5>
+                <div class="fw-extra fs-4 teacher-name color-primary">
+                  PGS.TS Hoàng Đức Hạnh
+                </div>
+                <div class="teach-role mt-1 fw-bold color-primary">
+                  Nguyên Phó Giám đốc Sở Y tế Hà Nội, Trưởng khoa
+                </div>
+                <small class="color-primary text-truncate-2 lh-16"
+                  >Thầy thuốc nhân dân, Phó giáo sư Tiến sĩ</small
+                >
+              </div>
+              <div class="col-xxl-4 col-xl-6 col-lg-4 col-6 mt-lg-5 mt-4">
+                <img
+                  src="assets/img/ts-PhamTrungKien.png"
+                  alt=""
+                  class="teacher-img"
+                />
+                <h5 class="color-secondary fw-bold mt-3">Khoa Y</h5>
+                <div class="fw-extra fs-4 teacher-name color-primary">
+                  PGS.TS Phạm Trung Kiên
+                </div>
+                <div class="teach-role mt-1 fw-bold color-primary">
+                  Trợ lý Chủ tịch Hội đồng trường về ngành Y khoa
+                </div>
+                <small class="color-primary text-truncate-2 lh-16"
+                  >Nguyên Phó Hiệu trưởng trường Đại học Y Dược - ĐHQGHN, Phó
+                  giáo sư Tiến sĩ
+                </small>
+              </div>
+              <div class="col-xxl-4 col-xl-6 col-lg-4 col-6 mt-lg-5 mt-4">
+                <img
+                  src="assets/img/ts_CanThiCuc.png"
+                  alt=""
+                  class="teacher-img"
+                />
+                <h5 class="color-secondary fw-bold mt-3">Khoa Y</h5>
+                <div class="fw-extra fs-4 teacher-name color-primary">
+                  TS. Cấn Thị Cúc
+                </div>
+                <div class="teach-role mt-1 fw-bold color-primary">
+                  Phó Trưởng khoa
+                </div>
+                <small class="color-primary text-truncate-2 lh-16"
+                  >Tiến sĩ</small
+                >
+              </div>
+              <div class="col-xxl-4 col-xl-6 col-lg-4 col-6 mt-lg-5 mt-4">
+                <img
+                  src="assets/img/ts-PhamThiQuynhHoa.png"
+                  alt=""
+                  class="teacher-img"
+                />
+                <h5 class="color-secondary fw-bold mt-3">Khoa Y</h5>
+                <div class="fw-extra fs-4 teacher-name color-primary">
+                  Phạm Thị Quỳnh Hoa
+                </div>
+                <div class="teach-role mt-1 fw-bold color-primary">
+                  Trưởng bộ môn Sản phụ khoa
+                </div>
+                <small class="color-primary text-truncate-2 lh-16"
+                  >BSCK II
+                </small>
+              </div>
+              <div class="col-xxl-4 col-xl-6 col-lg-4 col-6 mt-lg-5 mt-4">
+                <img
+                  src="assets/img/ts-TranDangCong.png"
+                  alt=""
+                  class="teacher-img"
+                />
+                <h5 class="color-secondary fw-bold mt-3">
+                  Khoa Công nghệ thông tin
+                </h5>
+                <div class="fw-extra fs-4 teacher-name color-primary">
+                  TS. Trần Đăng Công
+                </div>
+                <div class="teach-role mt-1 fw-bold color-primary">
+                  Trưởng khoa
+                </div>
+                <small class="color-primary text-truncate-2 lh-16"
+                  >Tiến sĩ</small
+                >
+              </div>
+              <div class="col-xxl-4 col-xl-6 col-lg-4 col-6 mt-lg-5 mt-4">
+                <img
+                  src="assets/img/ts-DauHaiPhong.png"
+                  alt=""
+                  class="teacher-img"
+                />
+                <h5 class="color-secondary fw-bold mt-3">
+                  Khoa Công nghệ thông tin
+                </h5>
+                <div class="fw-extra fs-4 teacher-name color-primary">
+                  TS. Đậu Hải Phong
+                </div>
+                <div class="teach-role mt-1 fw-bold color-primary">
+                  Phó Trưởng khoa
+                </div>
+                <small class="color-primary text-truncate-2 lh-16"
+                  >Tiến sĩ</small
+                >
+              </div>
+              <div class="col-xxl-4 col-xl-6 col-lg-4 col-6 mt-lg-5 mt-4">
+                <img
+                  src="assets/img/ts-HoangDucHanh.png"
+                  alt=""
+                  class="teacher-img"
+                />
+                <h5 class="color-secondary fw-bold mt-3">Khoa Y</h5>
+                <div class="fw-extra fs-4 teacher-name color-primary">
+                  PGS.TS Hoàng Đức Hạnh
+                </div>
+                <div class="teach-role mt-1 fw-bold color-primary">
+                  Nguyên Phó Giám đốc Sở Y tế Hà Nội, Trưởng khoa
+                </div>
+                <small class="color-primary text-truncate-2 lh-16"
+                  >Thầy thuốc nhân dân, Phó giáo sư Tiến sĩ</small
+                >
+              </div>
+              <div class="col-xxl-4 col-xl-6 col-lg-4 col-6 mt-lg-5 mt-4">
+                <img
+                  src="assets/img/ts-PhamTrungKien.png"
+                  alt=""
+                  class="teacher-img"
+                />
+                <h5 class="color-secondary fw-bold mt-3">Khoa Y</h5>
+                <div class="fw-extra fs-4 teacher-name color-primary">
+                  PGS.TS Phạm Trung Kiên
+                </div>
+                <div class="teach-role mt-1 fw-bold color-primary">
+                  Trợ lý Chủ tịch Hội đồng trường về ngành Y khoa
+                </div>
+                <small class="color-primary text-truncate-2 lh-16"
+                  >Nguyên Phó Hiệu trưởng trường Đại học Y Dược - ĐHQGHN, Phó
+                  giáo sư Tiến sĩ
+                </small>
+              </div>
+              <div class="col-xxl-4 col-xl-6 col-lg-4 col-6 mt-lg-5 mt-4">
+                <img
+                  src="assets/img/ts_CanThiCuc.png"
+                  alt=""
+                  class="teacher-img"
+                />
+                <h5 class="color-secondary fw-bold mt-3">Khoa Y</h5>
+                <div class="fw-extra fs-4 teacher-name color-primary">
+                  TS. Cấn Thị Cúc
+                </div>
+                <div class="teach-role mt-1 fw-bold color-primary">
+                  Phó Trưởng khoa
+                </div>
+                <small class="color-primary text-truncate-2 lh-16"
+                  >Tiến sĩ</small
+                >
+              </div>
+              <div class="col-xxl-4 col-xl-6 col-lg-4 col-6 mt-lg-5 mt-4">
+                <img
+                  src="assets/img/ts-PhamThiQuynhHoa.png"
+                  alt=""
+                  class="teacher-img"
+                />
+                <h5 class="color-secondary fw-bold mt-3">Khoa Y</h5>
+                <div class="fw-extra fs-4 teacher-name color-primary">
+                  Phạm Thị Quỳnh Hoa
+                </div>
+                <div class="teach-role mt-1 fw-bold color-primary">
+                  Trưởng bộ môn Sản phụ khoa
+                </div>
+                <small class="color-primary text-truncate-2 lh-16"
+                  >BSCK II
+                </small>
+              </div>
+            </div>
+
+            <nav class="mt-lg-5 mt-4">
+              <ul class="pagination justify-content-center gap-3">
+                <li class="page-item">
+                  <a class="page-link active" href="#">1</a>
+                </li>
+                <li class="page-item"><a class="page-link" href="#">2</a></li>
+                <li class="page-item"><a class="page-link" href="#">3</a></li>
+                <li class="page-item"><a class="page-link" href="#">4</a></li>
+                <li class="align-content-center fw-bolder">...</li>
+                <li class="page-item"><a class="page-link" href="#">21</a></li>
+                <li class="page-item">
+                  <a class="page-link" href="#">
+                    <img src="assets/icon/next-page.svg" alt="" />
+                  </a>
+                </li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>
