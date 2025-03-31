@@ -45,6 +45,10 @@
   .event-item img {
     height: 205px;
   }
+  .content-sub-title {
+    max-width: 350px;
+    line-height: 20px;
+  }
 }
 
 .text-truncate-2 {
