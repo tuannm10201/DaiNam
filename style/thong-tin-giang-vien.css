@@ -42,6 +42,11 @@
   height: 352px;
   border-radius: 10px;
 }
+@media (min-width: 768px) {
+  .teacher-img ~ * {
+    width: 300px;
+  }
+}
 @media (max-width: 991.98px) {
   .right-content .row {
     margin-top: -1rem;
@@ -49,7 +54,10 @@
 }
 @media (min-width: 992px) {
   .right-content .row {
-    margin-top: -3rem;
+    margin-top: -40px;
+  }
+  .mt-lg-5 {
+    margin-top: 40px !important;
   }
 }
 @media (min-width: 1200px) {
@@ -76,19 +84,24 @@
     width: 220px;
     height: 250px;
   }
+  .right-content h5 {
+    line-height: 18px;
+  }
   .right-content h5,
   .teach-role,
   .text-truncate-2 {
+    min-width: 165px;
     font-size: 13px;
   }
   .teacher-name {
     font-size: 1rem !important;
+    min-width: 165px;
   }
 }
 @media (max-width: 575.98px) {
   .teacher-img {
-    width: 165px;
-    height: 193.62px;
+    width: 164px;
+    height: 192px;
   }
 }
 @media (max-width: 360px) {
@@ -107,6 +120,11 @@
 }
 
 .page-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 40px;
   border-radius: 0.375rem !important;
   color: black !important;
   font-weight: 700;
