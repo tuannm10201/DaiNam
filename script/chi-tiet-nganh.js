@@ -1,3 +1,38 @@
+// Equalize height of highlight-point-title elements
+function equalizeHighlightTitles() {
+  const titles = document.querySelectorAll(".highlight-point-title");
+
+  // For screens smaller than lg (992px), set height to auto
+  if (window.innerWidth < 992) {
+    titles.forEach((title) => {
+      title.style.height = "auto";
+    });
+    return;
+  }
+
+  let maxHeight = 50; // Minimum height
+
+  // Reset heights to auto to get natural heights
+  titles.forEach((title) => {
+    title.style.height = "auto";
+  });
+
+  // Find the maximum height
+  titles.forEach((title) => {
+    const height = title.offsetHeight;
+    maxHeight = Math.max(maxHeight, height);
+  });
+
+  // Apply the maximum height to all elements
+  titles.forEach((title) => {
+    title.style.height = `${maxHeight}px`;
+  });
+}
+
+// Call on load and resize
+window.addEventListener("load", equalizeHighlightTitles);
+window.addEventListener("resize", equalizeHighlightTitles);
+
 // inject new event
 fetch("components/new-event/new-event.html")
   .then((res) => res.text())
