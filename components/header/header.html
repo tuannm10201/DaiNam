@@ -125,7 +125,7 @@
 
         <!-- Language Dropdown -->
         <li
-          class="col-12 col-xl ps-xl-3 p-xl-0 ms-0 nav-item dropdown click-dropdown"
+          class="col-12 col-xl ps-xl-3 p-xl-0 ms-0 nav-item dropdown click-dropdown d-none d-xl-block"
         >
           <a
             class="nav-link ps-xl-2 dropdown-toggle gap-2 d-flex align-items-center"
@@ -145,7 +145,7 @@
           </a>
           <ul class="dropdown-menu dropdown-click-menu w-25">
             <li class="dropdown-item">
-              <a href="/vi">
+              <a href="/vi" class="d-flex align-items-center gap-1">
                 <img
                   width="26"
                   height="16"
@@ -156,7 +156,7 @@
               </a>
             </li>
             <li class="dropdown-item">
-              <a href="/en">
+              <a href="/en" class="d-flex align-items-center gap-1">
                 <img
                   width="26"
                   height="16"
@@ -191,8 +191,58 @@
     </a>
 
     <div
-      class="d-flex align-items-center justify-content-end flex-fill mobile-search-container"
+      class="d-flex align-items-center justify-content-end mobile-search-container position-relative"
     >
+      <!-- Language Dropdown -->
+      <a
+        class="nav-link dropdown-toggle gap-2 d-flex align-items-center language-dropdown-sm d-xl-none"
+        href="#"
+        role="button"
+        data-bs-toggle="dropdown"
+        aria-expanded="false"
+      >
+        <img
+          width="26"
+          height="16"
+          src="assets/icon/language-flag.svg"
+          alt="Vietnamese Flag"
+        />
+        <span class="chevron-down icon-language"></span>
+      </a>
+      <ul
+        class="dropdown-menu dropdown-click-menu d-xl-none"
+        style="left: -1.2rem"
+      >
+        <li class="dropdown-item">
+          <a
+            href="/vi"
+            class="language-dropdown-item-sm d-flex align-items-center gap-2"
+          >
+            <img
+              width="26"
+              height="16"
+              src="assets/icon/language-flag.svg"
+              alt="Vietnamese Flag"
+            />
+            Tiếng Việt
+          </a>
+        </li>
+        <li class="dropdown-item">
+          <a
+            href="/en"
+            class="language-dropdown-item-sm d-flex align-items-center gap-2"
+          >
+            <img
+              width="26"
+              height="16"
+              src="assets/icon/language-english-flag.svg"
+              alt="English Flag"
+            />
+            English
+          </a>
+        </li>
+      </ul>
+
       <!-- mobile search -->
       <div class="px-3 py-2 nav-search-icon d-xl-none me-2" role="button">
         <img src="assets/icon/search-sm.svg" alt="" />
