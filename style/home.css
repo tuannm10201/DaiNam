@@ -51,6 +51,8 @@
   display: block;
   font-weight: 500;
   font-size: 1.0625rem;
+  padding: 5px 0;
+  line-height: 1.5rem;
 }
 .specialization-item:hover {
   font-weight: 700;
@@ -61,8 +63,7 @@
   line-height: 2.25rem;
 }
 .specialization-item {
-  max-width: 250px;
-  line-height: 1.5rem;
+  max-width: 270px;
 }
 @media (min-width: 1200px) {
   .specialization-content-left {
@@ -75,6 +76,9 @@
   }
   .specialization h4 {
     font-size: 1.625rem !important;
+  }
+  .specialization-border {
+    max-width: 270px;
   }
 }
 @media (max-width: 991.98px) {
