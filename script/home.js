@@ -73,69 +73,6 @@ function initReasonSwiper() {
 initReasonSwiper();
 window.addEventListener("resize", initReasonSwiper);
 
-const swiperWrapper = document.querySelector(".partner-swiper .swiper-wrapper");
-const partnerImgLayout1 = swiperWrapper.innerHTML;
-let partnerImgLayout2 = "";
-let partnerSwiper;
-
-function createGroupedSlides() {
-  const originalSlides = Array.from(swiperWrapper.children).map(
-    (slide) => slide.querySelector("img").src
-  );
-  let groupedHTML = "";
-
-  for (let i = 0; i < originalSlides.length; i += 4) {
-    groupedHTML += `<div class="swiper-slide">`;
-    for (let j = i; j < i + 4 && j < originalSlides.length; j++) {
-      groupedHTML += `<img src="${originalSlides[j]}" />`;
-    }
-    groupedHTML += `</div>`;
-  }
-
-  return groupedHTML;
-}
-
-function updatePartnerSwiperStructure() {
-  if (window.innerWidth < 992) {
-    if (partnerImgLayout2 === "") {
-      partnerImgLayout2 = createGroupedSlides();
-    }
-    if (swiperWrapper.innerHTML !== partnerImgLayout2) {
-      swiperWrapper.innerHTML = partnerImgLayout2;
-      initSwiper();
-    }
-  } else if (swiperWrapper.innerHTML !== partnerImgLayout1) {
-    swiperWrapper.innerHTML = partnerImgLayout1;
-    initSwiper();
-  }
-  if (!partnerSwiper) initSwiper();
-}
-
-function initSwiper() {
-  if (partnerSwiper) {
-    partnerSwiper.destroy(true, true);
-  }
-  partnerSwiper = new Swiper(".partner-swiper", {
-    pagination: {
-      el: ".swiper-pagination",
-      clickable: true,
-    },
-    slidesPerView: 1,
-    breakpoints: {
-      992: {
-        slidesPerView: 4,
-      },
-      1200: {
-        slidesPerView: 5,
-      },
-    },
-    spaceBetween: 25,
-  });
-}
-
-updatePartnerSwiperStructure();
-window.addEventListener("resize", updatePartnerSwiperStructure);
-
 // reason video
 const reasonVideo = document.getElementById("reason-video");
 const playButton = document.getElementById("reason-play-button");
@@ -206,3 +143,44 @@ const observer = new IntersectionObserver(
 document
   .querySelectorAll("[data-number-target]")
   .forEach((num) => observer.observe(num));
+
+// Partner logo marquee
+function setupPartnerMarquee() {
+  const container = document.querySelector(".partner-logo-container");
+  let marquee = new Marquee(container, {
+    minImagesPerRow: 10,
+    maxRows: () => (window.innerWidth < 768 ? 2 : 3), // Responsive rows
+  });
+
+  // Track screen size to rebuild marquee when crossing breakpoints
+  let isMobile = window.innerWidth < 768;
+  let resizeTimeout;
+
+  // Add resize listener to handle responsive changes with throttling
+  window.addEventListener("resize", () => {
+    // Clear previous timeout
+    if (resizeTimeout) {
+      clearTimeout(resizeTimeout);
+    }
+
+    // Set a timeout to avoid multiple rebuilds during resize
+    resizeTimeout = setTimeout(() => {
+      const wasMobile = isMobile;
+      isMobile = window.innerWidth < 768;
+
+      // Only rebuild marquee when crossing the breakpoint
+      if (wasMobile !== isMobile) {
+        // Remove loaded class before rebuilding
+        container.classList.remove("loaded");
+
+        marquee = new Marquee(container, {
+          minImagesPerRow: 10,
+          maxRows: () => (window.innerWidth < 768 ? 2 : 3),
+        });
+      }
+    }, 50);
+  });
+}
+
+// Initialize partner marquee when DOM is ready
+document.addEventListener("DOMContentLoaded", setupPartnerMarquee);
