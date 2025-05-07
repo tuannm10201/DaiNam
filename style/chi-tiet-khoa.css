@@ -548,3 +548,122 @@
     font-size: 0.8rem;
   }
 }
+
+/* === Student Life Image Popup (with smooth transitions) === */
+.student-img-popup-overlay {
+  position: fixed;
+  z-index: 20000;
+  left: 0;
+  top: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(10, 20, 40, 0.88);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2vw;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.28s cubic-bezier(0.4, 0, 0.2, 1);
+}
+.student-img-popup-overlay.active {
+  opacity: 1;
+  pointer-events: auto;
+}
+.student-img-popup-content {
+  max-width: 90vw;
+  max-height: 90vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transform: scale(0.98);
+  transition: transform 0.22s cubic-bezier(0.4, 0, 0.2, 1);
+}
+.student-img-popup-overlay.active .student-img-popup-content {
+  transform: scale(1);
+}
+.student-img-popup-img {
+  min-width: 30vw;
+  min-height: 30vw;
+  max-width: 80vw;
+  max-height: 80vh;
+  border-radius: 6px;
+  object-fit: contain;
+}
+.student-img-popup-close {
+  background-color: transparent;
+  outline: none;
+  top: 1rem;
+  right: 1rem;
+}
+.student-img-popup-close:hover {
+  background: var(--primary-color);
+}
+
+body.student-img-popup-open {
+  overflow: hidden;
+}
+
+@media (max-width: 767.98px) {
+  .student-img-popup-img {
+    max-width: 98vw;
+    max-height: 60vh;
+  }
+  .student-img-popup-content {
+    max-width: 98vw;
+    max-height: 70vh;
+  }
+  .student-img-popup-close {
+    top: 12px;
+    right: 12px;
+    font-size: 2rem;
+    width: 36px;
+    height: 36px;
+  }
+}
+
+.student-img-popup-nav {
+  position: absolute;
+  border: none;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  cursor: pointer;
+  z-index: 2;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(255, 255, 255, 0.7);
+}
+.student-img-popup-nav:hover {
+  background-color: #fff;
+}
+.student-img-popup-nav img {
+  width: 14px;
+  height: 23px;
+}
+.student-img-popup-prev {
+  left: 18%;
+}
+.student-img-popup-next {
+  right: 18%;
+}
+.back-btn-img {
+  margin-right: 3px;
+}
+.next-btn-img {
+  margin-left: 3px;
+}
+@media (max-width: 767.98px) {
+  .student-img-popup-nav {
+    width: 36px;
+    height: 36px;
+    font-size: 1.5rem;
+  }
+  .student-img-popup-prev {
+    left: 2%;
+  }
+  .student-img-popup-next {
+    right: 2%;
+  }
+}

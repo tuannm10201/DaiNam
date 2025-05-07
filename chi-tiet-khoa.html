@@ -866,5 +866,38 @@
         />
       </section>
     </main>
+
+    <div class="student-img-popup-overlay" style="display: none">
+      <button
+        class="student-img-popup-nav student-img-popup-prev"
+        aria-label="Previous image"
+      >
+        <img
+          class="back-btn-img"
+          src="assets/icon/next-page.svg"
+          style="transform: rotate(180deg)"
+          alt="Next image"
+        />
+      </button>
+      <div class="student-img-popup-content">
+        <img class="student-img-popup-img" src="" alt="Student life full" />
+      </div>
+      <button
+        class="student-img-popup-nav student-img-popup-next"
+        aria-label="Next image"
+      >
+        <img
+          class="next-btn-img"
+          src="assets/icon/next-page.svg"
+          alt="Next image"
+        />
+      </button>
+      <button
+        class="student-img-popup-close border-0 position-fixed rounded-circle p-1"
+        aria-label="Close"
+      >
+        <img src="assets/icon/x.svg" width="32" height="32" alt="X" />
+      </button>
+    </div>
   </body>
 </html>
